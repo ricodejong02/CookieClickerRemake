@@ -241,19 +241,12 @@ namespace Kaziklikker
 
         private void button10_Click(object sender, EventArgs e)
         {
+            Money -= ClickingPrice;
             ClickingSpeed *= 2;
             ClickingPrice *= 2;
             ClickingAmount += 1;
         }
 
-        private void label22_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void label21_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
