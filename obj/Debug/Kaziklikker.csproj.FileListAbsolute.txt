@@ -1,0 +1,9 @@
+c:\users\rico\documents\visual studio 2013\Projects\Kaziklikker\Kaziklikker\bin\Debug\Kaziklikker.exe.config
+c:\users\rico\documents\visual studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.csprojResolveAssemblyReference.cache
+c:\users\rico\documents\visual studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Form1.resources
+c:\users\rico\documents\visual studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Properties.Resources.resources
+c:\users\rico\documents\visual studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.csproj.GenerateResource.Cache
+c:\users\rico\documents\visual studio 2013\Projects\Kaziklikker\Kaziklikker\bin\Debug\Kaziklikker.exe
+c:\users\rico\documents\visual studio 2013\Projects\Kaziklikker\Kaziklikker\bin\Debug\Kaziklikker.pdb
+c:\users\rico\documents\visual studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.exe
+c:\users\rico\documents\visual studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.pdb
