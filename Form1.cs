@@ -18,7 +18,7 @@ namespace Kaziklikker
     {
 
         #region ints
-        Int64 Money = 00;
+        Int64 Money = 0;
         Int64 CPS = 0;
         Int64 ClickerPrice = 10;
         Int64 FarmPrice = 50;
