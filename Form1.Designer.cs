@@ -83,11 +83,13 @@
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.timer4 = new System.Windows.Forms.Timer(this.components);
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Kaziknop
             // 
-            this.Kaziknop.Location = new System.Drawing.Point(264, 122);
+            this.Kaziknop.Location = new System.Drawing.Point(244, 146);
             this.Kaziknop.Name = "Kaziknop";
             this.Kaziknop.Size = new System.Drawing.Size(112, 78);
             this.Kaziknop.TabIndex = 1;
@@ -552,11 +554,30 @@
             this.timer4.Interval = 15000;
             this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
             // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(188, 93);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(69, 13);
+            this.label32.TabIndex = 36;
+            this.label32.Text = "Keren geklikt";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(287, 93);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(0, 13);
+            this.label33.TabIndex = 37;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 408);
+            this.Controls.Add(this.label33);
+            this.Controls.Add(this.label32);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.label29);
@@ -673,6 +694,8 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Timer timer4;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
     }
 }
 

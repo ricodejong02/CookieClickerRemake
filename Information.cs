@@ -36,6 +36,7 @@ namespace Kaziklikker
         private Int64 godAmount;
         private Int64 bankRente;
         private Int64 opBank;
+        private Int64 totalClicks;
 
         
         public Int64 Money
@@ -204,6 +205,12 @@ namespace Kaziklikker
         {
             get { return godPrice; }
             set { godPrice = value; }
+        }
+
+        public Int64 TotalClicks
+        {
+            get { return totalClicks; }
+            set { totalClicks = value; }
         }
     }
 }

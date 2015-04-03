@@ -68,6 +68,7 @@ namespace Kaziklikker
         Int64 UniverseSpeed = 100000;
         Int64 GodPrice = 250000000;
         Int64 GodAmount = 0;
+        Int64 TotalClicks = 0;
         bool Autosave = false;
         #endregion
 
@@ -92,9 +93,9 @@ namespace Kaziklikker
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        public void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
         #endregion
 
@@ -102,6 +103,7 @@ namespace Kaziklikker
         private void Kaziknop_Click(object sender, EventArgs e)
         {
             Money += ClickingSpeed;
+            TotalClicks += 1;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -140,6 +142,7 @@ namespace Kaziklikker
             label20.Text = ClickingSpeed.ToString();
             label30.Text = UniverseAmount.ToString();
             label31.Text = GodAmount.ToString();
+            label33.Text = TotalClicks.ToString();
 
             label26.Text = OpBank.ToString();
             label27.Text = BankRente.ToString();
@@ -589,6 +592,7 @@ namespace Kaziklikker
                 info.UniverseAmount = UniverseAmount;
                 info.UniversePrice = UniversePrice;
                 info.UniverseSpeed = UniverseSpeed;
+                info.TotalClicks = TotalClicks;
 
                 SaveXML.SaveData(info, "kazidata.xml");
             }
@@ -635,6 +639,7 @@ namespace Kaziklikker
                 UniversePrice = info.UniversePrice;
                 UniverseSpeed = info.UniverseSpeed;
                 UniverseAmount = info.UniverseAmount;
+                TotalClicks = info.TotalClicks;
             }
             else
             {
@@ -776,6 +781,11 @@ namespace Kaziklikker
                     ClickerBuffer += 1;
                 }
             }
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
 
         }
 
