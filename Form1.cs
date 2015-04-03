@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -100,11 +100,13 @@ namespace Kaziklikker
         #endregion
 
         #region Kaziknop
-        private void Kaziknop_Click(object sender, EventArgs e)
+        private void Kaziknop_MouseClick(object sender, MouseEventArgs e)
         {
+
             Money += ClickingSpeed;
             TotalClicks += 1;
         }
+
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -782,12 +784,6 @@ namespace Kaziklikker
                 }
             }
 
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
+        } 
     }
 }
