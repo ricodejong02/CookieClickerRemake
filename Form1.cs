@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -59,7 +59,6 @@ namespace Kaziklikker
         Int64 PlanetBuffer = 0;
         Int64 GalaxyBuffer = 0;
         Int64 UniverseBuffer = 0;
-        Int64 GodBuffer = 0;
         Int64 WeinigGeldBuffer = 0;
         Int64 VeelGeldBuffer = 0;
         Int64 BankBuffer = 0;
@@ -100,12 +99,6 @@ namespace Kaziklikker
         #endregion
 
         #region Kaziknop
-        private void Kaziknop_MouseClick(object sender, MouseEventArgs e)
-        {
-
-            Money += ClickingSpeed;
-            TotalClicks += 1;
-        }
 
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -275,7 +268,7 @@ namespace Kaziklikker
             {
                 button9.Enabled = true;
             }
-            
+
             if (Money >= ClickingPrice)
             {
                 button10.Enabled = true;
@@ -321,12 +314,12 @@ namespace Kaziklikker
         {
             CPS += ClickerSpeed;
             Money -= ClickerPrice;
-            ClickerPrice += 5;           
+            ClickerPrice += 5;
             ClickerAmount += 1;
 
             if (ClickerAmount >= 50 && ClickerBuffer == 0)
             {
-                MessageBox.Show("Nieuwe Cheat code gekregen! " + ClickerString);
+                MessageBox.Show("New cheat code unlocked! " + ClickerString);
                 ClickerBuffer += 1;
             }
 
@@ -341,7 +334,7 @@ namespace Kaziklikker
 
             if (FarmAmount >= 50 && FarmBuffer == 0)
             {
-                MessageBox.Show("Nieuwe Cheat code gekregen! " + FarmString);
+                MessageBox.Show("New cheat code unlocked! " + FarmString);
                 FarmBuffer += 1;
             }
         }
@@ -351,11 +344,11 @@ namespace Kaziklikker
             CPS += MineSpeed;
             Money -= MinePrice;
             MinePrice += 50;
-            MineAmount +=1;
+            MineAmount += 1;
 
-            if (MineAmount >= 50 && MineBuffer == 0) 
+            if (MineAmount >= 50 && MineBuffer == 0)
             {
-                MessageBox.Show("Nieuwe Cheat code gekregen! " + MineString);
+                MessageBox.Show("New cheat code unlocked! " + MineString);
                 MineBuffer += 1;
             }
         }
@@ -369,7 +362,7 @@ namespace Kaziklikker
 
             if (VillageAmount >= 50 && VillageBuffer == 0)
             {
-                MessageBox.Show("Nieuwe Cheat code gekregen! " + VillageString);
+                MessageBox.Show("New cheat code unlocked! " + VillageString);
                 VillageBuffer += 1;
             }
         }
@@ -383,7 +376,7 @@ namespace Kaziklikker
 
             if (CityAmount >= 50 && CityBuffer == 0)
             {
-                MessageBox.Show("Nieuwe Cheat code gekregen! " + CityString);
+                MessageBox.Show("New cheat code unlocked! " + CityString);
                 CityBuffer += 1;
             }
         }
@@ -398,7 +391,7 @@ namespace Kaziklikker
 
             if (CountryAmount >= 50 && CountryBuffer == 0)
             {
-                MessageBox.Show("Nieuwe Cheat code gekregen! " + CountryString);
+                MessageBox.Show("New cheat code unlocked! " + CountryString);
                 CountryBuffer += 1;
             }
         }
@@ -408,12 +401,12 @@ namespace Kaziklikker
             CPS += PlanetSpeed;
             Money -= PlanetPrice;
             PlanetPrice += 500;
-            PlanetAmount +=1;
+            PlanetAmount += 1;
             PlanetSpeed += 2;
 
             if (PlanetAmount >= 50 && PlanetBuffer == 0)
             {
-                MessageBox.Show("Nieuwe Cheat code gekregen! " + PlanetString);
+                MessageBox.Show("New cheat code unlocked! " + PlanetString);
                 PlanetBuffer += 1;
             }
         }
@@ -428,7 +421,7 @@ namespace Kaziklikker
 
             if (GalaxyAmount >= 50 && GalaxyBuffer == 0)
             {
-                MessageBox.Show("Nieuwe Cheat code gekregen! " + GalaxyString);
+                MessageBox.Show("New cheat code unlocked! " + GalaxyString);
                 GalaxyBuffer += 1;
             }
         }
@@ -443,7 +436,7 @@ namespace Kaziklikker
 
             if (UniverseAmount >= 50 && UniverseBuffer == 0)
             {
-                MessageBox.Show("Nieuwe Cheat code gekregen! " + UniverseString);
+                MessageBox.Show("New cheat code unlocked! " + UniverseString);
                 UniverseBuffer += 1;
             }
         }
@@ -462,12 +455,6 @@ namespace Kaziklikker
             {
                 MessageBox.Show("Goden max.");
                 button18.Enabled = false;
-
-            }
-            if (GodAmount >= 50 && GodBuffer == 0)
-            {
-                MessageBox.Show("Nieuwe Cheat code gekregen! " + GodString);
-                GodBuffer += 1;
             }
         }
 
@@ -486,14 +473,18 @@ namespace Kaziklikker
         {
             #region cheats
 
+            if (textBox1.Text == "plsgifmemony")
+            {
+                Money += 10000000000000;
+            }
             if (textBox1.Text == ClickerString)
             {
-                 ClickerPrice = 0;
+                ClickerPrice = 0;
             }
 
             if (textBox1.Text == FarmString)
             {
-                 FarmPrice = 0;
+                FarmPrice = 0;
             }
 
             if (textBox1.Text == MineString)
@@ -671,7 +662,6 @@ namespace Kaziklikker
                 ClickerAmount = 0;
                 GodPrice = 250000000;
                 GodAmount = 0;
-                GodBuffer = 0;
                 UniversePrice = 25000000;
                 UniverseAmount = 0;
                 UniverseBuffer = 0;
@@ -709,7 +699,7 @@ namespace Kaziklikker
             }
             else if (dialogResult == DialogResult.No)
             {
-                
+
             }
 
         }
@@ -784,6 +774,14 @@ namespace Kaziklikker
                 }
             }
 
-        } 
+        }
+
+        private void Kaziknop_MouseClick(object sender, MouseEventArgs e)
+        {
+            Money += ClickerSpeed;
+            TotalClicks += 1;
+
+        }
+
     }
 }

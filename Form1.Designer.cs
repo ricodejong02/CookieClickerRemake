@@ -1,4 +1,4 @@
-namespace Kaziklikker
+﻿namespace Kaziklikker
 {
     partial class Form1
     {
@@ -93,7 +93,7 @@ namespace Kaziklikker
             this.Kaziknop.Name = "Kaziknop";
             this.Kaziknop.Size = new System.Drawing.Size(112, 78);
             this.Kaziknop.TabIndex = 1;
-            this.Kaziknop.Text = "kazi";
+            this.Kaziknop.Text = "Money!";
             this.Kaziknop.UseVisualStyleBackColor = true;
             this.Kaziknop.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Kaziknop_MouseClick);
             // 
@@ -125,7 +125,7 @@ namespace Kaziklikker
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 23);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Klikker";
+            this.button1.Text = "Clicker";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             this.button1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.button1_KeyPress);
@@ -381,20 +381,20 @@ namespace Kaziklikker
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(228, 40);
+            this.label23.Location = new System.Drawing.Point(218, 40);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(29, 13);
+            this.label23.Size = new System.Drawing.Size(39, 13);
             this.label23.TabIndex = 21;
-            this.label23.Text = "Geld";
+            this.label23.Text = "Money";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(209, 66);
+            this.label24.Location = new System.Drawing.Point(199, 66);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(48, 13);
+            this.label24.Size = new System.Drawing.Size(58, 13);
             this.label24.TabIndex = 22;
-            this.label24.Text = "Geld p/s";
+            this.label24.Text = "Money p/s";
             // 
             // button11
             // 
@@ -402,7 +402,7 @@ namespace Kaziklikker
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 23);
             this.button11.TabIndex = 23;
-            this.button11.Text = "Hack!";
+            this.button11.Text = "Cheat!";
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
@@ -412,7 +412,7 @@ namespace Kaziklikker
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(269, 20);
             this.textBox1.TabIndex = 24;
-            this.textBox1.Text = "Code invoeren krijg je bij achievements";
+            this.textBox1.Text = "Enter cheat-code";
             // 
             // label25
             // 
@@ -493,7 +493,7 @@ namespace Kaziklikker
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(96, 23);
             this.button16.TabIndex = 31;
-            this.button16.Text = "Reset Spel";
+            this.button16.Text = "Reset Game";
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
@@ -559,9 +559,9 @@ namespace Kaziklikker
             this.label32.AutoSize = true;
             this.label32.Location = new System.Drawing.Point(188, 93);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(69, 13);
+            this.label32.Size = new System.Drawing.Size(72, 13);
             this.label32.TabIndex = 36;
-            this.label32.Text = "Keren geklikt";
+            this.label32.Text = "Times clicked";
             // 
             // label33
             // 
@@ -698,4 +698,3 @@ namespace Kaziklikker
         private System.Windows.Forms.Label label33;
     }
 }
-
