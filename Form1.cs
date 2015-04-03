@@ -11,13 +11,14 @@ using System.Threading;
 using System.Xml.Serialization;
 using System.IO;
 
+
 namespace Kaziklikker
 {
     public partial class Form1 : Form
     {
 
         #region ints
-        Int64 Money = 11111111110;
+        Int64 Money = 00;
         Int64 CPS = 0;
         Int64 ClickerPrice = 10;
         Int64 FarmPrice = 50;
@@ -67,6 +68,7 @@ namespace Kaziklikker
         Int64 UniverseSpeed = 100000;
         Int64 GodPrice = 250000000;
         Int64 GodAmount = 0;
+        bool Autosave = false;
         #endregion
 
         #region strings
@@ -82,6 +84,8 @@ namespace Kaziklikker
         string GodString = "Heikenbash";
         #endregion
 
+        #region opstarten
+        //later contextmenu
         public Form1()
         {
             InitializeComponent();
@@ -92,7 +96,10 @@ namespace Kaziklikker
         {
             
         }
-        private void button2_Click(object sender, EventArgs e)
+        #endregion
+
+        #region Kaziknop
+        private void Kaziknop_Click(object sender, EventArgs e)
         {
             Money += ClickingSpeed;
         }
@@ -101,8 +108,9 @@ namespace Kaziklikker
         {
             Money += CPS;
         }
+        #endregion
 
-        #region Timer2
+        #region Snelle timer
         private void timer2_Tick(object sender, EventArgs e)
         {
 
@@ -135,14 +143,16 @@ namespace Kaziklikker
 
             label26.Text = OpBank.ToString();
             label27.Text = BankRente.ToString();
-            
             if (Tijd == 59)
             {
                 Tijd = 0;
             }
 
             #region false
-
+            if (GodAmount >= 5)
+            {
+                button18.Enabled = false;
+            }
             if (Money <= UniversePrice)
             {
                 button17.Enabled = false;
@@ -422,7 +432,7 @@ namespace Kaziklikker
         {
             CPS += UniverseSpeed;
             Money -= UniversePrice;
-            UniversePrice += 50000;
+            UniversePrice += 5000000;
             UniverseAmount += 1;
             UniverseSpeed += 50;
 
@@ -435,10 +445,20 @@ namespace Kaziklikker
 
         private void button18_Click(object sender, EventArgs e)
         {
-            CPS *= 10;
-            Money -= GodPrice;
-            GodAmount += 1;
+            if (GodAmount <= 4)
+            {
+                CPS *= 10;
+                Money -= GodPrice;
+                GodAmount += 1;
+                GodPrice *= 15;
+            }
 
+            if (GodAmount >= 5)
+            {
+                MessageBox.Show("Goden max.");
+                button18.Enabled = false;
+
+            }
             if (GodAmount >= 50 && GodBuffer == 0)
             {
                 MessageBox.Show("Nieuwe Cheat code gekregen! " + GodString);
@@ -456,6 +476,7 @@ namespace Kaziklikker
         }
         #endregion
 
+        #region cheats
         private void button11_Click(object sender, EventArgs e)
         {
             #region cheats
@@ -512,6 +533,9 @@ namespace Kaziklikker
 
             #endregion
         }
+        #endregion
+
+        #region bank
         private void button13_Click(object sender, EventArgs e)
         {
             Money -= 1000;
@@ -529,89 +553,9 @@ namespace Kaziklikker
             OpBank /= 10;
             OpBank *= BankRente;
         }
-
-        #region kutgebied
-        private void label27_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label26_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label25_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label20_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
         #endregion
 
+        #region save
         private void button14_Click(object sender, EventArgs e)
         {
             try
@@ -653,7 +597,9 @@ namespace Kaziklikker
                 MessageBox.Show(ex.Message);
             }
         }
+        #endregion
 
+        #region laad
         private void button15_Click(object sender, EventArgs e)
         {
             if (File.Exists("kazidata.xml"))
@@ -695,7 +641,9 @@ namespace Kaziklikker
                 MessageBox.Show("Bestand niet gevonden");
             }
         }
+        #endregion
 
+        #region reset
         private void button16_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Weet je het zeer zeker?", "Bevestig", MessageBoxButtons.YesNo);
@@ -758,7 +706,78 @@ namespace Kaziklikker
             }
 
         }
+        #endregion
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (Autosave == false)
+            {
+                Autosave = true;
+                timer4.Enabled = true;
+            }
+        }
+
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            if (Autosave == true)
+            {
+                try
+                {
+                    Information info = new Information();
+                    info.Money = Money;
+                    info.CPS = CPS;
+                    info.ClickerPrice = ClickerPrice;
+                    info.FarmPrice = FarmPrice;
+                    info.MinePrice = MinePrice;
+                    info.VillagePrice = VillagePrice;
+                    info.CityPrice = CityPrice;
+                    info.CountryPrice = CountryPrice;
+                    info.PlanetPrice = PlanetPrice;
+                    info.GalaxyPrice = GalaxyPrice;
+                    info.ClickerAmount = ClickerAmount;
+                    info.FarmAmount = FarmAmount;
+                    info.MineAmount = MineAmount;
+                    info.VillageAmount = VillageAmount;
+                    info.CityAmount = CityAmount;
+                    info.CountryAmount = CountryAmount;
+                    info.PlanetAmount = PlanetAmount;
+                    info.GalaxyAmount = GalaxyAmount;
+                    info.ClickingAmount = ClickingAmount;
+                    info.ClickingSpeed = ClickingSpeed;
+                    info.ClickingPrice = ClickingPrice;
+                    info.BankRente = BankRente;
+                    info.OpBank = OpBank;
+                    info.GodAmount = GodAmount;
+                    info.GodPrice = GodPrice;
+                    info.UniverseAmount = UniverseAmount;
+                    info.UniversePrice = UniversePrice;
+                    info.UniverseSpeed = UniverseSpeed;
+
+                    SaveXML.SaveData(info, "kazidata.xml");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+        private void button1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                CPS += ClickerSpeed;
+                Money -= ClickerPrice;
+                ClickerPrice += 5;
+                ClickerAmount += 1;
+
+                if (ClickerAmount >= 50 && ClickerBuffer == 0)
+                {
+                    MessageBox.Show("Nieuwe Cheat code gekregen! " + ClickerString);
+                    ClickerBuffer += 1;
+                }
+            }
+
+        }
 
     }
 }

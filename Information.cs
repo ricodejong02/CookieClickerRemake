@@ -34,29 +34,8 @@ namespace Kaziklikker
         private Int64 universeSpeed;
         private Int64 godPrice;
         private Int64 godAmount;
-        //
         private Int64 bankRente;
-        private Int64 clickerSpeed;
-        private Int64 farmSpeed;
-        private Int64 mineSpeed;
-        private Int64 villageSpeed;
-        private Int64 CitySpeed;
-        private Int64 countrySpeed;
-        private Int64 planetSpeed;
-        private Int64 galaxySpeed;
         private Int64 opBank;
-        private Int64 tijd;
-        private Int64 clickerBuffer;
-        private Int64 farmBuffer;
-        private Int64 mineBuffer;
-        private Int64 villageBuffer;
-        private Int64 cityBuffer;
-        private Int64 countryBuffer;
-        private Int64 planetBuffer;
-        private Int64 galaxyBuffer;
-        private Int64 weinigGeldBuffer;
-        private Int64 veelGeldBuffer;
-        private Int64 bankBuffer;
 
         
         public Int64 Money

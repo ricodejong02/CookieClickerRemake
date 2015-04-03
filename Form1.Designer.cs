@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Kaziknop = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -82,17 +82,18 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
+            this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // button2
+            // Kaziknop
             // 
-            this.button2.Location = new System.Drawing.Point(264, 122);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 78);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "kazi";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Kaziknop.Location = new System.Drawing.Point(264, 122);
+            this.Kaziknop.Name = "Kaziknop";
+            this.Kaziknop.Size = new System.Drawing.Size(112, 78);
+            this.Kaziknop.TabIndex = 1;
+            this.Kaziknop.Text = "kazi";
+            this.Kaziknop.UseVisualStyleBackColor = true;
+            this.Kaziknop.Click += new System.EventHandler(this.Kaziknop_Click);
             // 
             // label1
             // 
@@ -125,6 +126,7 @@
             this.button1.Text = "Klikker";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.button1_KeyPress);
             // 
             // label3
             // 
@@ -233,7 +235,6 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 13);
             this.label6.TabIndex = 15;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -242,7 +243,6 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 13);
             this.label7.TabIndex = 15;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -251,7 +251,6 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(0, 13);
             this.label8.TabIndex = 15;
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label9
             // 
@@ -260,7 +259,6 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(0, 13);
             this.label9.TabIndex = 15;
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -269,7 +267,6 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(0, 13);
             this.label10.TabIndex = 15;
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // button10
             // 
@@ -288,7 +285,6 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(0, 13);
             this.label11.TabIndex = 17;
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label12
             // 
@@ -321,7 +317,6 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(0, 13);
             this.label15.TabIndex = 18;
-            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // label16
             // 
@@ -330,7 +325,6 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(0, 13);
             this.label16.TabIndex = 18;
-            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // label17
             // 
@@ -339,7 +333,6 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(0, 13);
             this.label17.TabIndex = 18;
-            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label18
             // 
@@ -348,7 +341,6 @@
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(0, 13);
             this.label18.TabIndex = 18;
-            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // label19
             // 
@@ -357,7 +349,6 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(0, 13);
             this.label19.TabIndex = 18;
-            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // label20
             // 
@@ -366,7 +357,6 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(0, 13);
             this.label20.TabIndex = 18;
-            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // label21
             // 
@@ -421,7 +411,6 @@
             this.textBox1.Size = new System.Drawing.Size(269, 20);
             this.textBox1.TabIndex = 24;
             this.textBox1.Text = "Code invoeren krijg je bij achievements";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label25
             // 
@@ -431,7 +420,6 @@
             this.label25.Size = new System.Drawing.Size(32, 13);
             this.label25.TabIndex = 25;
             this.label25.Text = "Bank";
-            this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // button12
             // 
@@ -462,7 +450,6 @@
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(0, 13);
             this.label26.TabIndex = 27;
-            this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // label27
             // 
@@ -471,7 +458,6 @@
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(0, 13);
             this.label27.TabIndex = 28;
-            this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
             // timer3
             // 
@@ -481,9 +467,9 @@
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(412, 8);
+            this.button14.Location = new System.Drawing.Point(442, 8);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 23);
+            this.button14.Size = new System.Drawing.Size(45, 23);
             this.button14.TabIndex = 29;
             this.button14.Text = "Save";
             this.button14.UseVisualStyleBackColor = true;
@@ -491,9 +477,9 @@
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(412, 38);
+            this.button15.Location = new System.Drawing.Point(391, 8);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 23);
+            this.button15.Size = new System.Drawing.Size(45, 23);
             this.button15.TabIndex = 30;
             this.button15.Text = "Load";
             this.button15.UseVisualStyleBackColor = true;
@@ -501,9 +487,9 @@
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(412, 67);
+            this.button16.Location = new System.Drawing.Point(391, 35);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(75, 23);
+            this.button16.Size = new System.Drawing.Size(96, 23);
             this.button16.TabIndex = 31;
             this.button16.Text = "Reset Spel";
             this.button16.UseVisualStyleBackColor = true;
@@ -561,6 +547,11 @@
             this.label31.Size = new System.Drawing.Size(0, 13);
             this.label31.TabIndex = 35;
             // 
+            // timer4
+            // 
+            this.timer4.Interval = 15000;
+            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -615,7 +606,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Kaziknop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.ShowIcon = false;
@@ -628,7 +619,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Kaziknop;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
@@ -681,6 +672,7 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Timer timer4;
     }
 }
 
