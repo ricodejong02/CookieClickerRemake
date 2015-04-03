@@ -1,4 +1,4 @@
-﻿namespace Kaziklikker
+namespace Kaziklikker
 {
     partial class Form1
     {
@@ -95,7 +95,7 @@
             this.Kaziknop.TabIndex = 1;
             this.Kaziknop.Text = "kazi";
             this.Kaziknop.UseVisualStyleBackColor = true;
-            this.Kaziknop.Click += new System.EventHandler(this.Kaziknop_Click);
+            this.Kaziknop.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Kaziknop_MouseClick);
             // 
             // label1
             // 
