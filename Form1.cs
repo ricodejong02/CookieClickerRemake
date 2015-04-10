@@ -84,7 +84,7 @@ namespace Kaziklikker
         string GalaxyString = "Ole is mooi hahahahha";
         string UniverseString = "P16~198v<ö";
         string GodString = "J15~837v";
-        string CodeUnlocked = "New cheat-code unlocked! ";
+        string CodeUnlocked = "Je hebt een nieuwe cheat-code uitgefabt!";
         #endregion
 
         #region opstarten
@@ -707,7 +707,7 @@ namespace Kaziklikker
 
                 if (ClickerAmount >= 50 && ClickerBuffer == 0)
                 {
-                    MessageBox.Show("Nieuwe Cheat code gekregen! " + ClickerString);
+                    MessageBox.Show("Nieuwe Cheat code uitgefabt! " + ClickerString);
                     ClickerBuffer += 1;
                 }
             }
@@ -741,7 +741,7 @@ namespace Kaziklikker
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("Made by Rico.");
+            MessageBox.Show("Made by Ricodejong02 and Oledh1337.");
         }
 
         private void button19_Click(object sender, EventArgs e)
