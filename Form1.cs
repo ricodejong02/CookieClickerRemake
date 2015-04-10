@@ -56,7 +56,6 @@ namespace Kaziklikker
         UInt64 PlanetSpeed = 50;
         UInt64 GalaxySpeed = 75;
         UInt64 OpBank = 0;
-        UInt64 Tijd = 0;
         UInt64 ClickerBuffer = 0;
         UInt64 FarmBuffer = 0;
         UInt64 MineBuffer = 0;
@@ -144,11 +143,6 @@ namespace Kaziklikker
             label33.Text = TotalClicks.ToString();
             label26.Text = OpBank.ToString();
             label27.Text = BankRente.ToString();
-            if (Tijd == 59)
-            {
-                Tijd = 0;
-            }
-
             #region false
             if (GodAmount >= 5)
             {
