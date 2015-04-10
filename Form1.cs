@@ -10,15 +10,22 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Xml.Serialization;
 using System.IO;
+using System.Media;
 
 
 namespace Kaziklikker
 {
     public partial class Form1 : Form
     {
+        SoundPlayer Click_1 = new SoundPlayer("C:/Kazi-apps/Kaziklikker/Sounds/Click_1.wav");
+        SoundPlayer Click_2 = new SoundPlayer("C:/Kazi-apps/Kaziklikker/Sounds/Click_2.wav");
+        SoundPlayer Click_3 = new SoundPlayer("C:/Kazi-apps/Kaziklikker/Sounds/Click_3.wav");
+        SoundPlayer Click_4 = new SoundPlayer("C:/Kazi-apps/Kaziklikker/Sounds/Click_4.wav");
+        SoundPlayer Click_5 = new SoundPlayer("C:/Kazi-apps/Kaziklikker/Sounds/Click_5.wav");
+        Random rd = new Random();
 
         #region ints
-        Int64 Money = 0;
+        Int64 Money = 1000000000;
         Int64 CPS = 0;
         Int64 ClickerPrice = 10;
         Int64 FarmPrice = 50;
@@ -59,29 +66,26 @@ namespace Kaziklikker
         Int64 PlanetBuffer = 0;
         Int64 GalaxyBuffer = 0;
         Int64 UniverseBuffer = 0;
-        Int64 WeinigGeldBuffer = 0;
-        Int64 VeelGeldBuffer = 0;
-        Int64 BankBuffer = 0;
         Int64 UniversePrice = 25000000;
         Int64 UniverseAmount = 0;
         Int64 UniverseSpeed = 100000;
         Int64 GodPrice = 250000000;
         Int64 GodAmount = 0;
         Int64 TotalClicks = 0;
-        bool Autosave = false;
         #endregion
 
         #region strings
-        string ClickerString = "Kazimoko";
-        string FarmString = "Gakeje";
-        string MineString = "Bobobobo";
-        string VillageString = "Jeoder";
-        string CityString = "Hoielkl";
-        string CountryString = "Heolaak";
-        string PlanetString = "Gekieko";
-        string GalaxyString = "Ejobieel";
-        string UniverseString = "jehuil";
-        string GodString = "Heikenbash";
+        string ClickerString = "X47!184wÚ";
+        string FarmString = "W182%32dì";
+        string MineString = "G18#892f&Ô";
+        string VillageString = "N8&6469bö";
+        string CityString = "E810!88wá";
+        string CountryString = "F8$2596b~i";
+        string PlanetString = "B829(5)0vÛ";
+        string GalaxyString = "E6026^3cV";
+        string UniverseString = "P16~198v<ö";
+        string GodString = "J15~837v";
+        string CodeUnlocked = "New cheat-code unlocked! ";
         #endregion
 
         #region opstarten
@@ -94,7 +98,7 @@ namespace Kaziklikker
 
         public void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
         #endregion
 
@@ -110,7 +114,7 @@ namespace Kaziklikker
         #region Snelle timer
         private void timer2_Tick(object sender, EventArgs e)
         {
-
+            
             label1.Text = Money.ToString();
             label2.Text = CPS.ToString();
             label3.Text = ClickerPrice.ToString();
@@ -138,7 +142,6 @@ namespace Kaziklikker
             label30.Text = UniverseAmount.ToString();
             label31.Text = GodAmount.ToString();
             label33.Text = TotalClicks.ToString();
-
             label26.Text = OpBank.ToString();
             label27.Text = BankRente.ToString();
             if (Tijd == 59)
@@ -206,12 +209,12 @@ namespace Kaziklikker
                 button10.Enabled = false;
             }
 
-            if (Money <= 999)
+            if (Money <= 9999)
             {
                 button13.Enabled = false;
             }
 
-            if (OpBank <= 999)
+            if (OpBank <= 9999)
             {
                 button12.Enabled = false;
             }
@@ -274,12 +277,12 @@ namespace Kaziklikker
                 button10.Enabled = true;
             }
 
-            if (Money >= 1000)
+            if (Money >= 10000)
             {
                 button13.Enabled = true;
             }
 
-            if (OpBank >= 1000)
+            if (OpBank >= 10000)
             {
                 button12.Enabled = true;
             }
@@ -317,9 +320,9 @@ namespace Kaziklikker
             ClickerPrice += 5;
             ClickerAmount += 1;
 
-            if (ClickerAmount >= 50 && ClickerBuffer == 0)
+            if (ClickerAmount >= 500 && ClickerBuffer == 0)
             {
-                MessageBox.Show("New cheat code unlocked! " + ClickerString);
+                MessageBox.Show(CodeUnlocked + ClickerString);
                 ClickerBuffer += 1;
             }
 
@@ -332,9 +335,9 @@ namespace Kaziklikker
             FarmPrice += 25;
             FarmAmount += 1;
 
-            if (FarmAmount >= 50 && FarmBuffer == 0)
+            if (FarmAmount >= 500 && FarmBuffer == 0)
             {
-                MessageBox.Show("New cheat code unlocked! " + FarmString);
+                MessageBox.Show(CodeUnlocked + FarmString);
                 FarmBuffer += 1;
             }
         }
@@ -346,9 +349,9 @@ namespace Kaziklikker
             MinePrice += 50;
             MineAmount += 1;
 
-            if (MineAmount >= 50 && MineBuffer == 0)
+            if (MineAmount >= 500 && MineBuffer == 0)
             {
-                MessageBox.Show("New cheat code unlocked! " + MineString);
+                MessageBox.Show(CodeUnlocked + MineString);
                 MineBuffer += 1;
             }
         }
@@ -360,9 +363,9 @@ namespace Kaziklikker
             VillagePrice += 100;
             VillageAmount += 1;
 
-            if (VillageAmount >= 50 && VillageBuffer == 0)
+            if (VillageAmount >= 500 && VillageBuffer == 0)
             {
-                MessageBox.Show("New cheat code unlocked! " + VillageString);
+                MessageBox.Show(CodeUnlocked + VillageString);
                 VillageBuffer += 1;
             }
         }
@@ -373,10 +376,9 @@ namespace Kaziklikker
             Money -= CityPrice;
             CityPrice += 200;
             CityAmount += 1;
-
-            if (CityAmount >= 50 && CityBuffer == 0)
+            if (CityAmount >= 500 && CityBuffer == 0)
             {
-                MessageBox.Show("New cheat code unlocked! " + CityString);
+                MessageBox.Show(CodeUnlocked + CityString);
                 CityBuffer += 1;
             }
         }
@@ -388,10 +390,9 @@ namespace Kaziklikker
             CountryPrice += 350;
             CountryAmount += 1;
             CountrySpeed += 1;
-
-            if (CountryAmount >= 50 && CountryBuffer == 0)
+            if (CountryAmount >= 500 && CountryBuffer == 0)
             {
-                MessageBox.Show("New cheat code unlocked! " + CountryString);
+                MessageBox.Show(CodeUnlocked + CountryString);
                 CountryBuffer += 1;
             }
         }
@@ -403,10 +404,9 @@ namespace Kaziklikker
             PlanetPrice += 500;
             PlanetAmount += 1;
             PlanetSpeed += 2;
-
-            if (PlanetAmount >= 50 && PlanetBuffer == 0)
+            if (PlanetAmount >= 500 && PlanetBuffer == 0)
             {
-                MessageBox.Show("New cheat code unlocked! " + PlanetString);
+                MessageBox.Show(CodeUnlocked + PlanetString);
                 PlanetBuffer += 1;
             }
         }
@@ -418,10 +418,9 @@ namespace Kaziklikker
             GalaxyPrice += 1000;
             GalaxyAmount += 1;
             GalaxySpeed += 5;
-
-            if (GalaxyAmount >= 50 && GalaxyBuffer == 0)
+            if (GalaxyAmount >= 500 && GalaxyBuffer == 0)
             {
-                MessageBox.Show("New cheat code unlocked! " + GalaxyString);
+                MessageBox.Show(CodeUnlocked + GalaxyString);
                 GalaxyBuffer += 1;
             }
         }
@@ -433,10 +432,9 @@ namespace Kaziklikker
             UniversePrice += 5000000;
             UniverseAmount += 1;
             UniverseSpeed += 50;
-
-            if (UniverseAmount >= 50 && UniverseBuffer == 0)
+            if (UniverseAmount >= 500 && UniverseBuffer == 0)
             {
-                MessageBox.Show("New cheat code unlocked! " + UniverseString);
+                MessageBox.Show(CodeUnlocked + UniverseString);
                 UniverseBuffer += 1;
             }
         }
@@ -510,6 +508,7 @@ namespace Kaziklikker
             if (textBox1.Text == PlanetString)
             {
                 PlanetPrice = 0;
+
             }
 
             if (textBox1.Text == GalaxyString)
@@ -534,14 +533,14 @@ namespace Kaziklikker
         #region bank
         private void button13_Click(object sender, EventArgs e)
         {
-            Money -= 1000;
-            OpBank += 1000;
+            Money -= 10000;
+            OpBank += 10000;
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            Money += 1000;
-            OpBank -= 1000;
+            Money += 10000;
+            OpBank -= 10000;
         }
 
         private void timer3_Tick(object sender, EventArgs e)
@@ -556,6 +555,7 @@ namespace Kaziklikker
         {
             try
             {
+                MessageBox.Show("Kazidata.xml Saved.");
                 Information info = new Information();
                 info.Money = Money;
                 info.CPS = CPS;
@@ -636,7 +636,7 @@ namespace Kaziklikker
             }
             else
             {
-                MessageBox.Show("Bestand niet gevonden");
+                MessageBox.Show("File not found");
             }
         }
         #endregion
@@ -644,7 +644,8 @@ namespace Kaziklikker
         #region reset
         private void button16_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Weet je het zeer zeker?", "Bevestig", MessageBoxButtons.YesNo);
+            Information info = new Information();
+            DialogResult dialogResult = MessageBox.Show("Are you sure?", "Confirm", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 Money = 0;
@@ -693,9 +694,6 @@ namespace Kaziklikker
                 CountryBuffer = 0;
                 PlanetBuffer = 0;
                 GalaxyBuffer = 0;
-                WeinigGeldBuffer = 0;
-                VeelGeldBuffer = 0;
-                BankBuffer = 0;
             }
             else if (dialogResult == DialogResult.No)
             {
@@ -704,60 +702,6 @@ namespace Kaziklikker
 
         }
         #endregion
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (Autosave == false)
-            {
-                Autosave = true;
-                timer4.Enabled = true;
-            }
-        }
-
-        private void timer4_Tick(object sender, EventArgs e)
-        {
-            if (Autosave == true)
-            {
-                try
-                {
-                    Information info = new Information();
-                    info.Money = Money;
-                    info.CPS = CPS;
-                    info.ClickerPrice = ClickerPrice;
-                    info.FarmPrice = FarmPrice;
-                    info.MinePrice = MinePrice;
-                    info.VillagePrice = VillagePrice;
-                    info.CityPrice = CityPrice;
-                    info.CountryPrice = CountryPrice;
-                    info.PlanetPrice = PlanetPrice;
-                    info.GalaxyPrice = GalaxyPrice;
-                    info.ClickerAmount = ClickerAmount;
-                    info.FarmAmount = FarmAmount;
-                    info.MineAmount = MineAmount;
-                    info.VillageAmount = VillageAmount;
-                    info.CityAmount = CityAmount;
-                    info.CountryAmount = CountryAmount;
-                    info.PlanetAmount = PlanetAmount;
-                    info.GalaxyAmount = GalaxyAmount;
-                    info.ClickingAmount = ClickingAmount;
-                    info.ClickingSpeed = ClickingSpeed;
-                    info.ClickingPrice = ClickingPrice;
-                    info.BankRente = BankRente;
-                    info.OpBank = OpBank;
-                    info.GodAmount = GodAmount;
-                    info.GodPrice = GodPrice;
-                    info.UniverseAmount = UniverseAmount;
-                    info.UniversePrice = UniversePrice;
-                    info.UniverseSpeed = UniverseSpeed;
-
-                    SaveXML.SaveData(info, "kazidata.xml");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-        }
         private void button1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)13)
@@ -778,8 +722,53 @@ namespace Kaziklikker
 
         private void Kaziknop_MouseClick(object sender, MouseEventArgs e)
         {
-            Money += ClickerSpeed;
+            Money += ClickingSpeed;
             TotalClicks += 1;
+            
+            switch(rd.Next(5))
+            {
+                case 0:
+                    Click_1.Play();
+                    break;
+                case 1:
+                    Click_2.Play();
+                    break;
+                case 2:
+                    Click_3.Play();
+                    break;
+                case 3:
+                    Click_4.Play();
+                    break;
+                case 4:
+                    Click_5.Play();
+                    break;
+            }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Made by Rico.");
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+            this.BackColor = colorDialog1.Color;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void Kaziknop_Click(object sender, EventArgs e)
+        {
 
         }
 

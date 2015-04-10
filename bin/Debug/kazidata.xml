@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Information xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Money>7</Money>
-  <CPS>1</CPS>
-  <ClickerPrice>15</ClickerPrice>
+  <Money>0</Money>
+  <CPS>0</CPS>
+  <ClickerPrice>10</ClickerPrice>
   <FarmPrice>50</FarmPrice>
   <MinePrice>100</MinePrice>
   <VillagePrice>250</VillagePrice>
@@ -10,7 +10,7 @@
   <CountryPrice>1000</CountryPrice>
   <PlanetPrice>5000</PlanetPrice>
   <GalaxyPrice>10000</GalaxyPrice>
-  <ClickerAmount>1</ClickerAmount>
+  <ClickerAmount>0</ClickerAmount>
   <FarmAmount>0</FarmAmount>
   <MineAmount>0</MineAmount>
   <VillageAmount>0</VillageAmount>
@@ -28,5 +28,5 @@
   <UniversePrice>25000000</UniversePrice>
   <GodAmount>0</GodAmount>
   <GodPrice>250000000</GodPrice>
-  <TotalClicks>14</TotalClicks>
+  <TotalClicks>0</TotalClicks>
 </Information>
