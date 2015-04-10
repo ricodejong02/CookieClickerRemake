@@ -679,7 +679,6 @@ namespace Kaziklikker
                 GalaxySpeed = 75;
                 UniverseSpeed = 100000;
                 OpBank = 0;
-                Tijd = 0;
                 ClickerBuffer = 0;
                 FarmBuffer = 0;
                 MineBuffer = 0;
