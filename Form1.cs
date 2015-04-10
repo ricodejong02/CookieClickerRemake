@@ -17,11 +17,11 @@ namespace Kaziklikker
 {
     public partial class Form1 : Form
     {
-        SoundPlayer Click_1 = new SoundPlayer("C:/Kazi-apps/Kaziklikker/Sounds/Click_1.wav");
-        SoundPlayer Click_2 = new SoundPlayer("C:/Kazi-apps/Kaziklikker/Sounds/Click_2.wav");
-        SoundPlayer Click_3 = new SoundPlayer("C:/Kazi-apps/Kaziklikker/Sounds/Click_3.wav");
-        SoundPlayer Click_4 = new SoundPlayer("C:/Kazi-apps/Kaziklikker/Sounds/Click_4.wav");
-        SoundPlayer Click_5 = new SoundPlayer("C:/Kazi-apps/Kaziklikker/Sounds/Click_5.wav");
+        SoundPlayer Click_1 = new SoundPlayer("Click_1.wav");
+        SoundPlayer Click_2 = new SoundPlayer("Click_2.wav");
+        SoundPlayer Click_3 = new SoundPlayer("Click_3.wav");
+        SoundPlayer Click_4 = new SoundPlayer("Click_4.wav");
+        SoundPlayer Click_5 = new SoundPlayer("Click_5.wav");
         Random rd = new Random();
 
         #region ints
@@ -84,7 +84,7 @@ namespace Kaziklikker
         string GalaxyString = "Ole is mooi hahahahha";
         string UniverseString = "P16~198v<ö";
         string GodString = "J15~837v";
-        string CodeUnlocked = "Je hebt een nieuwe cheat-code uitgefabt!";
+        string CodeUnlocked = "Je hebt een nieuwe cheat-code uitgefabt! ";
         #endregion
 
         #region opstarten
