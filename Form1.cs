@@ -81,7 +81,7 @@ namespace Kaziklikker
         string CityString = "E810!88wá";
         string CountryString = "F8$2596b~i";
         string PlanetString = "B829(5)0vÛ";
-        string GalaxyString = "E6026^3cV";
+        string GalaxyString = "Ole is mooi hahahahha";
         string UniverseString = "P16~198v<ö";
         string GodString = "J15~837v";
         string CodeUnlocked = "New cheat-code unlocked! ";
