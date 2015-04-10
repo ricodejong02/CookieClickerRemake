@@ -687,6 +687,7 @@ namespace Kaziklikker
                 CountryBuffer = 0;
                 PlanetBuffer = 0;
                 GalaxyBuffer = 0;
+                TotalClicks = 0;
             }
             else if (dialogResult == DialogResult.No)
             {
