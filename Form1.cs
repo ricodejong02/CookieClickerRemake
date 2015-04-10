@@ -25,7 +25,7 @@ namespace Kaziklikker
         Random rd = new Random();
 
         #region ints
-        Int64 Money = 1000000000;
+        Int64 Money = 5;
         Int64 CPS = 0;
         Int64 ClickerPrice = 10;
         Int64 FarmPrice = 50;
