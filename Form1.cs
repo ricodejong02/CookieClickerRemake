@@ -549,6 +549,12 @@ namespace Kaziklikker
         {
             try
             {
+                textBox1.Clear();
+                textBox1.AppendText("Saving game...");
+                button14.Enabled = false;
+                Thread.Sleep(1000);
+                textBox1.Clear();
+                textBox1.AppendText("Enter cheat-code");
                 MessageBox.Show("Kazidata.xml Saved.");
                 Information info = new Information();
                 info.Money = Money;
@@ -580,8 +586,8 @@ namespace Kaziklikker
                 info.UniversePrice = UniversePrice;
                 info.UniverseSpeed = UniverseSpeed;
                 info.TotalClicks = TotalClicks;
-
                 SaveXML.SaveData(info, "kazidata.xml");
+                button14.Enabled = true;
             }
             catch (Exception ex)
             {
@@ -595,6 +601,12 @@ namespace Kaziklikker
         {
             if (File.Exists("kazidata.xml"))
             {
+                textBox1.Clear();
+                textBox1.AppendText("Loading game...");
+                button15.Enabled = false;
+                Thread.Sleep(1000);
+                textBox1.Clear();
+                textBox1.AppendText("Enter cheat-code");
                 XmlSerializer xs = new XmlSerializer(typeof(Information));
                 FileStream read = new FileStream("kazidata.xml", FileMode.Open, FileAccess.Read, FileShare.Read);
                 Information info = (Information)xs.Deserialize(read);
@@ -627,6 +639,7 @@ namespace Kaziklikker
                 UniverseSpeed = info.UniverseSpeed;
                 UniverseAmount = info.UniverseAmount;
                 TotalClicks = info.TotalClicks;
+                button15.Enabled = true;
             }
             else
             {
