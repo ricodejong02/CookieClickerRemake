@@ -114,6 +114,7 @@ namespace Kaziklikker
         private void timer2_Tick(object sender, EventArgs e)
         {
             
+            //Label updaters
             label1.Text = Money.ToString();
             label2.Text = CPS.ToString();
             label3.Text = ClickerPrice.ToString();
@@ -127,8 +128,6 @@ namespace Kaziklikker
             label11.Text = ClickingPrice.ToString();
             label28.Text = UniversePrice.ToString();
             label29.Text = GodPrice.ToString();
-
-
             label12.Text = ClickerAmount.ToString();
             label13.Text = FarmAmount.ToString();
             label14.Text = MineAmount.ToString();
@@ -143,62 +142,63 @@ namespace Kaziklikker
             label33.Text = TotalClicks.ToString();
             label26.Text = OpBank.ToString();
             label27.Text = BankRente.ToString();
+            
             #region false
             if (GodAmount >= 5)
             {
                 button18.Enabled = false;
             }
-            if (Money <= UniversePrice)
+            if (Money <= UniversePrice - 1)
             {
                 button17.Enabled = false;
             }
 
-            if (Money <= GodPrice)
+            if (Money <= GodPrice - 1)
             {
                 button18.Enabled = false;
             }
 
-            if (Money <= ClickerPrice)
+            if (Money <= ClickerPrice - 1)
             {
                 button1.Enabled = false;
             }
 
-            if (Money <= FarmPrice)
+            if (Money <= FarmPrice - 1)
             {
                 button3.Enabled = false;
             }
 
-            if (Money <= MinePrice)
+            if (Money <= MinePrice - 1)
             {
                 button4.Enabled = false;
             }
 
-            if (Money <= VillagePrice)
+            if (Money <= VillagePrice - 1)
             {
                 button5.Enabled = false;
             }
 
-            if (Money <= CityPrice)
+            if (Money <= CityPrice - 1)
             {
                 button6.Enabled = false;
             }
 
-            if (Money <= CountryPrice)
+            if (Money <= CountryPrice - 1)
             {
                 button7.Enabled = false;
             }
 
-            if (Money <= PlanetPrice)
+            if (Money <= PlanetPrice - 1)
             {
                 button8.Enabled = false;
             }
 
-            if (Money <= GalaxyPrice)
+            if (Money <= GalaxyPrice - 1)
             {
                 button9.Enabled = false;
             }
 
-            if (Money <= ClickingPrice)
+            if (Money <= ClickingPrice - 1)
             {
                 button10.Enabled = false;
             }
