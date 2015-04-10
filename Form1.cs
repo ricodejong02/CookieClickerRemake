@@ -471,53 +471,53 @@ namespace Kaziklikker
             }
             if (textBox1.Text == ClickerString)
             {
-                ClickerPrice = 0;
+                ClickerPrice = 1;
             }
 
             if (textBox1.Text == FarmString)
             {
-                FarmPrice = 0;
+                FarmPrice = 1;
             }
 
             if (textBox1.Text == MineString)
             {
-                MinePrice = 0;
+                MinePrice = 1;
             }
 
             if (textBox1.Text == VillageString)
             {
-                VillagePrice = 0;
+                VillagePrice = 1;
             }
 
             if (textBox1.Text == CityString)
             {
-                CityPrice = 0;
+                CityPrice = 1;
             }
 
             if (textBox1.Text == CountryString)
             {
-                CountryPrice = 0;
+                CountryPrice = 1;
             }
 
             if (textBox1.Text == PlanetString)
             {
-                PlanetPrice = 0;
+                PlanetPrice = 1;
 
             }
 
             if (textBox1.Text == GalaxyString)
             {
-                GalaxyPrice = 0;
+                GalaxyPrice = 1;
             }
 
             if (textBox1.Text == UniverseString)
             {
-                UniversePrice = 0;
+                UniversePrice = 1;
             }
 
             if (textBox1.Text == GodString)
             {
-                GodPrice = 0;
+                GodPrice = 1;
             }
 
             #endregion
