@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Information xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Money>0</Money>
-  <CPS>0</CPS>
-  <ClickerPrice>10</ClickerPrice>
-  <FarmPrice>50</FarmPrice>
-  <MinePrice>100</MinePrice>
-  <VillagePrice>250</VillagePrice>
-  <CityPrice>500</CityPrice>
-  <CountryPrice>1000</CountryPrice>
-  <PlanetPrice>5000</PlanetPrice>
-  <GalaxyPrice>10000</GalaxyPrice>
-  <ClickerAmount>0</ClickerAmount>
-  <FarmAmount>0</FarmAmount>
-  <MineAmount>0</MineAmount>
-  <VillageAmount>0</VillageAmount>
-  <CityAmount>0</CityAmount>
-  <CountryAmount>0</CountryAmount>
-  <PlanetAmount>0</PlanetAmount>
-  <GalaxyAmount>0</GalaxyAmount>
+  <TickSpeed>1000</TickSpeed>
+  <Money>1708786</Money>
+  <CPS>2316</CPS>
+  <ClickerPrice>50</ClickerPrice>
+  <FarmPrice>150</FarmPrice>
+  <MinePrice>2250</MinePrice>
+  <VillagePrice>600</VillagePrice>
+  <CityPrice>1700</CityPrice>
+  <CountryPrice>3550</CountryPrice>
+  <PlanetPrice>13000</PlanetPrice>
+  <GalaxyPrice>42000</GalaxyPrice>
+  <ClickerAmount>5</ClickerAmount>
+  <FarmAmount>1</FarmAmount>
+  <MineAmount>40</MineAmount>
+  <VillageAmount>2</VillageAmount>
+  <CityAmount>1</CityAmount>
+  <CountryAmount>3</CountryAmount>
+  <PlanetAmount>1</PlanetAmount>
+  <GalaxyAmount>17</GalaxyAmount>
   <ClickingAmount>0</ClickingAmount>
   <ClickingSpeed>1</ClickingSpeed>
   <ClickingPrice>1500</ClickingPrice>
@@ -28,5 +29,5 @@
   <UniversePrice>25000000</UniversePrice>
   <GodAmount>0</GodAmount>
   <GodPrice>250000000</GodPrice>
-  <TotalClicks>0</TotalClicks>
+  <TotalClicks>139</TotalClicks>
 </Information>

@@ -8,206 +8,212 @@ namespace Kaziklikker
 {
     public class Information
     {
-        private Int64 money;
-        private Int64 cps;
-        private Int64 clickerPrice;
-        private Int64 farmPrice;
-        private Int64 minePrice;
-        private Int64 villagePrice;
-        private Int64 cityPrice;
-        private Int64 countryPrice;
-        private Int64 planetPrice;
-        private Int64 galaxyPrice;
-        private Int64 clickingPrice;
-        private Int64 clickerAmount;
-        private Int64 farmAmount;
-        private Int64 mineAmount;
-        private Int64 villageAmount;
-        private Int64 cityAmount;
-        private Int64 countryAmount;
-        private Int64 planetAmount;
-        private Int64 galaxyAmount;
-        private Int64 clickingAmount;
-        private Int64 clickingSpeed;
-        private Int64 universePrice;
-        private Int64 universeAmount;
-        private Int64 universeSpeed;
-        private Int64 godPrice;
-        private Int64 godAmount;
-        private Int64 bankRente;
-        private Int64 opBank;
-        private Int64 totalClicks;
+        private long money;
+        private long cps;
+        private long clickerPrice;
+        private long farmPrice;
+        private long minePrice;
+        private long villagePrice;
+        private long cityPrice;
+        private long countryPrice;
+        private long planetPrice;
+        private long galaxyPrice;
+        private long clickingPrice;
+        private long clickerAmount;
+        private long farmAmount;
+        private long mineAmount;
+        private long villageAmount;
+        private long cityAmount;
+        private long countryAmount;
+        private long planetAmount;
+        private long galaxyAmount;
+        private long clickingAmount;
+        private long clickingSpeed;
+        private long universePrice;
+        private long universeAmount;
+        private long universeSpeed;
+        private long godPrice;
+        private long godAmount;
+        private long bankRente;
+        private long opBank;
+        private long totalClicks;
+        private int tickSpeed;
 
+        public int TickSpeed
+        {
+            get { return tickSpeed; }
+            set { tickSpeed = value; }
+        }
         
-        public Int64 Money
+        public long Money
         {
             get { return money; }
             set { money = value;  }
         }
 
-        public Int64 CPS
+        public long CPS
         {
             get { return cps; }
             set { cps = value;  }
         }
 
-        public Int64 ClickerPrice
+        public long ClickerPrice
         {
             get { return clickerPrice; }
             set { clickerPrice = value; }
         }
 
-        public Int64 FarmPrice
+        public long FarmPrice
         {
             get { return farmPrice; }
             set { farmPrice = value; }
         }
 
-        public Int64 MinePrice
+        public long MinePrice
         {
             get { return minePrice; }
             set { minePrice = value; }
         }
 
-        public Int64 VillagePrice
+        public long VillagePrice
         {
             get { return villagePrice; }
             set { villagePrice = value; }
         }
 
-        public Int64 CityPrice
+        public long CityPrice
         {
             get { return cityPrice; }
             set { cityPrice = value; }
         }
 
-        public Int64 CountryPrice
+        public long CountryPrice
         {
             get { return countryPrice; }
             set { countryPrice = value; }
         }
 
-        public Int64 PlanetPrice
+        public long PlanetPrice
         {
             get { return planetPrice; }
             set { planetPrice = value; }
         }
 
-        public Int64 GalaxyPrice
+        public long GalaxyPrice
         {
             get { return galaxyPrice; }
             set { galaxyPrice = value; }
         }
 
-        public Int64 ClickerAmount
+        public long ClickerAmount
         {
             get { return clickerAmount; }
             set { clickerAmount = value; }
         }
 
-        public Int64 FarmAmount
+        public long FarmAmount
         {
             get { return farmAmount; }
             set { farmAmount = value; }
         }
 
-        public Int64 MineAmount
+        public long MineAmount
         {
             get { return mineAmount; }
             set { mineAmount = value; }
         }
 
-        public Int64 VillageAmount
+        public long VillageAmount
         {
             get { return villageAmount; }
             set { villageAmount = value; }
         }
 
-        public Int64 CityAmount
+        public long CityAmount
         {
             get { return cityAmount; }
             set { cityAmount = value; }
         }
 
-        public Int64 CountryAmount
+        public long CountryAmount
         {
             get { return countryAmount; }
             set { countryAmount = value; }
         }
 
-        public Int64 PlanetAmount
+        public long PlanetAmount
         {
             get { return planetAmount; }
             set { planetAmount = value; }
         }
 
-        public Int64 GalaxyAmount
+        public long GalaxyAmount
         {
             get { return galaxyAmount; }
             set { galaxyAmount = value; }
         }
 
-        public Int64 ClickingAmount
+        public long ClickingAmount
         {
             get { return clickingAmount; }
             set { clickingAmount = value; }
         }
 
-        public Int64 ClickingSpeed
+        public long ClickingSpeed
         {
             get { return clickingSpeed; }
             set { clickingSpeed = value; }
         }
 
-        public Int64 ClickingPrice
+        public long ClickingPrice
         {
             get { return clickingPrice; }
             set { clickingPrice = value; }
         }
 
-        public Int64 BankRente
+        public long BankRente
         {
             get { return bankRente; }
             set { bankRente = value; }
         }
 
-        public Int64 OpBank
+        public long OpBank
         {
             get { return opBank; }
             set { opBank = value; }
         }
 
-        public Int64 UniverseSpeed
+        public long UniverseSpeed
         {
             get { return universeSpeed; }
             set { universeSpeed = value; }
         }
 
-        public UInt64 UniverseAmount
+        public long UniverseAmount
         {
             get { return universeAmount; }
             set { universeAmount = value; }
         }
 
-        public Int64 UniversePrice
+        public long UniversePrice
         {
             get { return universePrice; }
             set { universePrice = value; }
         }
 
-        public Int64 GodAmount
+        public long GodAmount
         {
             get { return godAmount; }
             set { godAmount = value; }
         }
 
-        public Int64 GodPrice
+        public long GodPrice
         {
             get { return godPrice; }
             set { godPrice = value; }
         }
 
-        public Int64 TotalClicks
+        public long TotalClicks
         {
             get { return totalClicks; }
             set { totalClicks = value; }

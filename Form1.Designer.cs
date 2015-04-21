@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Kaziknop = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -89,17 +88,23 @@
             this.label34 = new System.Windows.Forms.Label();
             this.button19 = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.button20 = new System.Windows.Forms.Button();
+            this.label35 = new System.Windows.Forms.Label();
+            this.button21 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Kaziknop
             // 
+            this.Kaziknop.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Kaziknop.FlatAppearance.BorderSize = 0;
             this.Kaziknop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Kaziknop.ForeColor = System.Drawing.Color.Coral;
-            this.Kaziknop.Image = ((System.Drawing.Image)(resources.GetObject("Kaziknop.Image")));
-            this.Kaziknop.Location = new System.Drawing.Point(191, 162);
+            this.Kaziknop.Image = global::Kaziklikker.Properties.Resources.Money;
+            this.Kaziknop.Location = new System.Drawing.Point(158, 122);
             this.Kaziknop.Name = "Kaziknop";
-            this.Kaziknop.Size = new System.Drawing.Size(240, 96);
+            this.Kaziknop.Size = new System.Drawing.Size(319, 189);
             this.Kaziknop.TabIndex = 1;
             this.Kaziknop.UseVisualStyleBackColor = true;
             this.Kaziknop.Click += new System.EventHandler(this.Kaziknop_Click);
@@ -107,19 +112,25 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(251, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.Size = new System.Drawing.Size(12, 13);
             this.label1.TabIndex = 2;
+            this.label1.Text = "/";
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(251, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.Size = new System.Drawing.Size(12, 13);
             this.label2.TabIndex = 3;
+            this.label2.Text = "/";
             // 
             // timer1
             // 
@@ -131,7 +142,7 @@
             // 
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Image = global::Kaziklikker.Properties.Resources.Cursor;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(23, 30);
             this.button1.Name = "button1";
@@ -147,20 +158,21 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(109, 35);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.Size = new System.Drawing.Size(12, 13);
             this.label3.TabIndex = 5;
+            this.label3.Text = "/";
             // 
             // timer2
             // 
             this.timer2.Enabled = true;
-            this.timer2.Interval = 3;
+            this.timer2.Interval = 25;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // button3
             // 
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Image = global::Kaziklikker.Properties.Resources.Farm;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(23, 59);
             this.button3.Name = "button3";
@@ -175,14 +187,15 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(109, 66);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 13);
+            this.label4.Size = new System.Drawing.Size(12, 13);
             this.label4.TabIndex = 7;
+            this.label4.Text = "/";
             // 
             // button4
             // 
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Image = global::Kaziklikker.Properties.Resources.Cave;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.Location = new System.Drawing.Point(23, 88);
             this.button4.Name = "button4";
@@ -197,20 +210,21 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(109, 93);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 13);
+            this.label5.Size = new System.Drawing.Size(12, 13);
             this.label5.TabIndex = 9;
+            this.label5.Text = "/";
             // 
             // button5
             // 
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Image = global::Kaziklikker.Properties.Resources.Village;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.Location = new System.Drawing.Point(23, 117);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(80, 23);
             this.button5.TabIndex = 10;
-            this.button5.Text = "Village";
+            this.button5.Text = "   Village";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -218,7 +232,7 @@
             // 
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Image = global::Kaziklikker.Properties.Resources.City;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.Location = new System.Drawing.Point(23, 147);
             this.button6.Name = "button6";
@@ -232,7 +246,7 @@
             // 
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.Image = global::Kaziklikker.Properties.Resources.Country;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.Location = new System.Drawing.Point(23, 176);
             this.button7.Name = "button7";
@@ -246,7 +260,7 @@
             // 
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.Image = global::Kaziklikker.Properties.Resources.Planet;
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.Location = new System.Drawing.Point(23, 206);
             this.button8.Name = "button8";
@@ -260,7 +274,7 @@
             // 
             this.button9.FlatAppearance.BorderSize = 0;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
+            this.button9.Image = global::Kaziklikker.Properties.Resources.Galxy;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button9.Location = new System.Drawing.Point(23, 235);
             this.button9.Name = "button9";
@@ -275,46 +289,51 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(109, 122);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 13);
+            this.label6.Size = new System.Drawing.Size(12, 13);
             this.label6.TabIndex = 15;
+            this.label6.Text = "/";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(109, 152);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 13);
+            this.label7.Size = new System.Drawing.Size(12, 13);
             this.label7.TabIndex = 15;
+            this.label7.Text = "/";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(109, 181);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 13);
+            this.label8.Size = new System.Drawing.Size(12, 13);
             this.label8.TabIndex = 15;
+            this.label8.Text = "/";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(109, 211);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 13);
+            this.label9.Size = new System.Drawing.Size(12, 13);
             this.label9.TabIndex = 15;
+            this.label9.Text = "/";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(109, 240);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 13);
+            this.label10.Size = new System.Drawing.Size(12, 13);
             this.label10.TabIndex = 15;
+            this.label10.Text = "/";
             // 
             // button10
             // 
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
+            this.button10.Image = global::Kaziklikker.Properties.Resources.Cursor_Power;
             this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.Location = new System.Drawing.Point(23, 322);
             this.button10.Name = "button10";
@@ -329,80 +348,90 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(109, 327);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(0, 13);
+            this.label11.Size = new System.Drawing.Size(12, 13);
             this.label11.TabIndex = 17;
+            this.label11.Text = "/";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(2, 35);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(0, 13);
+            this.label12.Size = new System.Drawing.Size(12, 13);
             this.label12.TabIndex = 18;
+            this.label12.Text = "/";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(2, 64);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(0, 13);
+            this.label13.Size = new System.Drawing.Size(12, 13);
             this.label13.TabIndex = 18;
+            this.label13.Text = "/";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(2, 93);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(0, 13);
+            this.label14.Size = new System.Drawing.Size(12, 13);
             this.label14.TabIndex = 18;
+            this.label14.Text = "/";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(2, 122);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(0, 13);
+            this.label15.Size = new System.Drawing.Size(12, 13);
             this.label15.TabIndex = 18;
+            this.label15.Text = "/";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(2, 152);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(0, 13);
+            this.label16.Size = new System.Drawing.Size(12, 13);
             this.label16.TabIndex = 18;
+            this.label16.Text = "/";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(2, 181);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(0, 13);
+            this.label17.Size = new System.Drawing.Size(12, 13);
             this.label17.TabIndex = 18;
+            this.label17.Text = "/";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(2, 211);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(0, 13);
+            this.label18.Size = new System.Drawing.Size(12, 13);
             this.label18.TabIndex = 18;
+            this.label18.Text = "/";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(2, 240);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(0, 13);
+            this.label19.Size = new System.Drawing.Size(12, 13);
             this.label19.TabIndex = 18;
+            this.label19.Text = "/";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(2, 327);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(0, 13);
+            this.label20.Size = new System.Drawing.Size(12, 13);
             this.label20.TabIndex = 18;
+            this.label20.Text = "/";
             // 
             // label21
             // 
@@ -424,6 +453,8 @@
             // 
             // label23
             // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label23.AutoSize = true;
             this.label23.Location = new System.Drawing.Point(188, 40);
             this.label23.Name = "label23";
@@ -433,6 +464,8 @@
             // 
             // label24
             // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label24.AutoSize = true;
             this.label24.Location = new System.Drawing.Point(169, 66);
             this.label24.Name = "label24";
@@ -442,7 +475,8 @@
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(433, 379);
+            this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button11.Location = new System.Drawing.Point(433, 382);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 23);
             this.button11.TabIndex = 23;
@@ -452,7 +486,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(158, 379);
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(158, 383);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(269, 20);
             this.textBox1.TabIndex = 24;
@@ -460,6 +496,7 @@
             // 
             // label25
             // 
+            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label25.AutoSize = true;
             this.label25.Location = new System.Drawing.Point(52, 354);
             this.label25.Name = "label25";
@@ -469,6 +506,7 @@
             // 
             // button12
             // 
+            this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.Location = new System.Drawing.Point(5, 351);
             this.button12.Name = "button12";
@@ -480,6 +518,7 @@
             // 
             // button13
             // 
+            this.button13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.Location = new System.Drawing.Point(97, 351);
             this.button13.Name = "button13";
@@ -491,19 +530,23 @@
             // 
             // label26
             // 
+            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label26.AutoSize = true;
             this.label26.Location = new System.Drawing.Point(2, 387);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(0, 13);
+            this.label26.Size = new System.Drawing.Size(12, 13);
             this.label26.TabIndex = 27;
+            this.label26.Text = "/";
             // 
             // label27
             // 
+            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label27.AutoSize = true;
             this.label27.Location = new System.Drawing.Point(94, 386);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(0, 13);
+            this.label27.Size = new System.Drawing.Size(12, 13);
             this.label27.TabIndex = 28;
+            this.label27.Text = "/";
             // 
             // timer3
             // 
@@ -513,7 +556,8 @@
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(442, 8);
+            this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button14.Location = new System.Drawing.Point(453, 25);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(45, 23);
             this.button14.TabIndex = 29;
@@ -523,7 +567,8 @@
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(391, 8);
+            this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button15.Location = new System.Drawing.Point(402, 25);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(45, 23);
             this.button15.TabIndex = 30;
@@ -533,7 +578,8 @@
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(340, 8);
+            this.button16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button16.Location = new System.Drawing.Point(348, 25);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(45, 23);
             this.button16.TabIndex = 31;
@@ -545,7 +591,7 @@
             // 
             this.button17.FlatAppearance.BorderSize = 0;
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
+            this.button17.Image = global::Kaziklikker.Properties.Resources.Universe;
             this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button17.Location = new System.Drawing.Point(23, 264);
             this.button17.Name = "button17";
@@ -559,7 +605,7 @@
             // 
             this.button18.FlatAppearance.BorderSize = 0;
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
+            this.button18.Image = global::Kaziklikker.Properties.Resources.God;
             this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button18.Location = new System.Drawing.Point(23, 293);
             this.button18.Name = "button18";
@@ -574,35 +620,41 @@
             this.label28.AutoSize = true;
             this.label28.Location = new System.Drawing.Point(109, 269);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(0, 13);
+            this.label28.Size = new System.Drawing.Size(12, 13);
             this.label28.TabIndex = 32;
+            this.label28.Text = "/";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.Location = new System.Drawing.Point(109, 298);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(0, 13);
+            this.label29.Size = new System.Drawing.Size(12, 13);
             this.label29.TabIndex = 33;
+            this.label29.Text = "/";
             // 
             // label30
             // 
             this.label30.AutoSize = true;
             this.label30.Location = new System.Drawing.Point(2, 269);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(0, 13);
+            this.label30.Size = new System.Drawing.Size(12, 13);
             this.label30.TabIndex = 34;
+            this.label30.Text = "/";
             // 
             // label31
             // 
             this.label31.AutoSize = true;
             this.label31.Location = new System.Drawing.Point(2, 298);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(0, 13);
+            this.label31.Size = new System.Drawing.Size(12, 13);
             this.label31.TabIndex = 35;
+            this.label31.Text = "/";
             // 
             // label32
             // 
+            this.label32.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label32.AutoSize = true;
             this.label32.Location = new System.Drawing.Point(155, 93);
             this.label32.Name = "label32";
@@ -612,15 +664,19 @@
             // 
             // label33
             // 
+            this.label33.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label33.AutoSize = true;
             this.label33.Location = new System.Drawing.Point(251, 93);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(0, 13);
+            this.label33.Size = new System.Drawing.Size(12, 13);
             this.label33.TabIndex = 37;
+            this.label33.Text = "/";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(391, 37);
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(402, 56);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(96, 23);
             this.button2.TabIndex = 38;
@@ -631,21 +687,53 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(47, 13);
+            this.label34.Location = new System.Drawing.Point(45, 13);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(32, 13);
+            this.label34.Size = new System.Drawing.Size(35, 13);
             this.label34.TabIndex = 39;
-            this.label34.Text = "Shop";
+            this.label34.Text = "Shop:";
             // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(340, 37);
+            this.button19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button19.Location = new System.Drawing.Point(348, 56);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(45, 23);
+            this.button19.Size = new System.Drawing.Size(48, 23);
             this.button19.TabIndex = 40;
             this.button19.Text = "Color";
             this.button19.UseVisualStyleBackColor = true;
             this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // button20
+            // 
+            this.button20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button20.Location = new System.Drawing.Point(348, 85);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(79, 23);
+            this.button20.TabIndex = 41;
+            this.button20.Text = "Mute";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // label35
+            // 
+            this.label35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(404, 9);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(40, 13);
+            this.label35.TabIndex = 43;
+            this.label35.Text = "Opties:";
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(433, 85);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(65, 23);
+            this.button21.TabIndex = 44;
+            this.button21.Text = "Unmute";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // Form1
             // 
@@ -653,6 +741,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(510, 408);
+            this.Controls.Add(this.button21);
+            this.Controls.Add(this.label35);
+            this.Controls.Add(this.button20);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.label34);
             this.Controls.Add(this.button2);
@@ -708,14 +799,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Kaziknop);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "Kazi clicker";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-            this.MaximizeBox = false;
 
         }
 
@@ -780,5 +869,8 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Button button21;
     }
 }

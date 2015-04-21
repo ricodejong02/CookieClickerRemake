@@ -36,6 +36,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -87,6 +88,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -105,6 +107,18 @@
     <Content Include="Cursor.ico" />
     <Content Include="favicon %283%29.ico" />
     <Content Include="Icon.ico" />
+    <None Include="Resources\Universe.png" />
+    <None Include="Resources\Planet.png" />
+    <None Include="Resources\Money.png" />
+    <None Include="Resources\God.png" />
+    <None Include="Resources\Galxy.png" />
+    <None Include="Resources\Farm.png" />
+    <None Include="Resources\Cursor_Power.png" />
+    <None Include="Resources\Cursor.png" />
+    <None Include="Resources\Country.png" />
+    <None Include="Resources\City.png" />
+    <None Include="Resources\Cave.png" />
+    <None Include="Resources\Village.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">

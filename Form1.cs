@@ -22,55 +22,59 @@ namespace Kaziklikker
         SoundPlayer Click_3 = new SoundPlayer("Click_3.wav");
         SoundPlayer Click_4 = new SoundPlayer("Click_4.wav");
         SoundPlayer Click_5 = new SoundPlayer("Click_5.wav");
+
         Random rd = new Random();
 
         #region ints
-        Int64 Money = 5;
-        Int64 CPS = 0;
-        Int64 ClickerPrice = 10;
-        Int64 FarmPrice = 50;
-        Int64 MinePrice = 100;
-        Int64 VillagePrice = 250;
-        Int64 CityPrice = 500;
-        Int64 CountryPrice = 1000;
-        Int64 PlanetPrice = 5000;
-        Int64 GalaxyPrice = 10000;
-        Int64 ClickingPrice = 1500;
-        Int64 ClickingSpeed = 1;
-        Int64 ClickerAmount = 0;
-        Int64 FarmAmount = 0;
-        Int64 MineAmount = 0;
-        Int64 VillageAmount = 0;
-        Int64 CityAmount = 0;
-        Int64 CountryAmount = 0;
-        Int64 PlanetAmount = 0;
-        Int64 GalaxyAmount = 0;
-        Int64 ClickingAmount = 0;
-        Int64 BankRente = 11;
-        Int64 ClickerSpeed = 1;
-        Int64 FarmSpeed = 3;
-        Int64 MineSpeed = 5;
-        Int64 VillageSpeed = 10;
-        Int64 CitySpeed = 20;
-        Int64 CountrySpeed = 35;
-        Int64 PlanetSpeed = 50;
-        Int64 GalaxySpeed = 75;
-        Int64 OpBank = 0;
-        Int64 ClickerBuffer = 0;
-        Int64 FarmBuffer = 0;
-        Int64 MineBuffer = 0;
-        Int64 VillageBuffer = 0;
-        Int64 CityBuffer = 0;
-        Int64 CountryBuffer = 0;
-        Int64 PlanetBuffer = 0;
-        Int64 GalaxyBuffer = 0;
-        Int64 UniverseBuffer = 0;
-        Int64 UniversePrice = 25000000;
-        Int64 UniverseAmount = 0;
-        Int64 UniverseSpeed = 100000;
-        Int64 GodPrice = 250000000;
-        Int64 GodAmount = 0;
-        Int64 TotalClicks = 0;
+        long Money = 5;
+        long CPS = 0;
+        long ClickerPrice = 25;
+        long FarmPrice = 125;
+        long MinePrice = 250;
+        long VillagePrice = 400;
+        long CityPrice = 1500;
+        long CountryPrice = 2500;
+        long PlanetPrice = 12500;
+        long GalaxyPrice = 25000;
+        long ClickingPrice = 1500;
+        long ClickingSpeed = 1;
+        long ClickerAmount = 0;
+        long FarmAmount = 0;
+        long MineAmount = 0;
+        long VillageAmount = 0;
+        long CityAmount = 0;
+        long CountryAmount = 0;
+        long PlanetAmount = 0;
+        long GalaxyAmount = 0;
+        long ClickingAmount = 0;
+        long BankRente = 11;
+        long ClickerSpeed = 1;
+        long FarmSpeed = 3;
+        long MineSpeed = 5;
+        long VillageSpeed = 10;
+        long CitySpeed = 20;
+        long CountrySpeed = 35;
+        long PlanetSpeed = 5;
+        long GalaxySpeed = 75;
+        long OpBank = 0;
+        long ClickerBuffer = 0;
+        long FarmBuffer = 0;
+        long MineBuffer = 0;
+        long VillageBuffer = 0;
+        long CityBuffer = 0;
+        long CountryBuffer = 0;
+        long PlanetBuffer = 0;
+        long GalaxyBuffer = 0;
+        long UniverseBuffer = 0;
+        long UniversePrice = 25000000;
+        long UniverseAmount = 0;
+        long UniverseSpeed = 100000;
+        long GodPrice = 250000000;
+        long GodAmount = 0;
+        long TotalClicks = 0;
+        int TickSpeed = 1000;
+        int CreditsBuffer = 0;
+        bool Mute = false;
         #endregion
 
         #region strings
@@ -426,10 +430,17 @@ namespace Kaziklikker
             UniversePrice += 5000000;
             UniverseAmount += 1;
             UniverseSpeed += 50;
+
             if (UniverseAmount >= 500 && UniverseBuffer == 0)
             {
                 MessageBox.Show(CodeUnlocked + UniverseString);
                 UniverseBuffer += 1;
+            }
+
+            if (TickSpeed >= 250)
+            {
+                TickSpeed -= 1;
+                timer1.Interval = TickSpeed;
             }
         }
 
@@ -586,6 +597,7 @@ namespace Kaziklikker
                 info.UniversePrice = UniversePrice;
                 info.UniverseSpeed = UniverseSpeed;
                 info.TotalClicks = TotalClicks;
+                info.TickSpeed = TickSpeed;
                 SaveXML.SaveData(info, "kazidata.xml");
                 button14.Enabled = true;
             }
@@ -639,6 +651,7 @@ namespace Kaziklikker
                 UniverseSpeed = info.UniverseSpeed;
                 UniverseAmount = info.UniverseAmount;
                 TotalClicks = info.TotalClicks;
+                TickSpeed = info.TickSpeed;
                 button15.Enabled = true;
             }
             else
@@ -731,30 +744,40 @@ namespace Kaziklikker
         {
             Money += ClickingSpeed;
             TotalClicks += 1;
-            
-            switch(rd.Next(5))
+
+            if (Mute == false)
             {
-                case 0:
-                    Click_1.Play();
-                    break;
-                case 1:
-                    Click_2.Play();
-                    break;
-                case 2:
-                    Click_3.Play();
-                    break;
-                case 3:
-                    Click_4.Play();
-                    break;
-                case 4:
-                    Click_5.Play();
-                    break;
+                switch (rd.Next(5))
+                {
+                    case 0:
+                        Click_1.Play();
+                        break;
+                    case 1:
+                        Click_2.Play();
+                        break;
+                    case 2:
+                        Click_3.Play();
+                        break;
+                    case 3:
+                        Click_4.Play();
+                        break;
+                    case 4:
+                        Click_5.Play();
+                        break;
+                }
             }
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("Made by Ricodejong02 and Oledh1337.");
+            MessageBox.Show("Kazi-apps studios presenteert:\r\n\r\nKaziklikker!\r\n\r\nCredits:\r\nCoding and Art: Ricodejong01.\r\nCoding: Oledh1337\r\nTesters: 123gijs en AnProGram.");
+
+            if (CreditsBuffer == 0)
+            {
+                MessageBox.Show("Bedankt voor het bekijken van de credits! je krijgt 500 geld!");
+                CreditsBuffer += 1;
+                Money += 500;           
+            }
         }
 
         private void button19_Click(object sender, EventArgs e)
@@ -763,21 +786,27 @@ namespace Kaziklikker
             this.BackColor = colorDialog1.Color;
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button20_Click(object sender, EventArgs e)
         {
+            if (Mute == false)
+            {
+                Thread.Sleep(100);
+                Mute = true;
+            }
+        }
 
-
+        private void button21_Click(object sender, EventArgs e)
+        {
+            if (Mute == true)
+            {
+                Thread.Sleep(100);
+                Mute = false;
+            }
         }
 
         private void Kaziknop_Click(object sender, EventArgs e)
         {
 
         }
-
     }
 }
