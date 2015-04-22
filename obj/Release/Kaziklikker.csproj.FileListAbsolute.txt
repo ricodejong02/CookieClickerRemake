@@ -1,0 +1,8 @@
+C:\Users\Rico\Documents\Visual Studio 2013\Projects\Kaziklikker\Kaziklikker\bin\Release\Kaziklikker.exe.config
+C:\Users\Rico\Documents\Visual Studio 2013\Projects\Kaziklikker\Kaziklikker\bin\Release\Kaziklikker.exe
+C:\Users\Rico\Documents\Visual Studio 2013\Projects\Kaziklikker\Kaziklikker\bin\Release\Kaziklikker.pdb
+C:\Users\Rico\Documents\Visual Studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Release\Kaziklikker.Form1.resources
+C:\Users\Rico\Documents\Visual Studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Release\Kaziklikker.Properties.Resources.resources
+C:\Users\Rico\Documents\Visual Studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Release\Kaziklikker.csproj.GenerateResource.Cache
+C:\Users\Rico\Documents\Visual Studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Release\Kaziklikker.exe
+C:\Users\Rico\Documents\Visual Studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Release\Kaziklikker.pdb

@@ -26,55 +26,55 @@ namespace Kaziklikker
         Random rd = new Random();
 
         #region ints
-        long Money = 5;
-        long CPS = 0;
-        long ClickerPrice = 25;
-        long FarmPrice = 125;
-        long MinePrice = 250;
-        long VillagePrice = 400;
-        long CityPrice = 1500;
-        long CountryPrice = 2500;
-        long PlanetPrice = 12500;
-        long GalaxyPrice = 25000;
-        long ClickingPrice = 1500;
-        long ClickingSpeed = 1;
-        long ClickerAmount = 0;
-        long FarmAmount = 0;
-        long MineAmount = 0;
-        long VillageAmount = 0;
-        long CityAmount = 0;
-        long CountryAmount = 0;
-        long PlanetAmount = 0;
-        long GalaxyAmount = 0;
-        long ClickingAmount = 0;
-        long BankRente = 11;
-        long ClickerSpeed = 1;
-        long FarmSpeed = 3;
-        long MineSpeed = 5;
-        long VillageSpeed = 10;
-        long CitySpeed = 20;
-        long CountrySpeed = 35;
-        long PlanetSpeed = 5;
-        long GalaxySpeed = 75;
-        long OpBank = 0;
-        long ClickerBuffer = 0;
-        long FarmBuffer = 0;
-        long MineBuffer = 0;
-        long VillageBuffer = 0;
-        long CityBuffer = 0;
-        long CountryBuffer = 0;
-        long PlanetBuffer = 0;
-        long GalaxyBuffer = 0;
-        long UniverseBuffer = 0;
-        long UniversePrice = 25000000;
-        long UniverseAmount = 0;
-        long UniverseSpeed = 100000;
-        long GodPrice = 250000000;
-        long GodAmount = 0;
-        long TotalClicks = 0;
-        int TickSpeed = 1000;
-        int CreditsBuffer = 0;
-        bool Mute = false;
+        public long Money = 50000000000000000;
+        public long CPS = 0;
+        public long ClickerPrice = 25;
+        public long FarmPrice = 125;
+        public long MinePrice = 250;
+        public long VillagePrice = 400;
+        public long CityPrice = 1500;
+        public long CountryPrice = 2500;
+        public long PlanetPrice = 12500;
+        public long GalaxyPrice = 25000;
+        public long ClickingPrice = 1500;
+        public long ClickingSpeed = 1;
+        public long ClickerAmount = 0;
+        public long FarmAmount = 0;
+        public long MineAmount = 0;
+        public long VillageAmount = 0;
+        public long CityAmount = 0;
+        public long CountryAmount = 0;
+        public long PlanetAmount = 0;
+        public long GalaxyAmount = 0;
+        public long ClickingAmount = 0;
+        public long BankRente = 11;
+        public long ClickerSpeed = 1;
+        public long FarmSpeed = 3;
+        public long MineSpeed = 5;
+        public long VillageSpeed = 10;
+        public long CitySpeed = 20;
+        public long CountrySpeed = 35;
+        public long PlanetSpeed = 5;
+        public long GalaxySpeed = 75;
+        public long OpBank = 0;
+        public long ClickerBuffer = 0;
+        public long FarmBuffer = 0;
+        public long MineBuffer = 0;
+        public long VillageBuffer = 0;
+        public long CityBuffer = 0;
+        public long CountryBuffer = 0;
+        public long PlanetBuffer = 0;
+        public long GalaxyBuffer = 0;
+        public long UniverseBuffer = 0;
+        public long UniversePrice = 25000000;
+        public long UniverseAmount = 0;
+        public long UniverseSpeed = 100000;
+        public long GodPrice = 250000000;
+        public long GodAmount = 0;
+        public long TotalClicks = 0;
+        public int TickSpeed = 1000;
+        public int CreditsBuffer = 0;
+        public bool SellMode = false;
         #endregion
 
         #region strings
@@ -101,13 +101,11 @@ namespace Kaziklikker
 
         public void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
         #endregion
 
         #region Kaziknop
-
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             Money += CPS;
@@ -117,7 +115,6 @@ namespace Kaziklikker
         #region Snelle timer
         private void timer2_Tick(object sender, EventArgs e)
         {
-            
             //Label updaters
             label1.Text = Money.ToString();
             label2.Text = CPS.ToString();
@@ -148,63 +145,218 @@ namespace Kaziklikker
             label27.Text = BankRente.ToString();
             
             #region false
-            if (GodAmount >= 5)
+            if (SellMode == true)
             {
-                button18.Enabled = false;
-            }
-            if (Money <= UniversePrice - 1)
-            {
-                button17.Enabled = false;
+                if (ClickerAmount == 0)
+                {
+                    button1.Enabled = false;
+                }
+
+                if (FarmAmount == 0)
+                {
+                    button3.Enabled = false;
+                }
+
+                if (MineAmount == 0)
+                {
+                    button4.Enabled = false;
+                }
+
+                if (VillageAmount == 0)
+                {
+                    button5.Enabled = false;
+                }
+
+                if (CityAmount == 0)
+                {
+                    button6.Enabled = false;
+                }
+
+                if (CountryAmount == 0)
+                {
+                    button7.Enabled = false;
+                }
+
+                if (PlanetAmount == 0)
+                {
+                    button8.Enabled = false;
+                }
+
+                if (GalaxyAmount == 0)
+                {
+                    button9.Enabled = false;
+                }
+
+                //
+                //
+                //
+
+                if (ClickerAmount >= 1)
+                {
+                    button1.Enabled = true;
+                }
+
+                if (FarmAmount >= 1)
+                {
+                    button3.Enabled = true;
+                }
+
+                if (MineAmount >= 1)
+                {
+                    button4.Enabled = true;
+                }
+
+                if (VillageAmount >= 1)
+                {
+                    button5.Enabled = true;
+                }
+
+                if (CityAmount >= 1)
+                {
+                    button6.Enabled = true;
+                }
+
+                if (CountryAmount >= 1)
+                {
+                    button7.Enabled = true;
+                }
+
+                if (PlanetAmount >= 1)
+                {
+                    button8.Enabled = true;
+                }
+
+                if (GalaxyAmount >= 1)
+                {
+                    button9.Enabled = true;
+                }
             }
 
-            if (Money <= GodPrice - 1)
+            if (SellMode == false)
             {
-                button18.Enabled = false;
+                if (GodAmount >= 5)
+                {
+                    button18.Enabled = false;
+                }
+                if (Money <= UniversePrice - 1)
+                {
+                    button17.Enabled = false;
+                }
+
+                if (Money <= GodPrice - 1)
+                {
+                    button18.Enabled = false;
+                }
+
+                if (Money <= ClickerPrice - 1)
+                {
+                    button1.Enabled = false;
+                }
+
+                if (Money <= FarmPrice - 1)
+                {
+                    button3.Enabled = false;
+                }
+
+                if (Money <= MinePrice - 1)
+                {
+                    button4.Enabled = false;
+                }
+
+                if (Money <= VillagePrice - 1)
+                {
+                    button5.Enabled = false;
+                }
+
+                if (Money <= CityPrice - 1)
+                {
+                    button6.Enabled = false;
+                }
+
+                if (Money <= CountryPrice - 1)
+                {
+                    button7.Enabled = false;
+                }
+
+                if (Money <= PlanetPrice - 1)
+                {
+                    button8.Enabled = false;
+                }
+
+                if (Money <= GalaxyPrice - 1)
+                {
+                    button9.Enabled = false;
+                }
+
+                if (Money <= ClickingPrice - 1)
+                {
+                    button10.Enabled = false;
+                }
+            #endregion
+
+                #region true
+                if (Money >= UniversePrice)
+                {
+                    button17.Enabled = true;
+                }
+
+                if (Money >= GodPrice)
+                {
+                    button18.Enabled = true;
+                }
+                if (Money >= ClickerPrice)
+                {
+                    button1.Enabled = true;
+                }
+
+                if (Money >= FarmPrice)
+                {
+                    button3.Enabled = true;
+                }
+
+                if (Money >= MinePrice)
+                {
+                    button4.Enabled = true;
+                }
+
+                if (Money >= VillagePrice)
+                {
+                    button5.Enabled = true;
+                }
+
+                if (Money >= CityPrice)
+                {
+                    button6.Enabled = true;
+                }
+
+                if (Money >= CountryPrice)
+                {
+                    button7.Enabled = true;
+                }
+
+                if (Money >= PlanetPrice)
+                {
+                    button8.Enabled = true;
+                }
+
+                if (Money >= GalaxyPrice)
+                {
+                    button9.Enabled = true;
+                }
+
+                if (Money >= ClickingPrice)
+                {
+                    button10.Enabled = true;
+                }
+            }
+            if (Money >= 10000)
+            {
+                button13.Enabled = true;
             }
 
-            if (Money <= ClickerPrice - 1)
+            if (OpBank >= 10000)
             {
-                button1.Enabled = false;
-            }
-
-            if (Money <= FarmPrice - 1)
-            {
-                button3.Enabled = false;
-            }
-
-            if (Money <= MinePrice - 1)
-            {
-                button4.Enabled = false;
-            }
-
-            if (Money <= VillagePrice - 1)
-            {
-                button5.Enabled = false;
-            }
-
-            if (Money <= CityPrice - 1)
-            {
-                button6.Enabled = false;
-            }
-
-            if (Money <= CountryPrice - 1)
-            {
-                button7.Enabled = false;
-            }
-
-            if (Money <= PlanetPrice - 1)
-            {
-                button8.Enabled = false;
-            }
-
-            if (Money <= GalaxyPrice - 1)
-            {
-                button9.Enabled = false;
-            }
-
-            if (Money <= ClickingPrice - 1)
-            {
-                button10.Enabled = false;
+                button12.Enabled = true;
             }
 
             if (Money <= 9999)
@@ -218,72 +370,6 @@ namespace Kaziklikker
             }
 
 
-            #endregion
-
-            #region true
-            if (Money >= UniversePrice)
-            {
-                button17.Enabled = true;
-            }
-
-            if (Money >= GodPrice)
-            {
-                button18.Enabled = true;
-            }
-            if (Money >= ClickerPrice)
-            {
-                button1.Enabled = true;
-            }
-
-            if (Money >= FarmPrice)
-            {
-                button3.Enabled = true;
-            }
-
-            if (Money >= MinePrice)
-            {
-                button4.Enabled = true;
-            }
-
-            if (Money >= VillagePrice)
-            {
-                button5.Enabled = true;
-            }
-
-            if (Money >= CityPrice)
-            {
-                button6.Enabled = true;
-            }
-
-            if (Money >= CountryPrice)
-            {
-                button7.Enabled = true;
-            }
-
-            if (Money >= PlanetPrice)
-            {
-                button8.Enabled = true;
-            }
-
-            if (Money >= GalaxyPrice)
-            {
-                button9.Enabled = true;
-            }
-
-            if (Money >= ClickingPrice)
-            {
-                button10.Enabled = true;
-            }
-
-            if (Money >= 10000)
-            {
-                button13.Enabled = true;
-            }
-
-            if (OpBank >= 10000)
-            {
-                button12.Enabled = true;
-            }
 
             #endregion
 
@@ -313,113 +399,200 @@ namespace Kaziklikker
         #region shop
         private void button1_Click(object sender, EventArgs e)
         {
-            CPS += ClickerSpeed;
-            Money -= ClickerPrice;
-            ClickerPrice += 5;
-            ClickerAmount += 1;
-
-            if (ClickerAmount >= 500 && ClickerBuffer == 0)
+            if (SellMode == false)
             {
-                MessageBox.Show(CodeUnlocked + ClickerString);
-                ClickerBuffer += 1;
+                CPS += ClickerSpeed;
+                Money -= ClickerPrice;
+                ClickerPrice += 5;
+                ClickerAmount += 1;
+
+                if (ClickerAmount >= 500 && ClickerBuffer == 0)
+                {
+                    MessageBox.Show(CodeUnlocked + ClickerString);
+                    ClickerBuffer += 1;
+                }
             }
 
+            if (SellMode == true)
+            {
+                CPS -= ClickerSpeed;
+                Money += 20;
+                ClickerPrice -= 5;
+                ClickerAmount -= 1;
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            CPS += FarmSpeed;
-            Money -= FarmPrice;
-            FarmPrice += 25;
-            FarmAmount += 1;
-
-            if (FarmAmount >= 500 && FarmBuffer == 0)
+            if (SellMode == false)
             {
-                MessageBox.Show(CodeUnlocked + FarmString);
-                FarmBuffer += 1;
+                CPS += FarmSpeed;
+                Money -= FarmPrice;
+                FarmPrice += 25;
+                FarmAmount += 1;
+
+                if (FarmAmount >= 500 && FarmBuffer == 0)
+                {
+                    MessageBox.Show(CodeUnlocked + FarmString);
+                    FarmBuffer += 1;
+                }
+            }
+
+            if (SellMode == true)
+            {
+                CPS -= FarmSpeed;
+                Money += 100;
+                FarmPrice -= 25;
+                FarmAmount -= 1;
             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            CPS += MineSpeed;
-            Money -= MinePrice;
-            MinePrice += 50;
-            MineAmount += 1;
-
-            if (MineAmount >= 500 && MineBuffer == 0)
+            if (SellMode == false)
             {
-                MessageBox.Show(CodeUnlocked + MineString);
-                MineBuffer += 1;
+                CPS += MineSpeed;
+                Money -= MinePrice;
+                MinePrice += 50;
+                MineAmount += 1;
+
+                if (MineAmount >= 500 && MineBuffer == 0)
+                {
+                    MessageBox.Show(CodeUnlocked + MineString);
+                    MineBuffer += 1;
+                }
+            }
+
+            if (SellMode == true)
+            {
+                CPS -= MineSpeed;
+                Money += 200;
+                MinePrice -= 50;
+                MineAmount -= 1;
             }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            CPS += VillageSpeed;
-            Money -= VillagePrice;
-            VillagePrice += 100;
-            VillageAmount += 1;
-
-            if (VillageAmount >= 500 && VillageBuffer == 0)
+            if (SellMode == false)
             {
-                MessageBox.Show(CodeUnlocked + VillageString);
-                VillageBuffer += 1;
+                CPS += VillageSpeed;
+                Money -= VillagePrice;
+                VillagePrice += 100;
+                VillageAmount += 1;
+
+                if (VillageAmount >= 500 && VillageBuffer == 0)
+                {
+                    MessageBox.Show(CodeUnlocked + VillageString);
+                    VillageBuffer += 1;
+                }
+            }
+
+            if (SellMode == true)
+            {
+                CPS -= VillageSpeed;
+                Money += 300;
+                VillagePrice -= 100;
+                VillageAmount -= 1;
             }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            CPS += CitySpeed;
-            Money -= CityPrice;
-            CityPrice += 200;
-            CityAmount += 1;
-            if (CityAmount >= 500 && CityBuffer == 0)
+            if (SellMode == false)
             {
-                MessageBox.Show(CodeUnlocked + CityString);
-                CityBuffer += 1;
+                CPS += CitySpeed;
+                Money -= CityPrice;
+                CityPrice += 200;
+                CityAmount += 1;
+                if (CityAmount >= 500 && CityBuffer == 0)
+                {
+                    MessageBox.Show(CodeUnlocked + CityString);
+                    CityBuffer += 1;
+                }
+            }
+
+            if (SellMode == true)
+            {
+                CPS -= CitySpeed;
+                Money += 1000;
+                CityPrice -= 200;
+                CityAmount -= 1;
             }
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            CPS += CountrySpeed;
-            Money -= CountryPrice;
-            CountryPrice += 350;
-            CountryAmount += 1;
-            CountrySpeed += 1;
-            if (CountryAmount >= 500 && CountryBuffer == 0)
+            if (SellMode == false)
             {
-                MessageBox.Show(CodeUnlocked + CountryString);
-                CountryBuffer += 1;
+                CPS += CountrySpeed;
+                Money -= CountryPrice;
+                CountryPrice += 350;
+                CountryAmount += 1;
+
+                if (CountryAmount >= 500 && CountryBuffer == 0)
+                {
+                    MessageBox.Show(CodeUnlocked + CountryString);
+                    CountryBuffer += 1;
+                }
+            }
+
+            if (SellMode == true)
+            {
+                CPS -= CountrySpeed;
+                Money += 2000;
+                CountryPrice -= 350;
+                CountryAmount -= 1;
             }
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            CPS += PlanetSpeed;
-            Money -= PlanetPrice;
-            PlanetPrice += 500;
-            PlanetAmount += 1;
-            PlanetSpeed += 2;
-            if (PlanetAmount >= 500 && PlanetBuffer == 0)
+            if (SellMode == false)
             {
-                MessageBox.Show(CodeUnlocked + PlanetString);
-                PlanetBuffer += 1;
+                CPS += PlanetSpeed;
+                Money -= PlanetPrice;
+                PlanetPrice += 500;
+                PlanetAmount += 1;
+
+                if (PlanetAmount >= 500 && PlanetBuffer == 0)
+                {
+                    MessageBox.Show(CodeUnlocked + PlanetString);
+                    PlanetBuffer += 1;
+                }
+            }
+
+            if (SellMode == true)
+            {
+                CPS -= PlanetSpeed;
+                Money += 10000;
+                PlanetPrice -= 500;
+                PlanetAmount -= 1;
             }
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            CPS += GalaxySpeed;
-            Money -= GalaxyPrice;
-            GalaxyPrice += 1000;
-            GalaxyAmount += 1;
-            GalaxySpeed += 5;
-            if (GalaxyAmount >= 500 && GalaxyBuffer == 0)
+            if (SellMode == false)
             {
-                MessageBox.Show(CodeUnlocked + GalaxyString);
-                GalaxyBuffer += 1;
+                CPS += GalaxySpeed;
+                Money -= GalaxyPrice;
+                GalaxyPrice += 1000;
+                GalaxyAmount += 1;
+
+                if (GalaxyAmount >= 500 && GalaxyBuffer == 0)
+                {
+                    MessageBox.Show(CodeUnlocked + GalaxyString);
+                    GalaxyBuffer += 1;
+                }
+            }
+
+            if (SellMode == true)
+            {
+                CPS -= GalaxySpeed;
+                Money += 20000;
+                GalaxyPrice -= 1000;
+                GalaxyAmount -= 1;
             }
         }
 
@@ -714,6 +887,9 @@ namespace Kaziklikker
                 PlanetBuffer = 0;
                 GalaxyBuffer = 0;
                 TotalClicks = 0;
+                TickSpeed = 1000;
+                SellMode = false;
+                checkBox3.Checked = false;
             }
             else if (dialogResult == DialogResult.No)
             {
@@ -722,30 +898,14 @@ namespace Kaziklikker
 
         }
         #endregion
-        private void button1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)13)
-            {
-                CPS += ClickerSpeed;
-                Money -= ClickerPrice;
-                ClickerPrice += 5;
-                ClickerAmount += 1;
 
-                if (ClickerAmount >= 50 && ClickerBuffer == 0)
-                {
-                    MessageBox.Show("Nieuwe Cheat code uitgefabt! " + ClickerString);
-                    ClickerBuffer += 1;
-                }
-            }
-
-        }
-
+        #region kazi
         private void Kaziknop_MouseClick(object sender, MouseEventArgs e)
         {
             Money += ClickingSpeed;
             TotalClicks += 1;
 
-            if (Mute == false)
+            if (checkBox1.Checked == false)
             {
                 switch (rd.Next(5))
                 {
@@ -767,11 +927,13 @@ namespace Kaziklikker
                 }
             }
         }
+        #endregion
 
+        #region credits
         private void button2_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("Kazi-apps studios presenteert:\r\n\r\nKaziklikker!\r\n\r\nCredits:\r\nCoding and Art: Ricodejong01.\r\nCoding: Oledh1337\r\nTesters: 123gijs en AnProGram.");
-
+            Credits cr = new Credits();
+            cr.cred();
             if (CreditsBuffer == 0)
             {
                 MessageBox.Show("Bedankt voor het bekijken van de credits! je krijgt 500 geld!");
@@ -779,34 +941,60 @@ namespace Kaziklikker
                 Money += 500;           
             }
         }
+        #endregion
 
+        #region color
         private void button19_Click(object sender, EventArgs e)
         {
             colorDialog1.ShowDialog();
             this.BackColor = colorDialog1.Color;
         }
 
-        private void button20_Click(object sender, EventArgs e)
-        {
-            if (Mute == false)
-            {
-                Thread.Sleep(100);
-                Mute = true;
-            }
-        }
-
-        private void button21_Click(object sender, EventArgs e)
-        {
-            if (Mute == true)
-            {
-                Thread.Sleep(100);
-                Mute = false;
-            }
-        }
+        #endregion
 
         private void Kaziknop_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked == true)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+
+            if (checkBox2.Checked == false)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox3.Checked == true)
+            {
+                SellMode = true;
+                button17.Enabled = false;
+                button18.Enabled = false;
+                button10.Enabled = false;
+                
+            }
+
+            if (checkBox3.Checked == false)
+            {
+                SellMode = false;
+            }
+           
+        }
     }
 }
+
+
+
+
+
+
+
+
+//1000ste regel woe-hoe!
