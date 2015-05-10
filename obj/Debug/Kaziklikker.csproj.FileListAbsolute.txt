@@ -7,3 +7,5 @@ c:\users\rico\documents\visual studio 2013\Projects\Kaziklikker\Kaziklikker\bin\
 c:\users\rico\documents\visual studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.exe
 c:\users\rico\documents\visual studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.pdb
 C:\Users\Rico\documents\visual studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.csprojResolveAssemblyReference.cache
+C:\Users\Rico\documents\visual studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Wiki.resources
+C:\Users\Rico\Documents\Visual Studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Form2.resources

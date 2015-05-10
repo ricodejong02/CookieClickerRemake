@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Information xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TickSpeed>1000</TickSpeed>
+  <Money>12743</Money>
+  <CPS>75</CPS>
+  <ClickerPrice>95</ClickerPrice>
+  <FarmPrice>175</FarmPrice>
+  <MinePrice>350</MinePrice>
+  <VillagePrice>850</VillagePrice>
+  <CityPrice>1500</CityPrice>
+  <CountryPrice>2850</CountryPrice>
+  <PlanetPrice>12500</PlanetPrice>
+  <GalaxyPrice>25000</GalaxyPrice>
+  <ClickerAmount>14</ClickerAmount>
+  <FarmAmount>2</FarmAmount>
+  <MineAmount>2</MineAmount>
+  <VillageAmount>1</VillageAmount>
+  <CityAmount>0</CityAmount>
+  <CountryAmount>1</CountryAmount>
+  <PlanetAmount>0</PlanetAmount>
+  <GalaxyAmount>0</GalaxyAmount>
+  <ClickingAmount>1</ClickingAmount>
+  <ClickingSpeed>2</ClickingSpeed>
+  <ClickingPrice>1500</ClickingPrice>
+  <BankRente>11</BankRente>
+  <OpBank>0</OpBank>
+  <UniverseSpeed>100000</UniverseSpeed>
+  <UniverseAmount>0</UniverseAmount>
+  <UniversePrice>25000000</UniversePrice>
+  <GodAmount>0</GodAmount>
+  <GodPrice>250000000</GodPrice>
+  <TotalClicks>473</TotalClicks>
+</Information>
