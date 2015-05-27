@@ -130,6 +130,11 @@
     <Content Include="Cursor.ico" />
     <Content Include="favicon %283%29.ico" />
     <Content Include="Icon.ico" />
+    <None Include="Resources\SmallMoney3.png" />
+    <None Include="Resources\SmallMoney2.png" />
+    <None Include="Resources\SmallMoney1.png" />
+    <None Include="Resources\Plus.png" />
+    <None Include="Resources\Minus.png" />
     <None Include="Resources\Banknew.png" />
     <None Include="Resources\Cursor2.png" />
     <None Include="Resources\Clock2.png" />

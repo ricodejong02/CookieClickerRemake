@@ -32,9 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.clock = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.updater = new System.Windows.Forms.Timer(this.components);
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -62,7 +62,7 @@
             this.button13 = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.bank = new System.Windows.Forms.Timer(this.components);
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -75,7 +75,7 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.timer4 = new System.Windows.Forms.Timer(this.components);
+            this.antispam = new System.Windows.Forms.Timer(this.components);
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
@@ -84,34 +84,6 @@
             this.label41 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Kaziknop = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
@@ -135,6 +107,58 @@
             this.button35 = new System.Windows.Forms.Button();
             this.button36 = new System.Windows.Forms.Button();
             this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.button24 = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Kaziknop = new System.Windows.Forms.Button();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.randomEvents = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -164,11 +188,11 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "/";
             // 
-            // timer1
+            // clock
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.clock.Enabled = true;
+            this.clock.Interval = 1000;
+            this.clock.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label3
             // 
@@ -179,11 +203,11 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "/";
             // 
-            // timer2
+            // updater
             // 
-            this.timer2.Enabled = true;
-            this.timer2.Interval = 25;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            this.updater.Enabled = true;
+            this.updater.Interval = 10;
+            this.updater.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // label4
             // 
@@ -370,7 +394,9 @@
             // button11
             // 
             this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button11.Location = new System.Drawing.Point(723, 502);
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Location = new System.Drawing.Point(797, 501);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 23);
             this.button11.TabIndex = 23;
@@ -380,32 +406,35 @@
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(158, 503);
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.textBox1.Location = new System.Drawing.Point(207, 503);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(559, 20);
+            this.textBox1.Size = new System.Drawing.Size(587, 20);
             this.textBox1.TabIndex = 24;
             this.textBox1.Text = "Vul cheat-code in.";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label25
             // 
             this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(52, 474);
+            this.label25.Location = new System.Drawing.Point(48, 437);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(36, 13);
+            this.label25.Size = new System.Drawing.Size(40, 13);
             this.label25.TabIndex = 25;
-            this.label25.Text = "Bank";
+            this.label25.Text = "Bank:";
             this.label25.Click += new System.EventHandler(this.label25_Click);
             this.label25.DoubleClick += new System.EventHandler(this.label25_DoubleClick);
             // 
             // button12
             // 
             this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(5, 471);
+            this.button12.Location = new System.Drawing.Point(31, 453);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(41, 23);
             this.button12.TabIndex = 26;
@@ -416,8 +445,10 @@
             // button13
             // 
             this.button13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(97, 471);
+            this.button13.Location = new System.Drawing.Point(104, 453);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(41, 23);
             this.button13.TabIndex = 26;
@@ -429,7 +460,7 @@
             // 
             this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(2, 507);
+            this.label26.Location = new System.Drawing.Point(84, 485);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(12, 13);
             this.label26.TabIndex = 27;
@@ -439,17 +470,17 @@
             // 
             this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(111, 503);
+            this.label27.Location = new System.Drawing.Point(84, 506);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(12, 13);
             this.label27.TabIndex = 28;
             this.label27.Text = "/";
             // 
-            // timer3
+            // bank
             // 
-            this.timer3.Enabled = true;
-            this.timer3.Interval = 300000;
-            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            this.bank.Enabled = true;
+            this.bank.Interval = 300000;
+            this.bank.Tick += new System.EventHandler(this.timer3_Tick);
             // 
             // label28
             // 
@@ -508,7 +539,6 @@
             this.label33.Size = new System.Drawing.Size(12, 13);
             this.label33.TabIndex = 37;
             this.label33.Text = "/";
-            this.label33.Click += new System.EventHandler(this.label33_Click);
             // 
             // label34
             // 
@@ -525,7 +555,7 @@
             this.label35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(678, 8);
+            this.label35.Location = new System.Drawing.Point(755, 8);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(57, 16);
             this.label35.TabIndex = 43;
@@ -535,7 +565,7 @@
             // 
             this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(585, 88);
+            this.checkBox1.Location = new System.Drawing.Point(662, 88);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(97, 17);
             this.checkBox1.TabIndex = 45;
@@ -546,7 +576,7 @@
             // 
             this.checkBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(688, 87);
+            this.checkBox2.Location = new System.Drawing.Point(765, 87);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(96, 17);
             this.checkBox2.TabIndex = 46;
@@ -557,7 +587,7 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(12, 366);
+            this.checkBox3.Location = new System.Drawing.Point(12, 370);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(100, 17);
             this.checkBox3.TabIndex = 47;
@@ -565,17 +595,18 @@
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
-            // timer4
+            // antispam
             // 
-            this.timer4.Interval = 5000;
-            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
+            this.antispam.Enabled = true;
+            this.antispam.Interval = 500;
+            this.antispam.Tick += new System.EventHandler(this.timer4_Tick);
             // 
             // label36
             // 
             this.label36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(714, 318);
+            this.label36.Location = new System.Drawing.Point(791, 315);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(81, 16);
             this.label36.TabIndex = 50;
@@ -585,7 +616,7 @@
             // 
             this.label37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(635, 325);
+            this.label37.Location = new System.Drawing.Point(712, 321);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(26, 13);
             this.label37.TabIndex = 51;
@@ -595,18 +626,17 @@
             // 
             this.label38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(635, 345);
+            this.label38.Location = new System.Drawing.Point(712, 345);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(12, 13);
             this.label38.TabIndex = 52;
             this.label38.Text = "/";
-            this.label38.Click += new System.EventHandler(this.label38_Click);
             // 
             // label39
             // 
             this.label39.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(635, 374);
+            this.label39.Location = new System.Drawing.Point(712, 374);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(12, 13);
             this.label39.TabIndex = 55;
@@ -616,7 +646,7 @@
             // 
             this.label40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(635, 403);
+            this.label40.Location = new System.Drawing.Point(712, 403);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(12, 13);
             this.label40.TabIndex = 59;
@@ -626,7 +656,7 @@
             // 
             this.label41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(635, 432);
+            this.label41.Location = new System.Drawing.Point(712, 432);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(12, 13);
             this.label41.TabIndex = 60;
@@ -650,7 +680,430 @@
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(76, 13);
             this.label42.TabIndex = 62;
-            this.label42.Text = "Kaziklikker 2.8";
+            this.label42.Text = "Kaziklikker 3.0";
+            // 
+            // button26
+            // 
+            this.button26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button26.FlatAppearance.BorderSize = 0;
+            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button26.Image = global::Kaziklikker.Properties.Resources.Coin;
+            this.button26.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button26.Location = new System.Drawing.Point(784, 184);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(84, 23);
+            this.button26.TabIndex = 63;
+            this.button26.Text = "4Noobz";
+            this.button26.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
+            // 
+            // button27
+            // 
+            this.button27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button27.FlatAppearance.BorderSize = 0;
+            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button27.Image = global::Kaziklikker.Properties.Resources.SmallMoney;
+            this.button27.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button27.Location = new System.Drawing.Point(784, 213);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(83, 23);
+            this.button27.TabIndex = 63;
+            this.button27.Text = "Euro 25";
+            this.button27.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
+            // 
+            // button28
+            // 
+            this.button28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button28.FlatAppearance.BorderSize = 0;
+            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button28.Image = global::Kaziklikker.Properties.Resources.SmallMoney2;
+            this.button28.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button28.Location = new System.Drawing.Point(784, 242);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(83, 23);
+            this.button28.TabIndex = 63;
+            this.button28.Text = "Megalot";
+            this.button28.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
+            // 
+            // button29
+            // 
+            this.button29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button29.FlatAppearance.BorderSize = 0;
+            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button29.Image = global::Kaziklikker.Properties.Resources.SmallMoney3;
+            this.button29.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button29.Location = new System.Drawing.Point(784, 271);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(84, 23);
+            this.button29.TabIndex = 63;
+            this.button29.Text = "Exprice";
+            this.button29.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
+            // 
+            // label43
+            // 
+            this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(801, 163);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(55, 16);
+            this.label43.TabIndex = 50;
+            this.label43.Text = "Loterij:";
+            // 
+            // label44
+            // 
+            this.label44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(712, 168);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(57, 13);
+            this.label44.TabIndex = 64;
+            this.label44.Text = "Te winnen";
+            // 
+            // label45
+            // 
+            this.label45.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(660, 168);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(26, 13);
+            this.label45.TabIndex = 65;
+            this.label45.Text = "Prijs";
+            // 
+            // label46
+            // 
+            this.label46.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(660, 194);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(31, 13);
+            this.label46.TabIndex = 66;
+            this.label46.Text = "5000";
+            // 
+            // label47
+            // 
+            this.label47.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(660, 218);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(43, 13);
+            this.label47.TabIndex = 66;
+            this.label47.Text = "100000";
+            // 
+            // label48
+            // 
+            this.label48.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(660, 247);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(46, 13);
+            this.label48.TabIndex = 66;
+            this.label48.Text = "1 Miljard";
+            // 
+            // label49
+            // 
+            this.label49.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(660, 276);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(52, 13);
+            this.label49.TabIndex = 66;
+            this.label49.Text = "25 Miljard";
+            // 
+            // label50
+            // 
+            this.label50.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(714, 194);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(37, 13);
+            this.label50.TabIndex = 66;
+            this.label50.Text = "10000";
+            // 
+            // label51
+            // 
+            this.label51.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(714, 218);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(49, 13);
+            this.label51.TabIndex = 66;
+            this.label51.Text = "1000000";
+            // 
+            // label52
+            // 
+            this.label52.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(714, 247);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(52, 13);
+            this.label52.TabIndex = 66;
+            this.label52.Text = "25 Miljard";
+            // 
+            // label53
+            // 
+            this.label53.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(714, 276);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(64, 13);
+            this.label53.TabIndex = 66;
+            this.label53.Text = "1000 Miljard";
+            // 
+            // button30
+            // 
+            this.button30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button30.FlatAppearance.BorderSize = 0;
+            this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button30.Location = new System.Drawing.Point(312, 474);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(67, 23);
+            this.button30.TabIndex = 67;
+            this.button30.Text = "Alles gratis";
+            this.button30.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button30.UseVisualStyleBackColor = true;
+            this.button30.Visible = false;
+            this.button30.Click += new System.EventHandler(this.button30_Click_1);
+            // 
+            // button31
+            // 
+            this.button31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button31.FlatAppearance.BorderSize = 0;
+            this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button31.Location = new System.Drawing.Point(401, 474);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(56, 23);
+            this.button31.TabIndex = 67;
+            this.button31.Text = "+ 100K";
+            this.button31.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button31.UseVisualStyleBackColor = true;
+            this.button31.Visible = false;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
+            // 
+            // button32
+            // 
+            this.button32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button32.FlatAppearance.BorderSize = 0;
+            this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button32.Location = new System.Drawing.Point(489, 474);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(41, 23);
+            this.button32.TabIndex = 67;
+            this.button32.Text = "+ 1M";
+            this.button32.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button32.UseVisualStyleBackColor = true;
+            this.button32.Visible = false;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
+            // 
+            // button33
+            // 
+            this.button33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button33.FlatAppearance.BorderSize = 0;
+            this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button33.Location = new System.Drawing.Point(548, 474);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(44, 23);
+            this.button33.TabIndex = 67;
+            this.button33.Text = "+ 1B";
+            this.button33.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Visible = false;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
+            // 
+            // button34
+            // 
+            this.button34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button34.FlatAppearance.BorderSize = 0;
+            this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button34.Location = new System.Drawing.Point(617, 474);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(74, 23);
+            this.button34.TabIndex = 67;
+            this.button34.Text = "+ 100K CPS";
+            this.button34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button34.UseVisualStyleBackColor = true;
+            this.button34.Visible = false;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
+            // 
+            // button35
+            // 
+            this.button35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button35.FlatAppearance.BorderSize = 0;
+            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button35.Location = new System.Drawing.Point(718, 473);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(65, 23);
+            this.button35.TabIndex = 67;
+            this.button35.Text = "+ 1M CPS";
+            this.button35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button35.UseVisualStyleBackColor = true;
+            this.button35.Visible = false;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
+            // 
+            // button36
+            // 
+            this.button36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button36.FlatAppearance.BorderSize = 0;
+            this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button36.Location = new System.Drawing.Point(800, 473);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(75, 23);
+            this.button36.TabIndex = 67;
+            this.button36.Text = "+ 1B CPS";
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Visible = false;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
+            // 
+            // label54
+            // 
+            this.label54.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(204, 478);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(72, 16);
+            this.label54.TabIndex = 68;
+            this.label54.Text = "Hack m8:";
+            this.label54.Visible = false;
+            // 
+            // label55
+            // 
+            this.label55.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(5, 485);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(51, 13);
+            this.label55.TabIndex = 71;
+            this.label55.Text = "Op bank:";
+            // 
+            // label56
+            // 
+            this.label56.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(5, 507);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(39, 13);
+            this.label56.TabIndex = 71;
+            this.label56.Text = "Rente:";
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox14.Image = global::Kaziklikker.Properties.Resources.SmallMoney3;
+            this.pictureBox14.Location = new System.Drawing.Point(784, 474);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox14.TabIndex = 70;
+            this.pictureBox14.TabStop = false;
+            this.pictureBox14.Visible = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox13.Image = global::Kaziklikker.Properties.Resources.SmallMoney2;
+            this.pictureBox13.Location = new System.Drawing.Point(697, 474);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox13.TabIndex = 70;
+            this.pictureBox13.TabStop = false;
+            this.pictureBox13.Visible = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox12.Image = global::Kaziklikker.Properties.Resources.SmallMoney;
+            this.pictureBox12.Location = new System.Drawing.Point(598, 474);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox12.TabIndex = 70;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Visible = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox11.Image = global::Kaziklikker.Properties.Resources.SmallMoney3;
+            this.pictureBox11.Location = new System.Drawing.Point(536, 474);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox11.TabIndex = 70;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Visible = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox10.Image = global::Kaziklikker.Properties.Resources.SmallMoney2;
+            this.pictureBox10.Location = new System.Drawing.Point(463, 474);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox10.TabIndex = 70;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Visible = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox9.Image = global::Kaziklikker.Properties.Resources.SmallMoney;
+            this.pictureBox9.Location = new System.Drawing.Point(385, 474);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox9.TabIndex = 70;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Visible = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox8.Image = global::Kaziklikker.Properties.Resources.Coin;
+            this.pictureBox8.Location = new System.Drawing.Point(286, 474);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox8.TabIndex = 70;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Visible = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox7.Image = global::Kaziklikker.Properties.Resources.Plus;
+            this.pictureBox7.Location = new System.Drawing.Point(78, 456);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox7.TabIndex = 70;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox6.Image = global::Kaziklikker.Properties.Resources.Minus;
+            this.pictureBox6.Location = new System.Drawing.Point(8, 456);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox6.TabIndex = 70;
+            this.pictureBox6.TabStop = false;
+            // 
+            // button24
+            // 
+            this.button24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button24.FlatAppearance.BorderSize = 0;
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.Image = ((System.Drawing.Image)(resources.GetObject("button24.Image")));
+            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button24.Location = new System.Drawing.Point(761, 398);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(97, 23);
+            this.button24.TabIndex = 56;
+            this.button24.Text = "CPS";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // pictureBox5
             // 
@@ -683,7 +1136,7 @@
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(648, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(725, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(20, 20);
             this.pictureBox2.TabIndex = 61;
@@ -693,7 +1146,7 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(686, 314);
+            this.pictureBox1.Location = new System.Drawing.Point(763, 314);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 20);
             this.pictureBox1.TabIndex = 61;
@@ -706,28 +1159,13 @@
             this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button25.Image = ((System.Drawing.Image)(resources.GetObject("button25.Image")));
             this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button25.Location = new System.Drawing.Point(686, 427);
+            this.button25.Location = new System.Drawing.Point(763, 427);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(96, 23);
             this.button25.TabIndex = 57;
             this.button25.Text = "Bank";
             this.button25.UseVisualStyleBackColor = true;
             this.button25.Click += new System.EventHandler(this.button25_Click);
-            // 
-            // button24
-            // 
-            this.button24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button24.FlatAppearance.BorderSize = 0;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Image = ((System.Drawing.Image)(resources.GetObject("button24.Image")));
-            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button24.Location = new System.Drawing.Point(684, 398);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(97, 23);
-            this.button24.TabIndex = 56;
-            this.button24.Text = "CPS";
-            this.button24.UseVisualStyleBackColor = true;
-            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // button23
             // 
@@ -736,7 +1174,7 @@
             this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button23.Image = ((System.Drawing.Image)(resources.GetObject("button23.Image")));
             this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button23.Location = new System.Drawing.Point(686, 369);
+            this.button23.Location = new System.Drawing.Point(763, 369);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(99, 23);
             this.button23.TabIndex = 54;
@@ -752,7 +1190,7 @@
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button22.Image = ((System.Drawing.Image)(resources.GetObject("button22.Image")));
             this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.Location = new System.Drawing.Point(685, 340);
+            this.button22.Location = new System.Drawing.Point(762, 340);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(97, 23);
             this.button22.TabIndex = 53;
@@ -768,7 +1206,7 @@
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button21.Image = ((System.Drawing.Image)(resources.GetObject("button21.Image")));
             this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button21.Location = new System.Drawing.Point(720, 54);
+            this.button21.Location = new System.Drawing.Point(797, 54);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(61, 25);
             this.button21.TabIndex = 49;
@@ -780,11 +1218,12 @@
             // button20
             // 
             this.button20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button20.Enabled = false;
             this.button20.FlatAppearance.BorderSize = 0;
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button20.Image = ((System.Drawing.Image)(resources.GetObject("button20.Image")));
             this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button20.Location = new System.Drawing.Point(648, 54);
+            this.button20.Location = new System.Drawing.Point(725, 54);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(66, 23);
             this.button20.TabIndex = 48;
@@ -800,7 +1239,7 @@
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button19.Image = ((System.Drawing.Image)(resources.GetObject("button19.Image")));
             this.button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.Location = new System.Drawing.Point(576, 54);
+            this.button19.Location = new System.Drawing.Point(653, 54);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(66, 23);
             this.button19.TabIndex = 40;
@@ -816,7 +1255,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(648, 111);
+            this.button2.Location = new System.Drawing.Point(725, 111);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(93, 23);
             this.button2.TabIndex = 38;
@@ -832,7 +1271,7 @@
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
             this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(576, 25);
+            this.button16.Location = new System.Drawing.Point(653, 25);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(70, 23);
             this.button16.TabIndex = 31;
@@ -848,7 +1287,7 @@
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
             this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.Location = new System.Drawing.Point(648, 25);
+            this.button15.Location = new System.Drawing.Point(725, 25);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(70, 23);
             this.button15.TabIndex = 30;
@@ -864,7 +1303,7 @@
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
             this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(720, 25);
+            this.button14.Location = new System.Drawing.Point(797, 25);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(70, 25);
             this.button14.TabIndex = 29;
@@ -1036,271 +1475,66 @@
             this.Kaziknop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Kaziknop.ForeColor = System.Drawing.Color.Coral;
             this.Kaziknop.Image = ((System.Drawing.Image)(resources.GetObject("Kaziknop.Image")));
-            this.Kaziknop.Location = new System.Drawing.Point(141, 125);
+            this.Kaziknop.Location = new System.Drawing.Point(131, 111);
             this.Kaziknop.Name = "Kaziknop";
-            this.Kaziknop.Size = new System.Drawing.Size(446, 322);
+            this.Kaziknop.Size = new System.Drawing.Size(523, 322);
             this.Kaziknop.TabIndex = 1;
             this.Kaziknop.UseVisualStyleBackColor = true;
-            this.Kaziknop.Click += new System.EventHandler(this.Kaziknop_Click);
             this.Kaziknop.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Kaziknop_MouseClick);
             // 
-            // button26
+            // label57
             // 
-            this.button26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button26.Location = new System.Drawing.Point(707, 184);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(84, 23);
-            this.button26.TabIndex = 63;
-            this.button26.Text = "4Noobz";
-            this.button26.UseVisualStyleBackColor = true;
-            this.button26.Click += new System.EventHandler(this.button26_Click);
+            this.label57.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label57.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label57.Location = new System.Drawing.Point(658, 161);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(209, 2);
+            this.label57.TabIndex = 72;
             // 
-            // button27
+            // label58
             // 
-            this.button27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button27.Location = new System.Drawing.Point(707, 213);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(84, 23);
-            this.button27.TabIndex = 63;
-            this.button27.Text = "Eurojackpot";
-            this.button27.UseVisualStyleBackColor = true;
-            this.button27.Click += new System.EventHandler(this.button27_Click);
+            this.label58.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label58.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label58.Location = new System.Drawing.Point(660, 297);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(208, 2);
+            this.label58.TabIndex = 72;
             // 
-            // button28
+            // label60
             // 
-            this.button28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button28.Location = new System.Drawing.Point(707, 242);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(83, 23);
-            this.button28.TabIndex = 63;
-            this.button28.Text = "Megalot";
-            this.button28.UseVisualStyleBackColor = true;
-            this.button28.Click += new System.EventHandler(this.button28_Click);
+            this.label60.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label60.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label60.Location = new System.Drawing.Point(8, 480);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(135, 2);
+            this.label60.TabIndex = 72;
             // 
-            // button29
+            // randomEvents
             // 
-            this.button29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button29.Location = new System.Drawing.Point(707, 271);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(84, 23);
-            this.button29.TabIndex = 63;
-            this.button29.Text = "Exprice";
-            this.button29.UseVisualStyleBackColor = true;
-            this.button29.Click += new System.EventHandler(this.button29_Click);
-            // 
-            // label43
-            // 
-            this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(724, 163);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(55, 16);
-            this.label43.TabIndex = 50;
-            this.label43.Text = "Loterij:";
-            // 
-            // label44
-            // 
-            this.label44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(635, 168);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(57, 13);
-            this.label44.TabIndex = 64;
-            this.label44.Text = "Te winnen";
-            // 
-            // label45
-            // 
-            this.label45.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(583, 168);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(26, 13);
-            this.label45.TabIndex = 65;
-            this.label45.Text = "Prijs";
-            // 
-            // label46
-            // 
-            this.label46.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(583, 194);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(31, 13);
-            this.label46.TabIndex = 66;
-            this.label46.Text = "5000";
-            // 
-            // label47
-            // 
-            this.label47.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(583, 218);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(43, 13);
-            this.label47.TabIndex = 66;
-            this.label47.Text = "100000";
-            // 
-            // label48
-            // 
-            this.label48.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(583, 247);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(46, 13);
-            this.label48.TabIndex = 66;
-            this.label48.Text = "1 Miljard";
-            // 
-            // label49
-            // 
-            this.label49.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(583, 276);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(52, 13);
-            this.label49.TabIndex = 66;
-            this.label49.Text = "25 Miljard";
-            // 
-            // label50
-            // 
-            this.label50.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(637, 194);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(37, 13);
-            this.label50.TabIndex = 66;
-            this.label50.Text = "10000";
-            // 
-            // label51
-            // 
-            this.label51.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(637, 218);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(49, 13);
-            this.label51.TabIndex = 66;
-            this.label51.Text = "1000000";
-            // 
-            // label52
-            // 
-            this.label52.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(637, 247);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(52, 13);
-            this.label52.TabIndex = 66;
-            this.label52.Text = "25 Miljard";
-            // 
-            // label53
-            // 
-            this.label53.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(637, 276);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(64, 13);
-            this.label53.TabIndex = 66;
-            this.label53.Text = "1000 Miljard";
-            // 
-            // button30
-            // 
-            this.button30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button30.Location = new System.Drawing.Point(235, 474);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(75, 23);
-            this.button30.TabIndex = 67;
-            this.button30.Text = "Alles gratis";
-            this.button30.UseVisualStyleBackColor = true;
-            this.button30.Visible = false;
-            this.button30.Click += new System.EventHandler(this.button30_Click_1);
-            // 
-            // button31
-            // 
-            this.button31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button31.Location = new System.Drawing.Point(318, 474);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(75, 23);
-            this.button31.TabIndex = 67;
-            this.button31.Text = "+ 100K";
-            this.button31.UseVisualStyleBackColor = true;
-            this.button31.Visible = false;
-            this.button31.Click += new System.EventHandler(this.button31_Click);
-            // 
-            // button32
-            // 
-            this.button32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button32.Location = new System.Drawing.Point(399, 474);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(75, 23);
-            this.button32.TabIndex = 67;
-            this.button32.Text = "+ 1M";
-            this.button32.UseVisualStyleBackColor = true;
-            this.button32.Visible = false;
-            this.button32.Click += new System.EventHandler(this.button32_Click);
-            // 
-            // button33
-            // 
-            this.button33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button33.Location = new System.Drawing.Point(480, 474);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(75, 23);
-            this.button33.TabIndex = 67;
-            this.button33.Text = "+ 1B";
-            this.button33.UseVisualStyleBackColor = true;
-            this.button33.Visible = false;
-            this.button33.Click += new System.EventHandler(this.button33_Click);
-            // 
-            // button34
-            // 
-            this.button34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button34.Location = new System.Drawing.Point(561, 474);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(75, 23);
-            this.button34.TabIndex = 67;
-            this.button34.Text = "+ 100K CPS";
-            this.button34.UseVisualStyleBackColor = true;
-            this.button34.Visible = false;
-            this.button34.Click += new System.EventHandler(this.button34_Click);
-            // 
-            // button35
-            // 
-            this.button35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button35.Location = new System.Drawing.Point(642, 474);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(75, 23);
-            this.button35.TabIndex = 67;
-            this.button35.Text = "+ 1M CPS";
-            this.button35.UseVisualStyleBackColor = true;
-            this.button35.Visible = false;
-            this.button35.Click += new System.EventHandler(this.button35_Click);
-            // 
-            // button36
-            // 
-            this.button36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button36.Location = new System.Drawing.Point(720, 474);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(75, 23);
-            this.button36.TabIndex = 67;
-            this.button36.Text = "+ 1B CPS";
-            this.button36.UseVisualStyleBackColor = true;
-            this.button36.Visible = false;
-            this.button36.Click += new System.EventHandler(this.button36_Click);
-            // 
-            // label54
-            // 
-            this.label54.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(153, 478);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(72, 16);
-            this.label54.TabIndex = 68;
-            this.label54.Text = "Hack m8:";
-            this.label54.Visible = false;
+            this.randomEvents.Enabled = true;
+            this.randomEvents.Interval = 120000;
+            this.randomEvents.Tick += new System.EventHandler(this.randomEvents_Tick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(800, 528);
+            this.ClientSize = new System.Drawing.Size(877, 528);
+            this.Controls.Add(this.label60);
+            this.Controls.Add(this.label58);
+            this.Controls.Add(this.label57);
+            this.Controls.Add(this.label56);
+            this.Controls.Add(this.label55);
+            this.Controls.Add(this.pictureBox14);
+            this.Controls.Add(this.pictureBox13);
+            this.Controls.Add(this.pictureBox12);
+            this.Controls.Add(this.pictureBox11);
+            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label54);
             this.Controls.Add(this.button36);
             this.Controls.Add(this.button35);
@@ -1401,11 +1635,23 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Kaziknop);
-            this.MinimumSize = new System.Drawing.Size(700, 525);
+            this.KeyPreview = true;
+            this.MinimumSize = new System.Drawing.Size(835, 560);
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "Kazi clicker";
+            this.TransparencyKey = System.Drawing.Color.Teal;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -1421,10 +1667,10 @@
         private System.Windows.Forms.Button Kaziknop;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer clock;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer updater;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button4;
@@ -1461,7 +1707,7 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Timer bank;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
@@ -1483,7 +1729,7 @@
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Timer timer4;
+        private System.Windows.Forms.Timer antispam;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
@@ -1523,5 +1769,20 @@
         private System.Windows.Forms.Button button35;
         private System.Windows.Forms.Button button36;
         private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Timer randomEvents;
     }
 }

@@ -37,7 +37,36 @@ namespace Kaziklikker
         private long bankRente;
         private long opBank;
         private long totalClicks;
+        private long goedkoopPrice;
+        private long clickingSpeedPrice;
+        private long cpsPrice;
+        private long bankPrice;
         private int tickSpeed;
+
+
+        public long GoedkoopPrice
+        {
+            get { return goedkoopPrice; }
+            set { goedkoopPrice = value; }
+        }
+
+        public long ClickingSpeedPrice
+        {
+            get { return clickingSpeedPrice; }
+            set { clickingSpeedPrice = value; }
+        }
+
+        public long CPSprice
+        {
+            get { return cpsPrice; }
+            set { cpsPrice = value; }
+        }
+
+        public long BankPrice
+        {
+            get { return bankPrice; }
+            set { bankPrice = value; }
+        }
 
         public int TickSpeed
         {

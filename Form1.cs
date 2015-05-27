@@ -80,26 +80,28 @@ namespace Kaziklikker
         public long TotalClicks = 0;
         public long GoedkoopPrice = 100000;
         public long ClickingSpeedPrice = 100000;
-        public long CPSSprice = 1000000;
+        public long CPSprice = 1000000;
         public long BankPrice = 1000000;
+        public decimal Spam;
 
         public int TickSpeed = 1000;
         public int CreditsBuffer = 0;
+
         public bool SellMode = false;
         public bool Cheater = false;
         #endregion
 
         #region strings
-        public string ClickerString = "X47!184wÚ";
-        public string FarmString = "W182%32dì";
-        public string MineString = "G18#892f&Ô";
-        public string VillageString = "N8&6469bö";
-        public string CityString = "E810!88wá";
-        public string CountryString = "F8$2596b~i";
-        public string PlanetString = "B829(5)0vÛ";
-        public string GalaxyString = "E6026^3cV";
-        public string UniverseString = "P16~198v<ö";
-        public string GodString = "J15~837v";
+        public string ClickerString = "Snellevingers";
+        public string FarmString = "Boerenleven";
+        public string MineString = "Minecraft";
+        public string VillageString = "Mooidorp";
+        public string CityString = "Dacity";
+        public string CountryString = "Tataland";
+        public string PlanetString = "Megapower";
+        public string GalaxyString = "Nasa2050";
+        public string UniverseString = "Nasa2070";
+        public string GodString = "kazi is leven";
         public string CodeUnlocked = "Je hebt een nieuwe cheat-code uitgefabt! ";
         public string Pad = "C:/Kazi-apps/Kaziklikker/";
         #endregion
@@ -109,27 +111,16 @@ namespace Kaziklikker
         public Form1()
         {
             InitializeComponent();
-
+            SetStyle(ControlStyles.SupportsTransparentBackColor, true);
         }
 
         public void Form1_Load(object sender, EventArgs e)
         {
-            button1.Image = Image.FromFile("C:/Kazi-apps/Kaziklikker/Art/Cursor.png");
-            Kaziknop.Image = Image.FromFile("C:/Kazi-apps/Kaziklikker/Art/Money.png");
-            button3.Image = Image.FromFile("C:/Kazi-apps/Kaziklikker/Art/Farm.png");
-            button4.Image = Image.FromFile("C:/Kazi-apps/Kaziklikker/Art/Cave.png");
-            button5.Image = Image.FromFile("C:/Kazi-apps/Kaziklikker/Art/Village.png");
-            button6.Image = Image.FromFile("C:/Kazi-apps/Kaziklikker/Art/City.png");
-            button7.Image = Image.FromFile("C:/Kazi-apps/Kaziklikker/Art/Country.png");
-            button8.Image = Image.FromFile("C:/Kazi-apps/Kaziklikker/Art/Planet.png");
-            button9.Image = Image.FromFile("C:/Kazi-apps/Kaziklikker/Art/Galxy.png");
-            button17.Image = Image.FromFile("C:/Kazi-apps/Kaziklikker/Art/Universe.png");
-            button18.Image = Image.FromFile("C:/Kazi-apps/Kaziklikker/Art/God.png");
-            button10.Image = Image.FromFile("C:/Kazi-apps/Kaziklikker/Art/Cursor_power.png");
+
         }
         #endregion
 
-        #region Kaziknop
+        #region Clock
         private void timer1_Tick(object sender, EventArgs e)
         {
             Money += CPS;
@@ -143,7 +134,7 @@ namespace Kaziklikker
             this.Text = Money.ToString() + " Money!";
             label38.Text = GoedkoopPrice.ToString();
             label39.Text = ClickingSpeedPrice.ToString();
-            label40.Text = CPSSprice.ToString();
+            label40.Text = CPSprice.ToString();
             label41.Text = BankPrice.ToString();
             label1.Text = Money.ToString();
             label2.Text = CPS.ToString();
@@ -281,7 +272,7 @@ namespace Kaziklikker
                     button23.Enabled = true;
                 }
 
-                if (Money >= CPSSprice)
+                if (Money >= CPSprice)
                 {
                     button24.Enabled = true;
                 }
@@ -303,7 +294,7 @@ namespace Kaziklikker
                     button23.Enabled = false;
                 }
 
-                if (Money <= CPSSprice - 1)
+                if (Money <= CPSprice - 1)
                 {
                     button24.Enabled = false;
                 }
@@ -428,21 +419,25 @@ namespace Kaziklikker
             if (Money >= 10000)
             {
                 button13.Enabled = true;
+                pictureBox7.Enabled = true;
             }
 
             if (OpBank >= 10000)
             {
                 button12.Enabled = true;
+                pictureBox6.Enabled = true;
             }
 
             if (Money <= 9999)
             {
                 button13.Enabled = false;
+                pictureBox7.Enabled = false;
             }
 
             if (OpBank <= 9999)
             {
                 button12.Enabled = false;
+                pictureBox6.Enabled = false;
             }
 
             if (Money >= 5000)
@@ -484,6 +479,16 @@ namespace Kaziklikker
             {
                 button29.Enabled = false;
             }
+
+            if (OpBank <= -1)
+            {
+                label26.ForeColor = Color.Red;
+            }
+
+            if (OpBank >= 0)
+            {
+                label26.ForeColor = Color.Black;
+            }
             #endregion
 
 
@@ -504,6 +509,13 @@ namespace Kaziklikker
                 button34.Visible = true;
                 button35.Visible = true;
                 button36.Visible = true;
+                pictureBox8.Visible = true;
+                pictureBox9.Visible = true;
+                pictureBox10.Visible = true;
+                pictureBox11.Visible = true;
+                pictureBox12.Visible = true;
+                pictureBox13.Visible = true;
+                pictureBox14.Visible = true;
                 label54.Visible = true;
             }
 
@@ -559,17 +571,18 @@ namespace Kaziklikker
             }
 
             #endregion
+            this.KeyPreview = true;
         }
         #endregion
 
         #region bank
-        private void button13_Click(object sender, EventArgs e)
+        public void button13_Click(object sender, EventArgs e)
         {
             Money -= 10000;
             OpBank += 10000;
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        public void button12_Click(object sender, EventArgs e)
         {
             Money += 10000;
             OpBank -= 10000;
@@ -578,6 +591,18 @@ namespace Kaziklikker
         private void timer3_Tick(object sender, EventArgs e)
         {
             OpBank = OpBank / 10 * BankRente;
+        }
+
+        private void label25_Click(object sender, EventArgs e)
+        {
+            OpBank += Money;
+            Money = 0;
+        }
+
+        private void label25_DoubleClick(object sender, EventArgs e)
+        {
+            Money += OpBank;
+            OpBank = 0;
         }
         #endregion
 
@@ -624,6 +649,10 @@ namespace Kaziklikker
                 info.UniverseSpeed = UniverseSpeed;
                 info.TotalClicks = TotalClicks;
                 info.TickSpeed = TickSpeed;
+                info.GoedkoopPrice = GoedkoopPrice;
+                info.ClickingSpeedPrice = ClickingSpeedPrice;
+                info.CPSprice = CPSprice;
+                info.BankPrice = BankPrice;
                 SaveXML.SaveData(info, "kazidata.xml");
                 button14.Enabled = true;
             }
@@ -678,6 +707,10 @@ namespace Kaziklikker
                 UniverseAmount = info.UniverseAmount;
                 TotalClicks = info.TotalClicks;
                 TickSpeed = info.TickSpeed;
+                GoedkoopPrice = info.GoedkoopPrice;
+                ClickingSpeedPrice = info.ClickingSpeedPrice;
+                CPSprice = info.CPSprice;
+                BankPrice = info.BankPrice;
                 button15.Enabled = true;
             }
             else
@@ -809,11 +842,7 @@ namespace Kaziklikker
 
         #endregion
 
-        private void Kaziknop_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        #region fullscreen
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox2.Checked == true)
@@ -826,7 +855,9 @@ namespace Kaziklikker
                 this.WindowState = FormWindowState.Normal;
             }
         }
+        #endregion
 
+        #region sellmode
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox3.Checked == true)
@@ -842,77 +873,33 @@ namespace Kaziklikker
             {
                 SellMode = false;
             }
-           
+        
         }
+        #endregion
 
-        private void label33_Click(object sender, EventArgs e)
-        {
-            
-        }
-
+        #region map
         private void button21_Click(object sender, EventArgs e)
         {
             Process.Start(Pad);
         }
-
+        #endregion
+        
+        #region wiki
         private void button20_Click(object sender, EventArgs e)
         {
             Wiki wiki = new Wiki();
             wiki.Show();
         }
+        #endregion
 
-        private void button22_Click(object sender, EventArgs e)
-        {
-            Money -= GoedkoopPrice;
-            GoedkoopPrice *= 2;
-            if (ClickerPrice >= 6)
-            {
-                ClickerPrice -= 5;
-            }
-
-            if (FarmPrice >= 11)
-            {
-                FarmPrice -= 10;
-            }
-
-            if (MinePrice >= 26)
-            {
-                MinePrice -= 25;
-            }
-
-            if (VillagePrice > 51)
-            {
-                VillagePrice -= 50;
-            }
-
-            if (CityPrice >= 101)
-            {
-                CityPrice -= 100;
-            }
-
-            if (CountryPrice >= 251)
-            {
-                CountryPrice -= 250;
-            }
-
-            if (PlanetPrice >= 1001)
-            {
-                PlanetPrice -= 1000;
-            }
-
-            if (GalaxyPrice >= 2001)
-            {
-                GalaxyPrice -= 2000;
-            }
-           
-           
-        }
-
+        #region antispam
         private void timer4_Tick(object sender, EventArgs e)
         {
-
+            Spam -= 1;
         }
+        #endregion
 
+        #region shop
         private void button1_Click(object sender, EventArgs e)
         {
             if (SellMode == false)
@@ -1020,6 +1007,7 @@ namespace Kaziklikker
             {
                 CPS += CitySpeed;
                 Money -= CityPrice;
+                //1000ste regel woe-hoe!
                 CityPrice += 200;
                 CityAmount += 1;
                 if (CityAmount >= 500 && CityBuffer == 0)
@@ -1130,7 +1118,7 @@ namespace Kaziklikker
             if (TickSpeed >= 250)
             {
                 TickSpeed -= 1;
-                timer1.Interval = TickSpeed;
+                clock.Interval = TickSpeed;
             }
         }
 
@@ -1161,30 +1149,55 @@ namespace Kaziklikker
             ClickingAmount += 1;
         }
 
-        private void label25_Click(object sender, EventArgs e)
+        #endregion
+
+        #region upgrades
+        private void button22_Click(object sender, EventArgs e)
         {
-            OpBank += Money;
-            Money = 0;
+            Money -= GoedkoopPrice;
+            GoedkoopPrice *= 2;
+            if (ClickerPrice >= 6)
+            {
+                ClickerPrice -= 5;
+            }
+
+            if (FarmPrice >= 11)
+            {
+                FarmPrice -= 10;
+            }
+
+            if (MinePrice >= 26)
+            {
+                MinePrice -= 25;
+            }
+
+            if (VillagePrice > 51)
+            {
+                VillagePrice -= 50;
+            }
+
+            if (CityPrice >= 101)
+            {
+                CityPrice -= 100;
+            }
+
+            if (CountryPrice >= 251)
+            {
+                CountryPrice -= 250;
+            }
+
+            if (PlanetPrice >= 1001)
+            {
+                PlanetPrice -= 1000;
+            }
+
+            if (GalaxyPrice >= 2001)
+            {
+                GalaxyPrice -= 2000;
+            }
+
+
         }
-
-        private void label25_DoubleClick(object sender, EventArgs e)
-        {
-            Money += OpBank;
-            OpBank = 0;
-        }
-
-        private void button22_Click_2(object sender, EventArgs e)
-        {
-            Form2 form2 = new Form2();
-            form2.Show();
-        }
-
-        private void label38_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
 
         private void button23_Click(object sender, EventArgs e)
         {
@@ -1204,7 +1217,7 @@ namespace Kaziklikker
             PlanetSpeed += 50;
             GalaxySpeed += 70;
             UniverseSpeed += 100000;
-            CPSSprice *= 3;
+            CPSprice *= 3;
         }
 
         private void button25_Click(object sender, EventArgs e)
@@ -1213,10 +1226,12 @@ namespace Kaziklikker
             BankPrice *= 2;
             BankRente += 1;
         }
+        #endregion
 
+        #region loterij
         private void button26_Click(object sender, EventArgs e)
         {
-            switch(rd.Next(2))
+            switch(rd.Next(4))
             {
                 case 1:
                     MessageBox.Show("Je hebt gewonnen!!!!");
@@ -1231,7 +1246,7 @@ namespace Kaziklikker
 
         private void button27_Click(object sender, EventArgs e)
         {
-            switch(rd.Next(10))
+            switch(rd.Next(13))
             {
                 case 1:
                     MessageBox.Show("Je hebt gewonnen!!!!");
@@ -1246,7 +1261,7 @@ namespace Kaziklikker
 
         private void button28_Click(object sender, EventArgs e)
         {
-            switch(rd.Next(23))
+            switch(rd.Next(28))
             {
                 case 0:
                     MessageBox.Show("Je hebt gewonnen!!!!");
@@ -1289,23 +1304,12 @@ namespace Kaziklikker
             }
             else if (dialogResult == DialogResult.No)
             {
-
+                MessageBox.Show("Haha watje!");
             }
         }
+        #endregion
 
-        private void button30_Click(object sender, EventArgs e)
-        {
-            if (Money >= 50)
-            {
-
-            }
-
-            if (Money <= 49)
-            {
-                MessageBox.Show("niet genoeg geld!");
-            }
-        }
-
+        #region hackm8
         private void button30_Click_1(object sender, EventArgs e)
         {
             ClickerPrice = 1;
@@ -1350,6 +1354,156 @@ namespace Kaziklikker
         {
             CPS += 1000000000;
         }
+
+        #endregion
+
+        #region kleurtjes
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.D1 && Spam <= 100)
+            {
+                this.Opacity = .10;
+                Spam++;
+            }
+
+            if (e.KeyCode == Keys.D2 && Spam <= 100)
+            {
+                this.Opacity = .20;
+                Spam++;
+            }
+
+            if (e.KeyCode == Keys.D3 && Spam <= 100)
+            {
+                this.Opacity = .30;
+                Spam++;
+            }
+
+            if (e.KeyCode == Keys.D4 && Spam <= 100)
+            {
+                this.Opacity = .40;
+                Spam++;
+            }
+
+            if (e.KeyCode == Keys.D5 && Spam <= 100)
+            {
+                this.Opacity = .50;
+                Spam++;
+            }
+
+            if (e.KeyCode == Keys.D6 && Spam <= 100)
+            {
+                this.Opacity = .60;
+                Spam++;
+            }
+
+            if (e.KeyCode == Keys.D7 && Spam <= 100)
+            {
+                this.Opacity = .70;
+                Spam++;
+            }
+
+            if (e.KeyCode == Keys.D8 && Spam <= 100)
+            {
+                this.Opacity = .80;
+                Spam++;
+            }
+
+            if (e.KeyCode == Keys.D9 && Spam <= 100)
+            {
+                this.Opacity = .90;
+                Spam++;
+            }
+
+            if (e.KeyCode == Keys.D0 && Spam <= 100)
+            {
+                this.Opacity = 100;
+                Spam++;
+            }
+
+            if (e.KeyCode == Keys.D && Spam <= 100)
+            {
+                this.BackColor = Color.LightCyan;
+                Spam++;
+            }
+
+            if (e.KeyCode == Keys.Q && Spam <= 100)
+            {
+                this.BackColor = Color.Red;
+                Spam++;
+            }
+
+            if (e.KeyCode == Keys.W && Spam <= 100)
+            {
+                this.BackColor = Color.Orange;
+                Spam++;
+            }
+
+            if (e.KeyCode == Keys.E && Spam <= 100)
+            {
+                this.BackColor = Color.Yellow;
+                Spam++;
+            }
+
+            if (e.KeyCode == Keys.R && Spam <= 100)
+            {
+                this.BackColor = Color.Green;
+                Spam++;
+            }
+
+            if (e.KeyCode == Keys.T && Spam <= 100)
+            {
+                this.BackColor = Color.Blue;
+                Spam++;
+            }
+
+            if (e.KeyCode == Keys.Y && Spam <= 100)
+            {
+                this.BackColor = Color.Magenta;
+                Spam++;
+            }
+
+            if (e.KeyCode == Keys.F && Spam <= 100)
+            {
+                this.BackColor = SystemColors.Control;
+                Spam++;
+            }
+
+            if (e.KeyCode == Keys.G && Spam <= 100)
+            {
+                this.BackColor = Color.Teal;
+                Spam++;
+            }
+
+            if(Spam >= 80){ MessageBox.Show("Rustig aan!");}}
+#endregion
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            this.KeyPreview = false;
+        }
+
+        private void randomEvents_Tick(object sender, EventArgs e)
+        {
+            switch (rd.Next(10))
+            {
+                case 0:                  
+                   if (OpBank >= 10)
+                   {
+                       OpBank = OpBank / BankRente * -2;
+                   }
+
+                   if (OpBank <= -1)
+                   {
+                       MessageBox.Show("Oh nee je bankaccount is gehackt! je hebt nu " + OpBank + " Euro schulden!");
+                   }
+
+                   if (OpBank >= 0)
+                   {
+                       MessageBox.Show("Oh nee je bankaccount is gehackt! je hebt nu nog maar " + OpBank + " Euro!");
+                   }
+                   break;
+            }
+        }
     }
 }
-//1000ste regel woe-hoe!
