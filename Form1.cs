@@ -687,7 +687,7 @@ namespace Kaziklikker
                 CountryPrice = info.CountryPrice;
                 PlanetPrice = info.PlanetPrice;
                 GalaxyPrice = info.GalaxyPrice;
-                ClickerAmount = info.CountryAmount;
+                ClickerAmount = info.ClickerAmount;
                 FarmAmount = info.FarmAmount;
                 MineAmount = info.MineAmount;
                 VillageAmount = info.VillageAmount;
