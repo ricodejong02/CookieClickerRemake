@@ -55,7 +55,6 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
@@ -71,6 +70,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cheat.cs" />
     <Compile Include="Credits.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -78,27 +78,27 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Information.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SaveXML.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Sounds.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sounds.resx</DependentUpon>
+    </Compile>
     <Compile Include="Wiki.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Wiki.Designer.cs">
       <DependentUpon>Wiki.cs</DependentUpon>
     </Compile>
+    <Compile Include="WikiRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WikiRes.resx</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -110,8 +110,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sounds.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Sounds.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Wiki.resx">
       <DependentUpon>Wiki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WikiRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WikiRes.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -124,15 +132,91 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Cursor.ico" />
-    <Content Include="favicon %283%29.ico" />
+    <None Include="Resources\Dice.png" />
+    <None Include="Resources\XPClockRed.png" />
+    <None Include="Resources\XPClockBlue.png" />
+    <None Include="Resources\ExperienceRed.png" />
+    <None Include="Resources\ExperienceBlue.png" />
+    <None Include="Resources\WikiPurple.png" />
+    <None Include="Resources\WikiGreen.png" />
+    <None Include="Resources\WikiBlue.png" />
+    <None Include="Resources\FireWall.png" />
+    <None Include="Resources\KaziHellMusic.wav" />
+    <None Include="Resources\ActualCursor.cur" />
+    <EmbeddedResource Include="ActualCursor.cur" />
+    <Content Include="Resources\Achievement_Cave1.png" />
+    <Content Include="Resources\Achievement_Cave10.png" />
+    <Content Include="Resources\Achievement_Cave100.png" />
+    <Content Include="Resources\Achievement_Cave1000.png" />
+    <Content Include="Resources\Achievement_Cave1337.png" />
+    <Content Include="Resources\Achievement_Clicker1.png" />
+    <Content Include="Resources\Achievement_Clicker10.png" />
+    <Content Include="Resources\Achievement_Clicker100.png" />
+    <Content Include="Resources\Achievement_Clicker1000.png" />
+    <Content Include="Resources\Achievement_Clicker1337.png" />
+    <Content Include="Resources\Achievement_Farm1.png" />
+    <Content Include="Resources\Achievement_Farm10.png" />
+    <Content Include="Resources\Achievement_Farm100.png" />
+    <Content Include="Resources\Achievement_Farm1000.png" />
+    <Content Include="Resources\Achievement_Farm1337.png" />
+    <Content Include="Resources\Achievement_Null1.png" />
+    <Content Include="Resources\Achievement_Null10.png" />
+    <Content Include="Resources\Achievement_Null100.png" />
+    <Content Include="Resources\Achievement_Null1000.png" />
+    <Content Include="Resources\Achievement_Null1337.png" />
+    <Content Include="Resources\Achievement_Unlock.wav" />
+    <Content Include="Resources\Achievement_Village1.png" />
+    <Content Include="Resources\Achievement_Village10.png" />
+    <Content Include="Resources\Achievement_Village100.png" />
+    <Content Include="Resources\Achievement_Village1000.png" />
+    <Content Include="Resources\Achievement_Village1337.png" />
+    <None Include="Resources\XPConvert.png" />
+    <None Include="Resources\XPClock.png" />
+    <None Include="Resources\XPMine.png" />
+    <None Include="Resources\Experience.png" />
+    <None Include="Resources\WikiMenu.png" />
+    <None Include="Resources\Achievement_Red.png" />
+    <None Include="Resources\Achievement_Orange.png" />
+    <None Include="Resources\Achievement_Blue.png" />
+    <None Include="Resources\Achievement_Blank.png" />
+    <None Include="bin\Debug\Money_God.png" />
     <Content Include="Icon.ico" />
+    <None Include="Resources\KaziMusic.wav" />
+    <None Include="Resources\Click_5.wav" />
+    <None Include="Resources\Click_4.wav" />
+    <None Include="Resources\Click_3.wav" />
+    <None Include="Resources\Click_2.wav" />
+    <None Include="Resources\Click_1.wav" />
+    <None Include="Resources\Upgrades.png" />
+    <None Include="Resources\Shop1.png" />
+    <None Include="Resources\Options.png" />
+    <None Include="Resources\Lotery.png" />
+    <None Include="Resources\Kaziklikker.png" />
+    <None Include="Resources\Hackm8.png" />
+    <None Include="Resources\Bank1.png" />
+    <None Include="Resources\Wallet.png" />
+    <None Include="Resources\Safe.png" />
+    <None Include="Resources\Richwallet.png" />
+    <None Include="Resources\Headphones_nitroon.png" />
+    <None Include="Resources\Headphones_nitrooff.png" />
+    <None Include="Resources\Headphones_nitro.png" />
+    <None Include="Resources\Headphones_magmaon.png" />
+    <None Include="Resources\Headphones_magmaoff.png" />
+    <None Include="Resources\Headphones_magma.png" />
+    <None Include="Resources\Headphones_aquaon.png" />
+    <None Include="Resources\Headphones_aquaoff.png" />
+    <None Include="Resources\Headphones_aqua.png" />
+    <None Include="Resources\Card.png" />
+    <None Include="Resources\50cent.png" />
+    <None Include="Resources\2euro.png" />
+    <None Include="Resources\1cent.png" />
     <None Include="Resources\SmallMoney3.png" />
     <None Include="Resources\SmallMoney2.png" />
-    <None Include="Resources\SmallMoney1.png" />
     <None Include="Resources\Plus.png" />
     <None Include="Resources\Minus.png" />
     <None Include="Resources\Banknew.png" />

@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="bank" xml:space="preserve">
+    <value>The bank is a special feature in Kaziklikker, you can find the bank in the bottom-left of your screen. You can click the buttons 'deposit' and 'withdraw' to deposit and withdraw your money from the bank.
+
+Every time the counter hits 0, your money is divided by ten and then multiplied by your interest rate.
+
+Some examples:
+1000 ÷ 10 × 11 = 1100
+5000 ÷ 10 × 12 = 6000
+
+To raise your interest rate, you can buy the 'bank' upgrade. This is further explained on the upgrades page.
+
+Your bank account might get hacked, to overcome this, buy the 'Firewall' upgrade in the upgrades menu.
+
+You can also choose to invest your money when you do this you can't withdraw your money for some time. Whilst investing your money can fluctuate a lot, usually in a positive way, but not always.</value>
+  </data>
+  <data name="basics" xml:space="preserve">
+    <value>Welcome to Kaziklikker, on this page, you will learn the basics of the game.
+
+The money you currently have is shown on the top-left corner of your the game window. To gain money, you have to click on the money in the middle of your screen. Once you clicked enough and made yourself some money, you can buy a 'clicker'. When you bought the clicker, your CPS counter goes up by 1. The CPS is added to your money every second*.
+
+*generally speaking</value>
+  </data>
+  <data name="changelog" xml:space="preserve">
+    <value>Upcoming features (3.3)
+-Achievements
+-Better cheats
+-Secret stuff
+
+Kaziklikker version 3.2.1 (15-02-2016)
+-Removed the sell mode
+*improvements
+
+Kaziklikker version 3.2 (15-02-2016)
++Added an FPS counter
++Added the experience system
++Added XP-Shop
++Added the firewall upgrade
++Added color to the shop
++Added a 'clean' mode
+*Reworked the saving system
+*Reworked the bank
+*Readded the wiki
+-Removed 123gijs from credits, due to lack of support</value>
+  </data>
+  <data name="cheat" xml:space="preserve">
+    <value>Cheats in Kaziklikker are explained on this page. You gain cheat codes by buying something in the shop 500 times. But, when you cheat, your game won't get saved.</value>
+  </data>
+  <data name="credits" xml:space="preserve">
+    <value>Kaziklikker, a game made by Rico de Jong.
+
+Testers: Axes Denite and melle.ellem.
+
+Programs used: Microsoft Visual Studio 2015 Community edition, Paint.net and Audacity.</value>
+  </data>
+  <data name="experience" xml:space="preserve">
+    <value>On this page, we'll talk about the experience system of Kaziklikkker. You can see how much experience you currently have by looking at the top of your screen. You gain XP by completing certain actions. There are two things you can do with experience: you can save it to buy things from the XP-Shop, or you can convert it to money. You can see the course next to the 'convert' button.</value>
+  </data>
+  <data name="home" xml:space="preserve">
+    <value>Welcome to the wiki, the place to learn! to navigate to a page, just click on one of the pages on the left.</value>
+  </data>
+  <data name="largenuber" xml:space="preserve">
+    <value>In Kaziklikker, particularly the late game, numbers tend to be very big. In order to still make them readable, the numbers are shortened. Here is a list of all the abbreviations used.
+
+K (thousands)
+1K = 1000
+
+M (millions)
+1M = 1000K = 1000000
+
+B (billions)
+1B = 1000M = 1000000K = 1000000000
+
+T (trillions)
+1T = 1000B = 1000000M = 1000000000K = 1000000000000
+
+Qa (quadrillions)
+1Qa = 1000T = 1000000B = 1000000000M = 1000000000000K = 1000000000000000
+
+Qi (quintillions)
+1Qi = 1000Qa = 1000000T = 1000000000B = 1000000000000M = 1000000000000000K = 1000000000000000000
+
+because kaziklikker is a 64-bit game, the max number allowed is 9.2Qi after this point, the 9.2Qi turn into -9.2Qi.</value>
+  </data>
+  <data name="lottery" xml:space="preserve">
+    <value>The lottery can be accessed on the right side of the screen.  The jackpot and price of a ticket are shown next to the buttons. When you buy a ticket, the game randomly decides if you've won. The most expensive lottery 'exprice' has a twist to it, there is a ten percent chance that your game will be reset,  this can't be undone.</value>
+  </data>
+  <data name="shop" xml:space="preserve">
+    <value>The shop in Kaziklikker is located on the right-side of your screen. Every item available in Kaziklikker is listed there. The number left to the button shows the amount of an item, the number on the right shows the price of the item. When a button is gray, it means you don't have enough money, to buy that item. Here is an overview of every item in the shop.
+
+Name: Clicker
+Default price: 25
+Default speed: 1
+
+Name: Farm
+Default price: 125
+Default speed: 3
+
+Name: Mine
+Default price: 250
+Default speed: 5
+
+Name: Village
+Default price: 750
+Default speed: 10
+
+Name: City
+Default price: 1500
+Default speed: 20
+
+Name: Country
+Default price: 2500
+Default speed: 35
+
+Name: Planet
+Default price: 12500
+Default speed: 50
+
+Name: Galaxy
+Default price: 25000
+Default speed: 75
+
+Name: Universe
+Default price: 25000000
+Default speed: 100000
+
+Every time, you but a universe the tick speed goes down by one, which means that a second goes faster, so you gain money faster. This can be done until you reach 0.25 seconds.
+
+There's also an XP-Shop. Things in the XP-Shop are obviously bought with experience. Here is an overview of all the items in the XP-Shop.
+
+Name: God
+Default price: 250000000
+Default speed: -
+
+When you buy a god, your CPS gets multiplied by ten.
+
+Name: Power click
+Default price: 25
+Default speed: -
+
+Buying the power click doubles your clicking speed. So after buying this item, clicking on the money is twice as efficient.
+
+Name: XP-Mine
+Default price: 10000
+Default speed: 5
+
+When you buy an XP-Mine, your experience per second goes up.</value>
+  </data>
+  <data name="upgrades" xml:space="preserve">
+    <value>As well as a shop, there is also an upgrades shop in Kaziklikker. In this shop, however, you can buy upgrades. On this page, you can find an explanation of all upgrades available in this shop.
+
+The 'cheap' upgrade makes everything cheaper. For example, a farm costs 150 before the upgrade, and only costs 125 after the upgrade.
+
+The 'clicking speed' upgrade adds ten to your original clicking speed. You might think to yourself that that's not a lot, but after it doubles again, and  again. It really makes a difference.
+
+The 'CPS' upgrades increases the CPS of every single item in the shop. An items speed might be 5 before the upgrade, but will be 6 after the upgrade.
+
+The 'bank' upgrade increments your interest rate by 1. Why this is useful is explained on the 'bank' page on the wiki.
+
+Last, but not least is the 'firewall'. This upgrade prevents your bank account from ever getting hacked again.</value>
+  </data>
+</root>

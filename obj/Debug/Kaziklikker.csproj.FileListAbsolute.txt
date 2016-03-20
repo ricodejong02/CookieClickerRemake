@@ -9,3 +9,52 @@ c:\users\rico\documents\visual studio 2013\Projects\Kaziklikker\Kaziklikker\obj\
 C:\Users\Rico\documents\visual studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.csprojResolveAssemblyReference.cache
 C:\Users\Rico\documents\visual studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Wiki.resources
 C:\Users\Rico\Documents\Visual Studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Form2.resources
+C:\Users\Rico\documents\visual studio 2013\Projects\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Form3.resources
+C:\Users\userr\OneDrive\Programeren\Kaziklikker\Kaziklikker\bin\Debug\Kaziklikker.exe.config
+C:\Users\userr\OneDrive\Programeren\Kaziklikker\Kaziklikker\bin\Debug\Kaziklikker.exe
+C:\Users\userr\OneDrive\Programeren\Kaziklikker\Kaziklikker\bin\Debug\Kaziklikker.pdb
+C:\Users\userr\OneDrive\Programeren\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.csprojResolveAssemblyReference.cache
+C:\Users\userr\OneDrive\Programeren\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Form1.resources
+C:\Users\userr\OneDrive\Programeren\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Form2.resources
+C:\Users\userr\OneDrive\Programeren\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Form3.resources
+C:\Users\userr\OneDrive\Programeren\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Properties.Resources.resources
+C:\Users\userr\OneDrive\Programeren\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Wiki.resources
+C:\Users\userr\OneDrive\Programeren\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.csproj.GenerateResource.Cache
+C:\Users\userr\OneDrive\Programeren\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.exe
+C:\Users\userr\OneDrive\Programeren\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.pdb
+C:\Code\C#\Kaziklikker\Kaziklikker\bin\Debug\Kaziklikker.exe.config
+C:\Code\C#\Kaziklikker\Kaziklikker\bin\Debug\Kaziklikker.exe
+C:\Code\C#\Kaziklikker\Kaziklikker\bin\Debug\Kaziklikker.pdb
+C:\Code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.csprojResolveAssemblyReference.cache
+C:\Code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Form1.resources
+C:\Code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Form2.resources
+C:\Code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Form3.resources
+C:\Code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Properties.Resources.resources
+C:\Code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Wiki.resources
+C:\Code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.csproj.GenerateResource.Cache
+C:\Code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.exe
+C:\Code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.pdb
+C:\Users\userr\Desktop\Nieuwe map\HDDPREP\rico\code\C#\Kaziklikker\Kaziklikker\bin\Debug\Kaziklikker.exe.config
+C:\Users\userr\Desktop\Nieuwe map\HDDPREP\rico\code\C#\Kaziklikker\Kaziklikker\bin\Debug\Kaziklikker.exe
+C:\Users\userr\Desktop\Nieuwe map\HDDPREP\rico\code\C#\Kaziklikker\Kaziklikker\bin\Debug\Kaziklikker.pdb
+C:\Users\userr\Desktop\Nieuwe map\HDDPREP\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.csprojResolveAssemblyReference.cache
+C:\Users\userr\Desktop\Nieuwe map\HDDPREP\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Form1.resources
+C:\Users\userr\Desktop\Nieuwe map\HDDPREP\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Properties.Resources.resources
+C:\Users\userr\Desktop\Nieuwe map\HDDPREP\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Sounds.resources
+C:\Users\userr\Desktop\Nieuwe map\HDDPREP\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Wiki.resources
+C:\Users\userr\Desktop\Nieuwe map\HDDPREP\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.WikiRes.resources
+C:\Users\userr\Desktop\Nieuwe map\HDDPREP\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.csproj.GenerateResource.Cache
+C:\Users\userr\Desktop\Nieuwe map\HDDPREP\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.exe
+C:\Users\userr\Desktop\Nieuwe map\HDDPREP\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.pdb
+C:\Users\userr\Desktop\rico\code\C#\Kaziklikker\Kaziklikker\bin\Debug\Kaziklikker.exe.config
+C:\Users\userr\Desktop\rico\code\C#\Kaziklikker\Kaziklikker\bin\Debug\Kaziklikker.exe
+C:\Users\userr\Desktop\rico\code\C#\Kaziklikker\Kaziklikker\bin\Debug\Kaziklikker.pdb
+C:\Users\userr\Desktop\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.csprojResolveAssemblyReference.cache
+C:\Users\userr\Desktop\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Form1.resources
+C:\Users\userr\Desktop\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Properties.Resources.resources
+C:\Users\userr\Desktop\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Sounds.resources
+C:\Users\userr\Desktop\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.Wiki.resources
+C:\Users\userr\Desktop\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.WikiRes.resources
+C:\Users\userr\Desktop\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.csproj.GenerateResource.Cache
+C:\Users\userr\Desktop\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.exe
+C:\Users\userr\Desktop\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.pdb

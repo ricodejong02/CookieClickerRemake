@@ -1,7 +1,168 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Kaziklikker.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Money" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="CPS" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ClickerPrice" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">25</Value>
+    </Setting>
+    <Setting Name="FarmPrice" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">125</Value>
+    </Setting>
+    <Setting Name="MinePrice" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">250</Value>
+    </Setting>
+    <Setting Name="VillagePrice" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">750</Value>
+    </Setting>
+    <Setting Name="CityPrice" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">1500</Value>
+    </Setting>
+    <Setting Name="CountryPrice" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">2500</Value>
+    </Setting>
+    <Setting Name="PlanetPrice" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">12500</Value>
+    </Setting>
+    <Setting Name="GalaxyPrice" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">25000</Value>
+    </Setting>
+    <Setting Name="ClickingPrice" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">250</Value>
+    </Setting>
+    <Setting Name="ClickingSpeed" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="ClickerAmount" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="FarmAmount" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="MineAmount" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="VillageAmount" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CityAmount" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CountryAmount" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PlanetAmount" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="GalaxyAmount" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ClickingAmount" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="BankRente" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">11</Value>
+    </Setting>
+    <Setting Name="ClickerSpeed" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="FarmSpeed" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="MineSpeed" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="VillageSpeed" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="CitySpeed" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="CountrySpeed" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">35</Value>
+    </Setting>
+    <Setting Name="PlanetSpeed" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="GalaxySpeed" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">75</Value>
+    </Setting>
+    <Setting Name="OpBank" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="UniversePrice" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">25000000</Value>
+    </Setting>
+    <Setting Name="UniverseAmount" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="UniverseSpeed" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">100000</Value>
+    </Setting>
+    <Setting Name="GodPrice" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">100000000</Value>
+    </Setting>
+    <Setting Name="GodAmount" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="TotalClicks" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="GoedkoopPrice" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="ClickingSpeedPrice" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">100000</Value>
+    </Setting>
+    <Setting Name="CPSPrice" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">100000</Value>
+    </Setting>
+    <Setting Name="BankPrice" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">100000</Value>
+    </Setting>
+    <Setting Name="HasWiki" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="XP" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="XPToMoney" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.15</Value>
+    </Setting>
+    <Setting Name="XPCPS" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="XPMinePrice" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="XPMineAmount" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="XPMineSpeed" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="TickSpeed" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="FireWallPrice" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">500000</Value>
+    </Setting>
+    <Setting Name="HasFireWall" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Ticks" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="BackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">LightCyan</Value>
+    </Setting>
+    <Setting Name="AccentColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">DarkTurquoise</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

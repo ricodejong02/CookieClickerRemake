@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Kaziklikker {
 
-namespace Kaziklikker
-{
-    public class Information
-    {
+    public class Information {
         private long money;
         private long cps;
         private long clickerPrice;
@@ -43,207 +36,172 @@ namespace Kaziklikker
         private long bankPrice;
         private int tickSpeed;
 
-
-        public long GoedkoopPrice
-        {
+        public long GoedkoopPrice {
             get { return goedkoopPrice; }
             set { goedkoopPrice = value; }
         }
 
-        public long ClickingSpeedPrice
-        {
+        public long ClickingSpeedPrice {
             get { return clickingSpeedPrice; }
             set { clickingSpeedPrice = value; }
         }
 
-        public long CPSprice
-        {
+        public long CPSprice {
             get { return cpsPrice; }
             set { cpsPrice = value; }
         }
 
-        public long BankPrice
-        {
+        public long BankPrice {
             get { return bankPrice; }
             set { bankPrice = value; }
         }
 
-        public int TickSpeed
-        {
+        public int TickSpeed {
             get { return tickSpeed; }
             set { tickSpeed = value; }
         }
-        
-        public long Money
-        {
+
+        public long Money {
             get { return money; }
-            set { money = value;  }
+            set { money = value; }
         }
 
-        public long CPS
-        {
+        public long CPS {
             get { return cps; }
-            set { cps = value;  }
+            set { cps = value; }
         }
 
-        public long ClickerPrice
-        {
+        public long ClickerPrice {
             get { return clickerPrice; }
             set { clickerPrice = value; }
         }
 
-        public long FarmPrice
-        {
+        public long FarmPrice {
             get { return farmPrice; }
             set { farmPrice = value; }
         }
 
-        public long MinePrice
-        {
+        public long MinePrice {
             get { return minePrice; }
             set { minePrice = value; }
         }
 
-        public long VillagePrice
-        {
+        public long VillagePrice {
             get { return villagePrice; }
             set { villagePrice = value; }
         }
 
-        public long CityPrice
-        {
+        public long CityPrice {
             get { return cityPrice; }
             set { cityPrice = value; }
         }
 
-        public long CountryPrice
-        {
+        public long CountryPrice {
             get { return countryPrice; }
             set { countryPrice = value; }
         }
 
-        public long PlanetPrice
-        {
+        public long PlanetPrice {
             get { return planetPrice; }
             set { planetPrice = value; }
         }
 
-        public long GalaxyPrice
-        {
+        public long GalaxyPrice {
             get { return galaxyPrice; }
             set { galaxyPrice = value; }
         }
 
-        public long ClickerAmount
-        {
+        public long ClickerAmount {
             get { return clickerAmount; }
             set { clickerAmount = value; }
         }
 
-        public long FarmAmount
-        {
+        public long FarmAmount {
             get { return farmAmount; }
             set { farmAmount = value; }
         }
 
-        public long MineAmount
-        {
+        public long MineAmount {
             get { return mineAmount; }
             set { mineAmount = value; }
         }
 
-        public long VillageAmount
-        {
+        public long VillageAmount {
             get { return villageAmount; }
             set { villageAmount = value; }
         }
 
-        public long CityAmount
-        {
+        public long CityAmount {
             get { return cityAmount; }
             set { cityAmount = value; }
         }
 
-        public long CountryAmount
-        {
+        public long CountryAmount {
             get { return countryAmount; }
             set { countryAmount = value; }
         }
 
-        public long PlanetAmount
-        {
+        public long PlanetAmount {
             get { return planetAmount; }
             set { planetAmount = value; }
         }
 
-        public long GalaxyAmount
-        {
+        public long GalaxyAmount {
             get { return galaxyAmount; }
             set { galaxyAmount = value; }
         }
 
-        public long ClickingAmount
-        {
+        public long ClickingAmount {
             get { return clickingAmount; }
             set { clickingAmount = value; }
         }
 
-        public long ClickingSpeed
-        {
+        public long ClickingSpeed {
             get { return clickingSpeed; }
             set { clickingSpeed = value; }
         }
 
-        public long ClickingPrice
-        {
+        public long ClickingPrice {
             get { return clickingPrice; }
             set { clickingPrice = value; }
         }
 
-        public long BankRente
-        {
+        public long BankRente {
             get { return bankRente; }
             set { bankRente = value; }
         }
 
-        public long OpBank
-        {
+        public long OpBank {
             get { return opBank; }
             set { opBank = value; }
         }
 
-        public long UniverseSpeed
-        {
+        public long UniverseSpeed {
             get { return universeSpeed; }
             set { universeSpeed = value; }
         }
 
-        public long UniverseAmount
-        {
+        public long UniverseAmount {
             get { return universeAmount; }
             set { universeAmount = value; }
         }
 
-        public long UniversePrice
-        {
+        public long UniversePrice {
             get { return universePrice; }
             set { universePrice = value; }
         }
 
-        public long GodAmount
-        {
+        public long GodAmount {
             get { return godAmount; }
             set { godAmount = value; }
         }
 
-        public long GodPrice
-        {
+        public long GodPrice {
             get { return godPrice; }
             set { godPrice = value; }
         }
 
-        public long TotalClicks
-        {
+        public long TotalClicks {
             get { return totalClicks; }
             set { totalClicks = value; }
         }
