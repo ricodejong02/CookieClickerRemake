@@ -27,6 +27,7 @@
             this.navigationWindow = new System.Windows.Forms.ListBox();
             this.textBox = new System.Windows.Forms.RichTextBox();
             this.titleBox = new System.Windows.Forms.TextBox();
+            this.Level = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // navigationWindow
@@ -74,9 +75,20 @@
             this.titleBox.Location = new System.Drawing.Point(164, 12);
             this.titleBox.Name = "titleBox";
             this.titleBox.ReadOnly = true;
-            this.titleBox.Size = new System.Drawing.Size(329, 31);
+            this.titleBox.Size = new System.Drawing.Size(277, 31);
             this.titleBox.TabIndex = 2;
             this.titleBox.Text = "Home";
+            // 
+            // Level
+            // 
+            this.Level.AutoSize = true;
+            this.Level.BackColor = System.Drawing.Color.White;
+            this.Level.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Level.Location = new System.Drawing.Point(447, 16);
+            this.Level.Name = "Level";
+            this.Level.Size = new System.Drawing.Size(16, 20);
+            this.Level.TabIndex = 3;
+            this.Level.Text = "*";
             // 
             // Wiki
             // 
@@ -85,6 +97,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImage = global::Kaziklikker.Properties.Resources.WikiMenu;
             this.ClientSize = new System.Drawing.Size(508, 448);
+            this.Controls.Add(this.Level);
             this.Controls.Add(this.titleBox);
             this.Controls.Add(this.textBox);
             this.Controls.Add(this.navigationWindow);
@@ -104,5 +117,6 @@
         private System.Windows.Forms.ListBox navigationWindow;
         private System.Windows.Forms.RichTextBox textBox;
         private System.Windows.Forms.TextBox titleBox;
+        private System.Windows.Forms.Label Level;
     }
 }

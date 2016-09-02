@@ -108,7 +108,6 @@
             this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -151,9 +150,7 @@
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.second = new System.Windows.Forms.Timer(this.components);
             this.Kaziknop = new System.Windows.Forms.Button();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -166,7 +163,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -639,9 +635,9 @@
             this.label46.AutoSize = true;
             this.label46.Location = new System.Drawing.Point(17, 134);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(31, 13);
+            this.label46.Size = new System.Drawing.Size(20, 13);
             this.label46.TabIndex = 66;
-            this.label46.Text = "5000";
+            this.label46.Text = "5K";
             // 
             // label47
             // 
@@ -649,9 +645,9 @@
             this.label47.AutoSize = true;
             this.label47.Location = new System.Drawing.Point(17, 158);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(43, 13);
+            this.label47.Size = new System.Drawing.Size(32, 13);
             this.label47.TabIndex = 66;
-            this.label47.Text = "100000";
+            this.label47.Text = "100K";
             // 
             // label48
             // 
@@ -659,19 +655,20 @@
             this.label48.AutoSize = true;
             this.label48.Location = new System.Drawing.Point(17, 187);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(43, 13);
+            this.label48.Size = new System.Drawing.Size(20, 13);
             this.label48.TabIndex = 66;
-            this.label48.Text = "1 Billion";
+            this.label48.Text = "1B";
             // 
             // label49
             // 
             this.label49.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label49.AutoSize = true;
+            this.label49.ForeColor = System.Drawing.Color.Red;
             this.label49.Location = new System.Drawing.Point(17, 216);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(49, 13);
+            this.label49.Size = new System.Drawing.Size(26, 13);
             this.label49.TabIndex = 66;
-            this.label49.Text = "25 Billion";
+            this.label49.Text = "25B";
             // 
             // label50
             // 
@@ -679,9 +676,9 @@
             this.label50.AutoSize = true;
             this.label50.Location = new System.Drawing.Point(71, 134);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(37, 13);
+            this.label50.Size = new System.Drawing.Size(26, 13);
             this.label50.TabIndex = 66;
-            this.label50.Text = "10000";
+            this.label50.Text = "10K";
             // 
             // label51
             // 
@@ -689,9 +686,9 @@
             this.label51.AutoSize = true;
             this.label51.Location = new System.Drawing.Point(71, 158);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(49, 13);
+            this.label51.Size = new System.Drawing.Size(22, 13);
             this.label51.TabIndex = 66;
-            this.label51.Text = "1000000";
+            this.label51.Text = "1M";
             // 
             // label52
             // 
@@ -699,19 +696,20 @@
             this.label52.AutoSize = true;
             this.label52.Location = new System.Drawing.Point(71, 187);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(49, 13);
+            this.label52.Size = new System.Drawing.Size(26, 13);
             this.label52.TabIndex = 66;
-            this.label52.Text = "25 Billion";
+            this.label52.Text = "25B";
             // 
             // label53
             // 
             this.label53.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label53.AutoSize = true;
+            this.label53.ForeColor = System.Drawing.Color.Red;
             this.label53.Location = new System.Drawing.Point(71, 216);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(46, 13);
+            this.label53.Size = new System.Drawing.Size(20, 13);
             this.label53.TabIndex = 66;
-            this.label53.Text = "1 Trillion";
+            this.label53.Text = "1T";
             // 
             // label55
             // 
@@ -918,7 +916,6 @@
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.DarkTurquoise;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.label34);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox7);
@@ -975,16 +972,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(203, 590);
             this.panel1.TabIndex = 92;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::Kaziklikker.Properties.Resources.Dice;
-            this.pictureBox8.Location = new System.Drawing.Point(178, -1);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox8.TabIndex = 97;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // button1
             // 
@@ -1187,7 +1174,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightCyan;
-            this.panel2.Controls.Add(this.pictureBox9);
             this.panel2.Controls.Add(this.label23);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label2);
@@ -1529,6 +1515,7 @@
             this.button29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button29.FlatAppearance.BorderSize = 0;
             this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button29.ForeColor = System.Drawing.Color.Red;
             this.button29.Image = global::Kaziklikker.Properties.Resources.SmallMoney3;
             this.button29.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button29.Location = new System.Drawing.Point(141, 211);
@@ -1605,16 +1592,6 @@
             this.Kaziknop.UseVisualStyleBackColor = true;
             this.Kaziknop.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Kaziknop_MouseClick);
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::Kaziklikker.Properties.Resources.Dice;
-            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox9.TabIndex = 91;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1638,7 +1615,6 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -1654,7 +1630,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1782,7 +1757,5 @@
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Timer second;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }

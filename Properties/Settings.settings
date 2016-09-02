@@ -125,9 +125,6 @@
     <Setting Name="BankPrice" Type="System.Int64" Scope="User">
       <Value Profile="(Default)">100000</Value>
     </Setting>
-    <Setting Name="HasWiki" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
     <Setting Name="XP" Type="System.Int64" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>

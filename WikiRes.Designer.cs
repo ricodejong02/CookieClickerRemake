@@ -98,6 +98,11 @@ namespace Kaziklikker {
         ///-Better cheats
         ///-Secret stuff
         ///
+        ///Kaziklikker version 3.2.2 (02-09-2016)
+        ///-Random colours
+        ///*Wiki is now free
+        ///*improvements
+        ///
         ///Kaziklikker version 3.2.1 (15-02-2016)
         ///-Removed the sell mode
         ///*improvements
@@ -107,12 +112,12 @@ namespace Kaziklikker {
         ///+Added the experience system
         ///+Added XP-Shop
         ///+Added the firewall upgrade
-        ///+Added color to the shop
+        ///+Added colour to the shop
         ///+Added a &apos;clean&apos; mode
+        ///+Added changelog
         ///*Reworked the saving system
         ///*Reworked the bank
-        ///*Readded the wiki
-        ///-Removed 123gijs from credits, due to lack of support.
+        ///*Readded the [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string changelog {
             get {
@@ -152,7 +157,12 @@ namespace Kaziklikker {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Welcome to the wiki, the place to learn! to navigate to a page, just click on one of the pages on the left..
+        ///   Looks up a localized string similar to Welcome to the wiki, the place to learn! to navigate to a page, just click on one of the pages on the left.
+        ///
+        ///The Stars on the right tell you how difficult a topic is.
+        ///1: beginner
+        ///2: advanced
+        ///3: pro.
         /// </summary>
         internal static string home {
             get {
@@ -181,9 +191,9 @@ namespace Kaziklikker {
         ///Qi (quintillions)
         ///1Qi = 1000Qa = 1000000T [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string largenuber {
+        internal static string largenumber {
             get {
-                return ResourceManager.GetString("largenuber", resourceCulture);
+                return ResourceManager.GetString("largenumber", resourceCulture);
             }
         }
         

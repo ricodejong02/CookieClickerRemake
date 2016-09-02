@@ -145,6 +145,11 @@ The money you currently have is shown on the top-left corner of your the game wi
 -Better cheats
 -Secret stuff
 
+Kaziklikker version 3.2.2 (02-09-2016)
+-Random colours
+*Wiki is now free
+*improvements
+
 Kaziklikker version 3.2.1 (15-02-2016)
 -Removed the sell mode
 *improvements
@@ -154,8 +159,9 @@ Kaziklikker version 3.2 (15-02-2016)
 +Added the experience system
 +Added XP-Shop
 +Added the firewall upgrade
-+Added color to the shop
++Added colour to the shop
 +Added a 'clean' mode
++Added changelog
 *Reworked the saving system
 *Reworked the bank
 *Readded the wiki
@@ -175,9 +181,14 @@ Programs used: Microsoft Visual Studio 2015 Community edition, Paint.net and Aud
     <value>On this page, we'll talk about the experience system of Kaziklikkker. You can see how much experience you currently have by looking at the top of your screen. You gain XP by completing certain actions. There are two things you can do with experience: you can save it to buy things from the XP-Shop, or you can convert it to money. You can see the course next to the 'convert' button.</value>
   </data>
   <data name="home" xml:space="preserve">
-    <value>Welcome to the wiki, the place to learn! to navigate to a page, just click on one of the pages on the left.</value>
+    <value>Welcome to the wiki, the place to learn! to navigate to a page, just click on one of the pages on the left.
+
+The Stars on the right tell you how difficult a topic is.
+1: beginner
+2: advanced
+3: pro</value>
   </data>
-  <data name="largenuber" xml:space="preserve">
+  <data name="largenumber" xml:space="preserve">
     <value>In Kaziklikker, particularly the late game, numbers tend to be very big. In order to still make them readable, the numbers are shortened. Here is a list of all the abbreviations used.
 
 K (thousands)
@@ -198,7 +209,7 @@ Qa (quadrillions)
 Qi (quintillions)
 1Qi = 1000Qa = 1000000T = 1000000000B = 1000000000000M = 1000000000000000K = 1000000000000000000
 
-because kaziklikker is a 64-bit game, the max number allowed is 9.2Qi after this point, the 9.2Qi turn into -9.2Qi.</value>
+because kaziklikker is a 64-bit game, the max number allowed is 9.2Qi after this point, the 9.2Qi turns into -9.2Qi.</value>
   </data>
   <data name="lottery" xml:space="preserve">
     <value>The lottery can be accessed on the right side of the screen.  The jackpot and price of a ticket are shown next to the buttons. When you buy a ticket, the game randomly decides if you've won. The most expensive lottery 'exprice' has a twist to it, there is a ten percent chance that your game will be reset,  this can't be undone.</value>

@@ -58,3 +58,15 @@ C:\Users\userr\Desktop\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikke
 C:\Users\userr\Desktop\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.csproj.GenerateResource.Cache
 C:\Users\userr\Desktop\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.exe
 C:\Users\userr\Desktop\rico\code\C#\Kaziklikker\Kaziklikker\obj\Debug\Kaziklikker.pdb
+C:\Users\userr\Documents\GitHub\CookieClickerRemake\obj\Debug\Kaziklikker.csprojResolveAssemblyReference.cache
+C:\Users\userr\Documents\GitHub\CookieClickerRemake\obj\Debug\Kaziklikker.Form1.resources
+C:\Users\userr\Documents\GitHub\CookieClickerRemake\obj\Debug\Kaziklikker.Properties.Resources.resources
+C:\Users\userr\Documents\GitHub\CookieClickerRemake\obj\Debug\Kaziklikker.Sounds.resources
+C:\Users\userr\Documents\GitHub\CookieClickerRemake\obj\Debug\Kaziklikker.Wiki.resources
+C:\Users\userr\Documents\GitHub\CookieClickerRemake\obj\Debug\Kaziklikker.WikiRes.resources
+C:\Users\userr\Documents\GitHub\CookieClickerRemake\obj\Debug\Kaziklikker.csproj.GenerateResource.Cache
+C:\Users\userr\Documents\GitHub\CookieClickerRemake\obj\Debug\Kaziklikker.exe
+C:\Users\userr\Documents\GitHub\CookieClickerRemake\obj\Debug\Kaziklikker.pdb
+C:\Users\userr\Documents\GitHub\CookieClickerRemake\bin\Debug\Kaziklikker.exe.config
+C:\Users\userr\Documents\GitHub\CookieClickerRemake\bin\Debug\Kaziklikker.exe
+C:\Users\userr\Documents\GitHub\CookieClickerRemake\bin\Debug\Kaziklikker.pdb

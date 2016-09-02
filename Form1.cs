@@ -26,7 +26,7 @@ namespace Kaziklikker {
 
         #region strings
         public string Val = "€";
-        public string version = "kaziklikker version 3.2.1";
+        public string version = "kaziklikker version 3.2.2";
 
         #endregion strings
 
@@ -168,8 +168,6 @@ namespace Kaziklikker {
         }
 
         public void Form1_Load(object sender, EventArgs e) {
-            if(Settings.Default.HasWiki)
-                button20.Enabled = true;
             panel1.BackColor = Settings.Default.AccentColor;
             button12.BackColor = Settings.Default.AccentColor;
             button13.BackColor = Settings.Default.AccentColor;
@@ -884,23 +882,8 @@ namespace Kaziklikker {
         }
 
         private void button20_Click(object sender, EventArgs e) {
-            if(Settings.Default.HasWiki) {
-                Wiki wiki = new Wiki();
-                wiki.Show();
-            }
-
-            if(Settings.Default.HasWiki == false) {
-                if(Settings.Default.Money >= 5000) {
-                    if(MessageBox.Show("The wiki costs 5000, do you want to buy it?", "Confirm", MessageBoxButtons.YesNo) == DialogResult.Yes) {
-                        Settings.Default.HasWiki = true;
-                        Settings.Default.Money -= 5000;
-                        Wiki wiki = new Wiki();
-                        wiki.Show();
-                    }
-                } else {
-                    MessageBox.Show("You don't have enough money for the wiki yet, the wiki is 5000.");
-                }
-            }
+            Wiki wiki = new Wiki();
+            wiki.Show();
         }
 
         private void button2_Click(object sender, EventArgs e) {
