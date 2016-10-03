@@ -26,7 +26,7 @@ namespace Kaziklikker {
 
         #region strings
         public string Val = "€";
-        public string version = "kaziklikker version 3.2.2";
+        public static string version = "kaziklikker version 3.3PRE";
 
         #endregion strings
 
@@ -35,23 +35,6 @@ namespace Kaziklikker {
         //later contextmenu
         public Form1() {
             InitializeComponent();
-            switch(rd.Next(4)) {
-                case 0:
-                    pictureBox15.Image = Resources.Headphones_magmaon;
-                    break;
-
-                case 1:
-                    pictureBox15.Image = Resources.Headphones_nitroon;
-                    break;
-
-                case 2:
-                    pictureBox15.Image = Resources.Headphones_aquaon;
-                    break;
-
-                default:
-                    pictureBox15.Image = Resources.Headphones_magmaon;
-                    break;
-            }
 
             switch(rd.Next(4)) {
                 case 0:
@@ -196,6 +179,8 @@ namespace Kaziklikker {
                 }
             }
             label62.Text = bankclock.ToString();
+            Settings.Default.MoneyEarned += Settings.Default.CPS;
+            Settings.Default.MoneyEarnedCPS += Settings.Default.CPS;
             Settings.Default.Money += Settings.Default.CPS;
             Settings.Default.XP += Settings.Default.XPCPS;
             Settings.Default.XPToMoney += (rd.NextDouble() / 10) - 0.05;
@@ -489,6 +474,8 @@ namespace Kaziklikker {
         #region kazi
 
         private void Kaziknop_MouseClick(object sender, MouseEventArgs e) {
+            Settings.Default.MoneyEarned += Settings.Default.ClickingSpeed;
+            Settings.Default.MoneyEarnedClicks += Settings.Default.ClickingSpeed;
             Settings.Default.Money += Settings.Default.ClickingSpeed;
             Settings.Default.TotalClicks += 1;
             Settings.Default.XP++;
@@ -539,7 +526,8 @@ namespace Kaziklikker {
         #region shop
 
         private void button1_Click(object sender, EventArgs e) {
-
+            Settings.Default.MoneySpent += Settings.Default.ClickerPrice;
+            Settings.Default.MoneySpentShop += Settings.Default.ClickerPrice;
             Settings.Default.XP += 5;
             Settings.Default.CPS += Settings.Default.ClickerSpeed;
             Settings.Default.Money -= Settings.Default.ClickerPrice;
@@ -548,7 +536,8 @@ namespace Kaziklikker {
         }
 
         private void button3_Click(object sender, EventArgs e) {
-
+            Settings.Default.MoneySpent += Settings.Default.FarmPrice;
+            Settings.Default.MoneySpentShop += Settings.Default.FarmPrice;
             Settings.Default.XP += 25;
             Settings.Default.CPS += Settings.Default.FarmSpeed;
             Settings.Default.Money -= Settings.Default.FarmPrice;
@@ -557,7 +546,8 @@ namespace Kaziklikker {
         }
 
         private void button4_Click(object sender, EventArgs e) {
-
+            Settings.Default.MoneySpent += Settings.Default.MinePrice;
+            Settings.Default.MoneySpentShop += Settings.Default.MinePrice;
             Settings.Default.XP += 50;
             Settings.Default.CPS += Settings.Default.MineSpeed;
             Settings.Default.Money -= Settings.Default.MinePrice;
@@ -566,7 +556,8 @@ namespace Kaziklikker {
         }
 
         private void button5_Click(object sender, EventArgs e) {
-
+            Settings.Default.MoneySpent += Settings.Default.VillagePrice;
+            Settings.Default.MoneySpentShop += Settings.Default.VillagePrice;
             Settings.Default.XP += 100;
             Settings.Default.CPS += Settings.Default.VillageSpeed;
             Settings.Default.Money -= Settings.Default.VillagePrice;
@@ -575,7 +566,8 @@ namespace Kaziklikker {
         }
 
         private void button6_Click(object sender, EventArgs e) {
-
+            Settings.Default.MoneySpent += Settings.Default.CityPrice;
+            Settings.Default.MoneySpentShop += Settings.Default.CityPrice;
             Settings.Default.XP += 200;
             Settings.Default.CPS += Settings.Default.CitySpeed;
             Settings.Default.Money -= Settings.Default.CityPrice;
@@ -584,7 +576,8 @@ namespace Kaziklikker {
         }
 
         private void button7_Click(object sender, EventArgs e) {
-
+            Settings.Default.MoneySpent += Settings.Default.CountryPrice;
+            Settings.Default.MoneySpentShop += Settings.Default.CountryPrice;
             Settings.Default.XP += 350;
             Settings.Default.CPS += Settings.Default.CountrySpeed;
             Settings.Default.Money -= Settings.Default.CountryPrice;
@@ -593,7 +586,8 @@ namespace Kaziklikker {
         }
 
         private void button8_Click(object sender, EventArgs e) {
-
+            Settings.Default.MoneySpent += Settings.Default.PlanetPrice;
+            Settings.Default.MoneySpentShop += Settings.Default.PlanetPrice;
             Settings.Default.XP += 500;
             Settings.Default.CPS += Settings.Default.PlanetSpeed;
             Settings.Default.Money -= Settings.Default.PlanetPrice;
@@ -602,7 +596,8 @@ namespace Kaziklikker {
         }
 
         private void button9_Click(object sender, EventArgs e) {
-
+            Settings.Default.MoneySpent += Settings.Default.GalaxyPrice;
+            Settings.Default.MoneySpentShop += Settings.Default.GalaxyPrice;
             Settings.Default.XP += 1000;
             Settings.Default.CPS += Settings.Default.GalaxySpeed;
             Settings.Default.Money -= Settings.Default.GalaxyPrice;
@@ -611,6 +606,8 @@ namespace Kaziklikker {
         }
 
         private void button17_Click(object sender, EventArgs e) {
+            Settings.Default.MoneySpent += Settings.Default.UniversePrice;
+            Settings.Default.MoneySpentShop += Settings.Default.UniversePrice;
             Settings.Default.XP += 5000000;
             Settings.Default.CPS += Settings.Default.UniverseSpeed;
             Settings.Default.Money -= Settings.Default.UniversePrice;
@@ -642,6 +639,8 @@ namespace Kaziklikker {
         #region upgrades
 
         private void button22_Click(object sender, EventArgs e) {
+            Settings.Default.MoneySpent += Settings.Default.GoedkoopPrice;
+            Settings.Default.MoneySpentUpgrades += Settings.Default.GoedkoopPrice;
             Settings.Default.XP += 1000;
             Settings.Default.Money -= Settings.Default.GoedkoopPrice;
             Settings.Default.GoedkoopPrice *= 2;
@@ -679,6 +678,8 @@ namespace Kaziklikker {
         }
 
         private void button23_Click(object sender, EventArgs e) {
+            Settings.Default.MoneySpent += Settings.Default.ClickingPrice;
+            Settings.Default.MoneySpentUpgrades += Settings.Default.ClickingPrice;
             Settings.Default.XP += 10000;
             Settings.Default.Money -= Settings.Default.ClickingSpeedPrice;
             Settings.Default.ClickingSpeedPrice += 50000;
@@ -686,20 +687,24 @@ namespace Kaziklikker {
         }
 
         private void button24_Click(object sender, EventArgs e) {
+            Settings.Default.MoneySpent += Settings.Default.CPSPrice;
+            Settings.Default.MoneySpentUpgrades += Settings.Default.CPSPrice;
             Settings.Default.XP += 10000;
             Settings.Default.ClickerSpeed += 1;
             Settings.Default.FarmSpeed += 3;
             Settings.Default.MineSpeed += 5;
             Settings.Default.VillageSpeed += 10;
-            Settings.Default.CitySpeed += 20;
-            Settings.Default.CountrySpeed += 35;
-            Settings.Default.PlanetSpeed += 50;
-            Settings.Default.GalaxySpeed += 70;
+            Settings.Default.CitySpeed += 25;
+            Settings.Default.CountrySpeed += 50;
+            Settings.Default.PlanetSpeed += 75;
+            Settings.Default.GalaxySpeed += 100;
             Settings.Default.UniverseSpeed += 100000;
             Settings.Default.CPSPrice *= 3;
         }
 
         private void button25_Click(object sender, EventArgs e) {
+            Settings.Default.MoneySpent += Settings.Default.BankPrice;
+            Settings.Default.MoneySpentUpgrades += Settings.Default.BankPrice;
             Settings.Default.XP += 10000;
             Settings.Default.Money -= Settings.Default.BankPrice;
             Settings.Default.BankPrice *= 2;
@@ -715,11 +720,15 @@ namespace Kaziklikker {
             switch(rd.Next(4)) {
                 case 1:
                     MessageBox.Show("You won!!!");
+                    Settings.Default.MoneyEarned += 10000;
+                    Settings.Default.MoneyEarnedLottery += 10000;
                     Settings.Default.Money += 10000;
                     break;
 
                 default:
                     MessageBox.Show("You lost :(");
+                    Settings.Default.MoneySpent += 5000;
+                    Settings.Default.MoneySpentLottery += 5000;
                     Settings.Default.Money -= 5000;
                     break;
             }
@@ -730,11 +739,15 @@ namespace Kaziklikker {
             switch(rd.Next(13)) {
                 case 1:
                     MessageBox.Show("You won!!!");
+                    Settings.Default.MoneyEarned += 1000000;
+                    Settings.Default.MoneyEarnedLottery += 1000000;
                     Settings.Default.Money += 1000000;
                     break;
 
                 default:
                     MessageBox.Show("You lost :(");
+                    Settings.Default.MoneySpent += 100000;
+                    Settings.Default.MoneySpentLottery += 100000;
                     Settings.Default.Money -= 100000;
                     break;
             }
@@ -745,11 +758,15 @@ namespace Kaziklikker {
             switch(rd.Next(28)) {
                 case 0:
                     MessageBox.Show("You won!!!!");
+                    Settings.Default.MoneyEarned += 25000000000;
+                    Settings.Default.MoneyEarnedLottery += 25000000000;
                     Settings.Default.Money += 25000000000;
                     break;
 
                 default:
                     MessageBox.Show("You lost :(");
+                    Settings.Default.MoneySpent += 1000000000;
+                    Settings.Default.MoneySpentLottery += 1000000000;
                     Settings.Default.Money -= 1000000000;
                     break;
             }
@@ -762,11 +779,15 @@ namespace Kaziklikker {
                 switch(rd.Next(10)) {
                     case 0:
                         MessageBox.Show("You won!!!!");
+                        Settings.Default.MoneyEarned += 1000000000000;
+                        Settings.Default.MoneyEarnedLottery += 1000000000000;
                         Settings.Default.Money += 1000000000000;
                         break;
 
                     case 1:
                         MessageBox.Show("You Won!!!!");
+                        Settings.Default.MoneyEarned += 1000000000000;
+                        Settings.Default.MoneyEarnedLottery += 1000000000000;
                         Settings.Default.Money += 1000000000000;
                         break;
 
@@ -779,6 +800,8 @@ namespace Kaziklikker {
 
                     default:
                         MessageBox.Show("You didn't win anything :(");
+                        Settings.Default.MoneySpent += 25000000000;
+                        Settings.Default.MoneySpentLottery += 25000000000;
                         Settings.Default.Money -= 25000000000;
                         break;
                 }
@@ -887,6 +910,8 @@ namespace Kaziklikker {
         }
 
         private void button2_Click(object sender, EventArgs e) {
+            Settings.Default.MoneyEarned += Convert.ToInt64(Settings.Default.XP * Settings.Default.XPToMoney);
+            Settings.Default.MoneyEarnedXP += Convert.ToInt64(Settings.Default.XP * Settings.Default.XPToMoney);
             Settings.Default.Money += Convert.ToInt64(Settings.Default.XP * Settings.Default.XPToMoney);
             Settings.Default.XP = 0;
         }
@@ -911,7 +936,7 @@ namespace Kaziklikker {
             }
         }
 
-        public string NiceNumber(long num) {
+        public static string NiceNumber(long num) {
             if(num < 1000)
                 return num.ToString();
             if(num >= 1000 && num < 1000000)
@@ -959,6 +984,8 @@ namespace Kaziklikker {
 
         private void button15_Click_1(object sender, EventArgs e) {
             Settings.Default.HasFireWall = true;
+            Settings.Default.MoneySpentUpgrades += Settings.Default.FireWallPrice;
+            Settings.Default.MoneySpent += Settings.Default.FireWallPrice;
             Settings.Default.Money -= Settings.Default.FireWallPrice;
         }
 
@@ -989,6 +1016,11 @@ namespace Kaziklikker {
             Kaziknop.FlatAppearance.MouseDownBackColor = BackColor;
             Kaziknop.FlatAppearance.MouseOverBackColor = BackColor;
             Settings.Default.BackColor = BackColor;
+        }
+
+        private void button21_Click(object sender, EventArgs e) {
+            Stats st = new Stats();
+            st.Show();
         }
     }
 }

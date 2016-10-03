@@ -212,14 +212,14 @@ namespace Kaziklikker {
         ///Name: Clicker
         ///Default price: 25
         ///Default speed: 1
+        ///CPS upgrade  : +1
         ///
         ///Name: Farm
         ///Default price: 125
         ///Default speed: 3
+        ///CPS upgrade  : +3
         ///
-        ///Name: Mine
-        ///Default price: 250
-        ///Default spe [rest of string was truncated]&quot;;.
+        ///Name: [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string shop {
             get {
@@ -232,7 +232,7 @@ namespace Kaziklikker {
         ///
         ///The &apos;cheap&apos; upgrade makes everything cheaper. For example, a farm costs 150 before the upgrade, and only costs 125 after the upgrade.
         ///
-        ///The &apos;clicking speed&apos; upgrade adds ten to your original clicking speed. You might think to yourself that that&apos;s not a lot, but after it doubles again, and  again. It really makes a [rest of string was truncated]&quot;;.
+        ///The &apos;clicking speed&apos; upgrade adds 10 to your original clicking speed. You might think to yourself that that&apos;s not a lot, but after it doubles again, and  again. It really makes a  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string upgrades {
             get {

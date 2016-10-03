@@ -220,38 +220,47 @@ because kaziklikker is a 64-bit game, the max number allowed is 9.2Qi after this
 Name: Clicker
 Default price: 25
 Default speed: 1
+CPS upgrade  : +1
 
 Name: Farm
 Default price: 125
 Default speed: 3
+CPS upgrade  : +3
 
 Name: Mine
 Default price: 250
 Default speed: 5
+CPS upgrade  : +5
 
 Name: Village
 Default price: 750
 Default speed: 10
+CPS upgrade  : +10
 
 Name: City
 Default price: 1500
 Default speed: 20
+CPS upgrade  : +25
 
 Name: Country
 Default price: 2500
 Default speed: 35
+CPS upgrade  : +50
 
 Name: Planet
 Default price: 12500
 Default speed: 50
+CPS upgrade  : +75
 
 Name: Galaxy
 Default price: 25000
 Default speed: 75
+CPS upgrade  : +100
 
 Name: Universe
 Default price: 25000000
 Default speed: 100000
+CPS upgrade  : +100000
 
 Every time, you but a universe the tick speed goes down by one, which means that a second goes faster, so you gain money faster. This can be done until you reach 0.25 seconds.
 
@@ -280,9 +289,10 @@ When you buy an XP-Mine, your experience per second goes up.</value>
 
 The 'cheap' upgrade makes everything cheaper. For example, a farm costs 150 before the upgrade, and only costs 125 after the upgrade.
 
-The 'clicking speed' upgrade adds ten to your original clicking speed. You might think to yourself that that's not a lot, but after it doubles again, and  again. It really makes a difference.
+The 'clicking speed' upgrade adds 10 to your original clicking speed. You might think to yourself that that's not a lot, but after it doubles again, and  again. It really makes a difference.
 
-The 'CPS' upgrades increases the CPS of every single item in the shop. An items speed might be 5 before the upgrade, but will be 6 after the upgrade.
+The 'CPS' upgrades increases the CPS of every single item in the shop. An item speed might be 5 before the upgrade, but will be 6 after the upgrade. How much each item gets raised can be seen on the 'shop' 
+page. This upgrade does not change the existing CPS.
 
 The 'bank' upgrade increments your interest rate by 1. Why this is useful is explained on the 'bank' page on the wiki.
 

@@ -658,5 +658,113 @@ namespace Kaziklikker.Properties {
                 this["AccentColor"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public long MoneySpent {
+            get {
+                return ((long)(this["MoneySpent"]));
+            }
+            set {
+                this["MoneySpent"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public long MoneySpentShop {
+            get {
+                return ((long)(this["MoneySpentShop"]));
+            }
+            set {
+                this["MoneySpentShop"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public long MoneySpentUpgrades {
+            get {
+                return ((long)(this["MoneySpentUpgrades"]));
+            }
+            set {
+                this["MoneySpentUpgrades"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public long MoneySpentLottery {
+            get {
+                return ((long)(this["MoneySpentLottery"]));
+            }
+            set {
+                this["MoneySpentLottery"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public long MoneyEarned {
+            get {
+                return ((long)(this["MoneyEarned"]));
+            }
+            set {
+                this["MoneyEarned"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public long MoneyEarnedClicks {
+            get {
+                return ((long)(this["MoneyEarnedClicks"]));
+            }
+            set {
+                this["MoneyEarnedClicks"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public long MoneyEarnedCPS {
+            get {
+                return ((long)(this["MoneyEarnedCPS"]));
+            }
+            set {
+                this["MoneyEarnedCPS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public long MoneyEarnedXP {
+            get {
+                return ((long)(this["MoneyEarnedXP"]));
+            }
+            set {
+                this["MoneyEarnedXP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public long MoneyEarnedLottery {
+            get {
+                return ((long)(this["MoneyEarnedLottery"]));
+            }
+            set {
+                this["MoneyEarnedLottery"] = value;
+            }
+        }
     }
 }

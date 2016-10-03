@@ -70,3 +70,4 @@ C:\Users\userr\Documents\GitHub\CookieClickerRemake\obj\Debug\Kaziklikker.pdb
 C:\Users\userr\Documents\GitHub\CookieClickerRemake\bin\Debug\Kaziklikker.exe.config
 C:\Users\userr\Documents\GitHub\CookieClickerRemake\bin\Debug\Kaziklikker.exe
 C:\Users\userr\Documents\GitHub\CookieClickerRemake\bin\Debug\Kaziklikker.pdb
+C:\Users\userr\Documents\GitHub\CookieClickerRemake\obj\Debug\Kaziklikker.Stats.resources
